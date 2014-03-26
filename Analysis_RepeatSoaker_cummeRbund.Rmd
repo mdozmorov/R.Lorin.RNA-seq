@@ -3,7 +3,7 @@ RepeatSoaker effect on DEGs detection
 ```{r setup, echo=FALSE, include=FALSE, cache=FALSE}
 # Set up the environment
 library(knitr) 
-opts_chunk$set(cache.path='cache/', fig.path='img/', cache=F, tidy=T, fig.keep='high', echo=T, dpi=300, out.width=700, echo=F)
+opts_chunk$set(cache.path='cache/', fig.path='img/', cache=T, tidy=T, fig.keep='high', echo=T, dpi=300, out.width=700, echo=F)
 options(replace.assign=TRUE, width=120)
 set.seed(1)
 ```
@@ -13,49 +13,8 @@ library(biomaRt)
 # Use the latest biomart version for mm
 mart <- useMart("ensembl", dataset="mmusculus_gene_ensembl")
 library("cummeRbund")
-#source("work_scripts//venn4.R")
 source("work_scripts//venn5.R")
-#library(org.Mm.eg.db)
 library(gridExtra)
-# suppressMessages(library(GO.db))
-# suppressMessages(library(GOstats))
-# # Preparing environment for remapping Gene Symbols to Entrez IDs
-# x <- org.Mm.egSYMBOL2EG
-# # Get the entrez gene identifiers that are mapped to a gene symbol
-# mapped_genes <- mappedkeys(x)
-# # Convert to a list
-# xx <- as.list(x[mapped_genes])
-```
-
-```{r GOEnrichment}
-# Perform GO enrichment analysis of topTable produced by limma.
-# Provide which ontology space to use, "MF", "BP", of "CC"
-# Returns a list of the results, and total count of significant enrichments
-GOEnrichment <- function(res, ont="BP", fileName=NULL)
-{
-  # Convert selected and all gene names to Entrez IDs, removing NAs
-  sel.entrez <- unlist(xx)[res.ge]; sel.entrez <- sel.entrez[!is.na(sel.entrez)]
-  all.entrez <- unlist(xx)# All Entrez genes
-  # Prepare parameters for the GO enrichment analysis
-  params <- new('GOHyperGParams',
-                geneIds=sel.entrez,
-                universeGeneIds=all.entrez,
-                ontology=ont,
-                pvalueCutoff=0.05,
-                conditional=F,
-                testDirection='over',
-                annotation="org.Mm.eg.db"
-  )
-  hgOver <- hyperGTest(params)
-  result <- summary(hgOver)
-  result <- cbind(result, p.adjust(result$Pvalue, method="BH")) # Append corrected for multiple testing p-value
-  colnames(result)[length(colnames(result))] <- "p.adj"
-  result <- result[result$p.adj < 0.1, ] # Subset the results keeping FDR at 10%
-  if (!is.null(fileName)) {
-    write.table(result, paste("results//", fileName, sep=""), sep="\t", row.names=F)
-  }
-  return(list(result, nrow(result)))
-}
 ```
 
 ```{r biomart}
