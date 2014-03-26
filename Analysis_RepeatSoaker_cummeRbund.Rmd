@@ -10,6 +10,8 @@ set.seed(1)
 
 ```{r loadLibraries, warning=FALSE, message=FALSE}
 library(biomaRt)
+# Use the latest biomart version for mm
+mart <- useMart("ensembl", dataset="mmusculus_gene_ensembl")
 library("cummeRbund")
 #source("work_scripts//venn4.R")
 source("work_scripts//venn5.R")
@@ -57,12 +59,13 @@ GOEnrichment <- function(res, ont="BP", fileName=NULL)
 ```
 
 ```{r biomart}
-refseq2gene <- function(x) {
-  # Function to convert NM_ IDs to EntrezIDs
-  # Use the latest biomart version for mm
-  mart <- useMart("ensembl", dataset="mmusculus_gene_ensembl")
-  # Convert RefSEq IDs to unique gene names. Do not do direct conversion to entrezIDs
-  return(getBM(attributes=c('external_gene_id', 'description'), filters='refseq_mrna', values=x, mart=mart, uniqueRows=T))
+refseq2gene <- function(x, fileName) {
+  # Function to convert NM_ IDs to gene names/descriptions
+  genes <- getBM(attributes=c('external_gene_id', 'description'), filters='refseq_mrna', values=x, mart=mart, uniqueRows=T)
+  if (!is.null(fileName)) {
+    write.table(genes, paste("results//", fileName, sep=""), sep="\t", row.names=F)
+  }
+  return(genes)
 }
 ```
 
@@ -120,31 +123,31 @@ The goal is to (subjectively) judge what we are loosing.
 
 ```{r u1}
 message("Unique genes for non-RepeatSoaked data")
-uniq.all <- refseq2gene(uniq(1)) # Condition-specific gene names
+uniq.all <- refseq2gene(uniq(1), "genes_uniq_all.txt") # Condition-specific gene names
 grid.table(uniq.all[order(uniq.all[,1]), ], gp=gpar(fontsize=6))  
 ```
 
 ```{r u2}
 message("Unique genes for 75%-RepeatSoaked data")
-uniq.all <- refseq2gene(uniq(2)) # Condition-specific gene names
+uniq.all <- refseq2gene(uniq(2), "genes_uniq_r75.txt") # Condition-specific gene names
 grid.table(uniq.all[order(uniq.all[,1]), ], gp=gpar(fontsize=6))  
 ```
 
 ```{r u3}
 message("Unique genes for 50%-RepeatSoaked data")
-uniq.all <- refseq2gene(uniq(3)) # Condition-specific gene names
+uniq.all <- refseq2gene(uniq(3), "genes_uniq_r50.txt") # Condition-specific gene names
 grid.table(uniq.all[order(uniq.all[,1]), ], gp=gpar(fontsize=6))  
 ```
 
 ```{r u4}
 message("Unique genes for 25%-RepeatSoaked data")
-uniq.all <- refseq2gene(uniq(4)) # Condition-specific gene names
+uniq.all <- refseq2gene(uniq(4), "genes_uniq_r25.txt") # Condition-specific gene names
 grid.table(uniq.all[order(uniq.all[,1]), ], gp=gpar(fontsize=6))  
 ```
 
 ```{r u5}
 message("Unique genes for 1%-RepeatSoaked data")
-uniq.all <- refseq2gene(uniq(5)) # Condition-specific gene names
+uniq.all <- refseq2gene(uniq(5), "genes_uniq_r01.txt") # Condition-specific gene names
 grid.table(uniq.all[order(uniq.all[,1]), ], gp=gpar(fontsize=6))  
 ```
 
