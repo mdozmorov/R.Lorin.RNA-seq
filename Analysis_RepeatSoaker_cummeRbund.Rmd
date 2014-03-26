@@ -6,31 +6,81 @@ library(knitr)
 opts_chunk$set(cache.path='cache/', fig.path='img/', cache=F, tidy=T, fig.keep='high', echo=T, dpi=300, out.width=700, echo=F)
 options(replace.assign=TRUE, width=120)
 set.seed(1)
-HIDE=F # If true, mask any data labels
 ```
 
-```{r loadLibraries, echo=FALSE, warning=FALSE, message=FALSE}
+```{r loadLibraries, warning=FALSE, message=FALSE}
+library(biomaRt)
 library("cummeRbund")
-source("work_scripts//venn4.R")
+#source("work_scripts//venn4.R")
 source("work_scripts//venn5.R")
+#library(org.Mm.eg.db)
+library(gridExtra)
+# suppressMessages(library(GO.db))
+# suppressMessages(library(GOstats))
+# # Preparing environment for remapping Gene Symbols to Entrez IDs
+# x <- org.Mm.egSYMBOL2EG
+# # Get the entrez gene identifiers that are mapped to a gene symbol
+# mapped_genes <- mappedkeys(x)
+# # Convert to a list
+# xx <- as.list(x[mapped_genes])
+```
+
+```{r GOEnrichment}
+# Perform GO enrichment analysis of topTable produced by limma.
+# Provide which ontology space to use, "MF", "BP", of "CC"
+# Returns a list of the results, and total count of significant enrichments
+GOEnrichment <- function(res, ont="BP", fileName=NULL)
+{
+  # Convert selected and all gene names to Entrez IDs, removing NAs
+  sel.entrez <- unlist(xx)[res.ge]; sel.entrez <- sel.entrez[!is.na(sel.entrez)]
+  all.entrez <- unlist(xx)# All Entrez genes
+  # Prepare parameters for the GO enrichment analysis
+  params <- new('GOHyperGParams',
+                geneIds=sel.entrez,
+                universeGeneIds=all.entrez,
+                ontology=ont,
+                pvalueCutoff=0.05,
+                conditional=F,
+                testDirection='over',
+                annotation="org.Mm.eg.db"
+  )
+  hgOver <- hyperGTest(params)
+  result <- summary(hgOver)
+  result <- cbind(result, p.adjust(result$Pvalue, method="BH")) # Append corrected for multiple testing p-value
+  colnames(result)[length(colnames(result))] <- "p.adj"
+  result <- result[result$p.adj < 0.1, ] # Subset the results keeping FDR at 10%
+  if (!is.null(fileName)) {
+    write.table(result, paste("results//", fileName, sep=""), sep="\t", row.names=F)
+  }
+  return(list(result, nrow(result)))
+}
+```
+
+```{r biomart}
+refseq2gene <- function(x) {
+  # Function to convert NM_ IDs to EntrezIDs
+  # Use the latest biomart version for mm
+  mart <- useMart("ensembl", dataset="mmusculus_gene_ensembl")
+  # Convert RefSEq IDs to unique gene names. Do not do direct conversion to entrezIDs
+  return(getBM(attributes=c('external_gene_id', 'description'), filters='refseq_mrna', values=x, mart=mart, uniqueRows=T))
+}
 ```
 
 ```{r loadData}
 cuff_data <- lapply(list(all="data//cuffdiff-/", r75="data//cuffdiff-.75/", r50="data//cuffdiff-.50/", r25="data//cuffdiff-.25", r01="data//cuffdiff-.01/"), readCufflinks) # , r00="data//cuffdiff-.00", rebuild=TRUE
 ```
 
-Overlap among DEGs identified in the non-soaked data ([[1]]) and RepeatSoaked data at 75%, 50, 25 and 1% thresholds.
+Overlap among DEGs identified in the non-soaked data (index [[1]]) and RepeatSoaked data at 75%, 50, 25 and 1% thresholds (subsequent indexes).
 
 ```{r diffGeneIDs}
 DEGcount <- function(cuff_data) {
-  # As in the manual
+  # Function to get tables of cuffdiff analysis
   gene_diff_data <- diffData(genes(cuff_data),"CTRL","MUT",features=T)
   sig_gene_data <- subset(gene_diff_data, (significant == 'yes')) # Get significant only
   return(sig_gene_data)
 }
 # Get RepeatSoaker-specific results in a list
 sig_genes <- lapply(cuff_data, DEGcount)
-
 ## 5-way venn diagram
 # Get condition-specific lists of gene_id
 sig_genes_names <- lapply(sig_genes, function(x) x$gene_id)
@@ -43,20 +93,60 @@ plot_venn5(sig_genes_names[[1]], sig_genes_names[[2]], sig_genes_names[[3]], sig
 
 We observe that soaking diminishes the number of differentially expressed genes. More rigorous soaking (less strict overlap threshold) also increases the number of genes not detected previously.
 
-```{r venn4, eval=FALSE}
-## 4-way venn diagram
-# Get list of genes identified as DEGs in any condition
-sig_genes_all <- unique(unlist(lapply(sig_genes, function(x) x$gene_id)))
-# Create empty matrix to mark condition-specific DEGs
-sig_genes_venn <- matrix(data=0, nrow=length(sig_genes_all), ncol=length(sig_genes))
-rownames(sig_genes_venn) <- sig_genes_all
-colnames(sig_genes_venn) <- names(cuff_data)
-# Fill the matrix
-for (i in 1:ncol(sig_genes_venn)) {
-  sig_genes_venn[sig_genes[[i]]$gene_id[sig_genes[[i]]$log2_fold_change > 0], i] <- 1
-  sig_genes_venn[sig_genes[[i]]$gene_id[sig_genes[[i]]$log2_fold_change < 0], i] <- -1
+```{r Uniq}
+uniq <- function(idx) {
+  # Find unique genes for the condition idx
+  idxs <- seq(1:length(cuff_data)) # All indexes
+  # Get unique XLOC IDs
+  uniq.xloc <- setdiff(sig_genes_names[[idx]], unique(unlist(sapply(setdiff(idxs, idx), function(x) sig_genes_names[[x]]))))
+  # Convert XLOC IDs to NM_ IDs. Some map to multiple NM_ IDs, comma separated
+  uniq.nmid <- as.character(featureNames(getGenes(cuff_data[[idx]], uniq.xloc))[, 2])
+  # splic comma-separated IDs and append them to a vector of unique NM_ IDs
+  uniq.nmid <- unique(unlist(lapply(strsplit(uniq.nmid, ","), function(v) {append(vector(), unique(v))})))
+  return(uniq.nmid) # Vector of NM_ IDs
 }
-# Plot it as venn diagram
-vennDiagram(sig_genes_venn[, 1:4], include="both")
+#grid.table(GOEnrichment(as.character(as.matrix(uniq.all[, 2])))[[1]][1:20], )
 ```
+
+Now, we check what those genes unique to each RepeatSoaker % are. We will look at 3 things:
+
+1) Gene names and their description. Note that not all probes can be mapped to genes, and some probes map to the same gene - therefore, the numbers in the Venn diagram and the tables below differ.
+
+2) GO enrichment of those genes, if any. (featureNames from cummeRbund conflicts with org.Mm.ed.db package, currently not functional)
+
+3) Reactome pathway enrichment of those genes, if any. (TODO)
+
+The goal is to (subjectively) judge what we are loosing. 
+
+```{r u1}
+message("Unique genes for non-RepeatSoaked data")
+uniq.all <- refseq2gene(uniq(1)) # Condition-specific gene names
+grid.table(uniq.all[order(uniq.all[,1]), ], gp=gpar(fontsize=6))  
+```
+
+```{r u2}
+message("Unique genes for 75%-RepeatSoaked data")
+uniq.all <- refseq2gene(uniq(2)) # Condition-specific gene names
+grid.table(uniq.all[order(uniq.all[,1]), ], gp=gpar(fontsize=6))  
+```
+
+```{r u3}
+message("Unique genes for 50%-RepeatSoaked data")
+uniq.all <- refseq2gene(uniq(3)) # Condition-specific gene names
+grid.table(uniq.all[order(uniq.all[,1]), ], gp=gpar(fontsize=6))  
+```
+
+```{r u4}
+message("Unique genes for 25%-RepeatSoaked data")
+uniq.all <- refseq2gene(uniq(4)) # Condition-specific gene names
+grid.table(uniq.all[order(uniq.all[,1]), ], gp=gpar(fontsize=6))  
+```
+
+```{r u5}
+message("Unique genes for 1%-RepeatSoaked data")
+uniq.all <- refseq2gene(uniq(5)) # Condition-specific gene names
+grid.table(uniq.all[order(uniq.all[,1]), ], gp=gpar(fontsize=6))  
+```
+
+TODO: What we are gaining.
 
