@@ -1,0 +1,93 @@
+"PathwayID"	"Pathway"	"N.Selected"	"N.In.Category"	"p.value"	"p.adj"
+"4809858"	"Mus musculus: Metabolism"	13	1504	3.37728449024945e-13	3.10710173102949e-11
+"4809894"	"Mus musculus: Metabolism of lipids and lipoproteins"	9	519	6.75005831349383e-12	3.10502682420716e-10
+"4810099"	"Mus musculus: mitochondrial fatty acid beta-oxidation of saturated fatty acids"	4	9	4.74923364810118e-11	1.45643165208436e-09
+"4809893"	"Mus musculus: Fatty acid, triacylglycerol, and ketone body metabolism"	6	144	1.88430328402405e-10	4.33389755325533e-09
+"4809892"	"Mus musculus: Mitochondrial Fatty Acid Beta-Oxidation"	4	16	3.2098093089236e-10	5.90604912841943e-09
+"4810661"	"Mus musculus: HDL-mediated lipid transport"	3	12	6.2559750805241e-08	9.59249512347029e-07
+"4809870"	"Mus musculus: Transmembrane transport of small molecules"	6	484	2.16635544102737e-07	2.8472100082074e-06
+"4810432"	"Mus musculus: Lipoprotein metabolism"	3	22	3.15093503708617e-07	3.6235752926491e-06
+"4810672"	"Mus musculus: ABC-family proteins mediated transport"	3	29	6.777866137329e-07	6.9284853848252e-06
+"4810353"	"Mus musculus: Lipid digestion, mobilization, and transport"	3	39	1.56308097682411e-06	1.43803449867818e-05
+"4810899"	"Mus musculus: PPARA Activates Gene Expression"	3	66	7.06444945491972e-06	5.90844863502377e-05
+"4810119"	"Mus musculus: mitochondrial fatty acid beta-oxidation of unsaturated fatty acids"	2	7	9.92257442134218e-06	7.60730705636234e-05
+"4810795"	"Mus musculus: Regulation of Lipid Metabolism by Peroxisome proliferator-activated receptor alpha (PPARalpha)"	3	83	1.37142288531861e-05	9.70545426533168e-05
+"4810718"	"Mus musculus: Role of Abl in Robo-Slit signaling"	2	9	1.51493893707365e-05	9.95531301505544e-05
+"4810625"	"Mus musculus: Signaling by Robo receptor"	2	31	0.000144372268523571	0.00088548324694457
+"4810789"	"Mus musculus: Regulation of actin dynamics for phagocytic cup formation"	2	58	0.000479645084336071	0.00275795923493241
+"4811157"	"Mus musculus: Stimuli-sensing channels"	2	74	0.000768210205596453	0.00415737287734551
+"4810382"	"Mus musculus: Fcgamma receptor (FCGR) dependent phagocytosis"	2	78	0.000850637615943292	0.00434770337037683
+"4811009"	"Mus musculus: Acrosome Reaction"	1	1	0.00106832076470553	0.00491691305313113
+"4809986"	"Mus musculus: Visual phototransduction"	2	89	0.0010983052232057	0.00491691305313113
+"4809988"	"Mus musculus: Diseases associated with visual transduction"	2	90	0.00112233884908428	0.00491691305313113
+"4810745"	"Mus musculus: Mitochondrial ABC transporters"	1	2	0.0016020668789507	0.00669955240288476
+"4810807"	"Mus musculus: Ion channel transport"	2	122	0.00202303753344624	0.00809215013378494
+"4810102"	"Mus musculus: Beta oxidation of butanoyl-CoA to acetyl-CoA"	1	3	0.00213553699851476	0.00818622516097326
+"4810100"	"Mus musculus: Beta oxidation of myristoyl-CoA to lauroyl-CoA"	1	4	0.00266873126135703	0.00909345466832765
+"4810101"	"Mus musculus: Beta oxidation of palmitoyl-CoA to myristoyl-CoA"	1	4	0.00266873126135703	0.00909345466832765
+"4810634"	"Mus musculus: Serotonin and melatonin biosynthesis"	1	4	0.00266873126135703	0.00909345466832765
+"4810567"	"Mus musculus: Vitamin B2 (riboflavin) metabolism"	1	5	0.00320164980536963	0.0104107555966924
+"4810098"	"Mus musculus: Beta oxidation of lauroyl-CoA to decanoyl-CoA-CoA"	1	6	0.00373429276837878	0.0104107555966924
+"4810103"	"Mus musculus: Beta oxidation of hexanoyl-CoA to butanoyl-CoA"	1	6	0.00373429276837878	0.0104107555966924
+"4810104"	"Mus musculus: Beta oxidation of octanoyl-CoA to hexanoyl-CoA"	1	6	0.00373429276837878	0.0104107555966924
+"4810105"	"Mus musculus: Beta oxidation of decanoyl-CoA to octanoyl-CoA-CoA"	1	6	0.00373429276837878	0.0104107555966924
+"4810272"	"Mus musculus: Neurotransmitter Clearance In The Synaptic Cleft"	1	6	0.00373429276837878	0.0104107555966924
+"4810761"	"Mus musculus: Beta-oxidation of very long chain fatty acids"	1	7	0.00426666028814482	0.011545080779686
+"4809901"	"Mus musculus: Disease"	3	672	0.00553011400219921	0.0145362996629237
+"4810633"	"Mus musculus: Amine-derived hormones"	1	11	0.00639337868763845	0.0163344137713703
+"4811108"	"Mus musculus: alpha-linolenic (omega3) and linoleic (omega6) acid metabolism"	1	12	0.00692437105525479	0.0163344137713703
+"4811109"	"Mus musculus: alpha-linolenic acid (ALA) metabolism"	1	12	0.00692437105525479	0.0163344137713703
+"4811155"	"Mus musculus: Cytosolic Iron-sulfur Cluster Assembly"	1	12	0.00692437105525479	0.0163344137713703
+"4810475"	"Mus musculus: Chylomicron-mediated lipid transport"	1	13	0.00745508880478973	0.0167284919522111
+"4810671"	"Mus musculus: ABCA transporters in lipid homeostasis"	1	13	0.00745508880478973	0.0167284919522111
+"4809990"	"Mus musculus: The canonical retinoid cycle in rods (twilight vision)"	1	14	0.00798553207353925	0.0170853244364096
+"4811100"	"Mus musculus: Metabolism of Angiotensinogen to Angiotensins"	1	14	0.00798553207353925	0.0170853244364096
+"4810133"	"Mus musculus: Axon guidance"	2	260	0.00866474007792505	0.0181171837992978
+"4810664"	"Mus musculus: Synthesis of PC"	1	18	0.010104563084251	0.0203811356784973
+"4809890"	"Mus musculus: Citric acid cycle (TCA cycle)"	1	19	0.0106336360061725	0.0203811356784973
+"4811007"	"Mus musculus: Fertilization"	1	19	0.0106336360061725	0.0203811356784973
+"4811008"	"Mus musculus: Reproduction"	1	19	0.0106336360061725	0.0203811356784973
+"4810074"	"Mus musculus: Peroxisomal lipid metabolism"	1	22	0.0122192133687508	0.0229421965290831
+"4810709"	"Mus musculus: CDO in myogenesis"	1	23	0.012747192477766	0.0229949354500877
+"4810710"	"Mus musculus: Myogenesis"	1	23	0.012747192477766	0.0229949354500877
+"4810134"	"Mus musculus: Developmental Biology"	2	376	0.0173785726745304	0.0303543251911895
+"4810121"	"Mus musculus: Transport of vitamins, nucleosides, and related molecules"	1	32	0.0174867308166635	0.0303543251911895
+"4809874"	"Mus musculus: Pyruvate metabolism and Citric Acid (TCA) cycle"	1	42	0.0227270597362441	0.0387201758469344
+"4811069"	"Mus musculus: Activation of Chaperone Genes by XBP1(S)"	1	45	0.0242938769504375	0.0400532635370143
+"4810738"	"Mus musculus: Activation of Chaperones by IRE1alpha"	1	46	0.0248156089305415	0.0400532635370143
+"4810959"	"Mus musculus: Retinoid metabolism and transport"	1	46	0.0248156089305415	0.0400532635370143
+"4810667"	"Mus musculus: Peptide hormone metabolism"	1	48	0.0258582630646498	0.0410165552059962
+"4810015"	"Mus musculus: Innate Immune System"	2	519	0.0315210022630581	0.0434372397435429
+"4810736"	"Mus musculus: Unfolded Protein Response"	1	62	0.0331266940579089	0.0434372397435429
+"4809896"	"Mus musculus: Metabolism of water-soluble vitamins and cofactors"	1	71	0.0377715128204721	0.0434372397435429
+"4809897"	"Mus musculus: Metabolism of vitamins and cofactors"	1	71	0.0377715128204721	0.0434372397435429
+"4809898"	"Mus musculus: Defective TCN2 causes hereditary megaloblastic anemia"	1	71	0.0377715128204721	0.0434372397435429
+"4809899"	"Mus musculus: Defects in cobalamin (B12) metabolism"	1	71	0.0377715128204721	0.0434372397435429
+"4809900"	"Mus musculus: Defects in vitamin and cofactor metabolism"	1	71	0.0377715128204721	0.0434372397435429
+"4809902"	"Mus musculus: Defective GIF causes intrinsic factor deficiency"	1	71	0.0377715128204721	0.0434372397435429
+"4809903"	"Mus musculus: Defective LMBRD1 causes methylmalonic aciduria and homocystinuria type cblF"	1	71	0.0377715128204721	0.0434372397435429
+"4809904"	"Mus musculus: Defective AMN causes hereditary megaloblastic anemia 1"	1	71	0.0377715128204721	0.0434372397435429
+"4809905"	"Mus musculus: Defective CUBN causes hereditary megaloblastic anemia 1"	1	71	0.0377715128204721	0.0434372397435429
+"4809906"	"Mus musculus: Defective MTRR causes methylmalonic aciduria and homocystinuria type cblE"	1	71	0.0377715128204721	0.0434372397435429
+"4809907"	"Mus musculus: Defective MTR causes methylmalonic aciduria and homocystinuria type cblG"	1	71	0.0377715128204721	0.0434372397435429
+"4809908"	"Mus musculus: Defective MMAB causes methylmalonic aciduria type cblB"	1	71	0.0377715128204721	0.0434372397435429
+"4809909"	"Mus musculus: Defective MMADHC causes methylmalonic aciduria and homocystinuria type cblD"	1	71	0.0377715128204721	0.0434372397435429
+"4809910"	"Mus musculus: Defective MMACHC causes methylmalonic aciduria and homocystinuria type cblC"	1	71	0.0377715128204721	0.0434372397435429
+"4809911"	"Mus musculus: Defective MMAA causes methylmalonic aciduria type cblA"	1	71	0.0377715128204721	0.0434372397435429
+"4809912"	"Mus musculus: Defective MUT causes methylmalonic aciduria mut type"	1	71	0.0377715128204721	0.0434372397435429
+"4809913"	"Mus musculus: Defective CD320 causes methylmalonic aciduria"	1	71	0.0377715128204721	0.0434372397435429
+"4809914"	"Mus musculus: Defective BTD causes biotidinase deficiency"	1	71	0.0377715128204721	0.0434372397435429
+"4809915"	"Mus musculus: Defects in biotin (Btn) metabolism"	1	71	0.0377715128204721	0.0434372397435429
+"4809916"	"Mus musculus: Defective HLCS causes multiple carboxylase deficiency"	1	71	0.0377715128204721	0.0434372397435429
+"4810077"	"Mus musculus: Glycerophospholipid biosynthesis"	1	84	0.0444425927221183	0.0504780065485788
+"4809951"	"Mus musculus: Metabolism of proteins"	2	691	0.0527421491506023	0.0591741185592124
+"4810078"	"Mus musculus: Phospholipid metabolism"	1	129	0.0671909324139757	0.074476696169708
+"4810922"	"Mus musculus: Factors involved in megakaryocyte development and platelet production"	1	138	0.0716772836241674	0.0785036915883738
+"4809875"	"Mus musculus: The citric acid (TCA) cycle and respiratory electron transport"	1	155	0.080094597840952	0.0866906235455009
+"4809881"	"Mus musculus: Transmission across Chemical Synapses"	1	174	0.0894147829492083	0.0956530236200833
+"4809877"	"Mus musculus: Metabolism of amino acids and derivatives"	1	187	0.095739028921099	0.101241271962541
+"4810016"	"Mus musculus: Immune System"	2	1045	0.107382344016627	0.112263359653746
+"4809882"	"Mus musculus: Neuronal System"	1	242	0.12202829095928	0.125702861113271
+"4809869"	"Mus musculus: SLC-mediated transmembrane transport"	1	244	0.122970190219504	0.125702861113271
+"4810243"	"Mus musculus: Hemostasis"	1	446	0.213229309208045	0.215572488430111
+"4809987"	"Mus musculus: Signal Transduction"	2	1858	0.261884456920021	0.261884456920021

@@ -1,0 +1,180 @@
+Understanding the biology of RepeatSoaker effect
+=================================================
+
+```{r setup, echo=FALSE, include=FALSE, cache=FALSE}
+# Set up the environment
+library(knitr) 
+opts_chunk$set(cache.path='cache/', fig.path='img/', cache=F, tidy=T, fig.keep='high', echo=T, dpi=300, out.width=700, echo=F)
+options(replace.assign=TRUE, width=120)
+set.seed(1)
+```
+
+```{r loadLibraries, warning=FALSE, message=FALSE}
+library(org.Mm.eg.db)
+library(gridExtra)
+library(GO.db)
+library(GOstats)
+library(reactome.db)
+# Preparing environment for remapping Gene Symbols to Entrez IDs
+x <- org.Mm.egSYMBOL2EG
+# Get the entrez gene identifiers that are mapped to a gene symbol
+mapped_genes <- mappedkeys(x)
+# Convert to a list
+xx <- as.list(x[mapped_genes])
+```
+
+```{r GOEnrichment}
+# Perform GO enrichment analysis of topTable produced by limma.
+# Provide which ontology space to use, "MF", "BP", of "CC"
+# Returns a list of the results, and total count of significant enrichments
+GOEnrichment <- function(res, ont="BP", fileName=NULL)
+{
+  # Convert selected and all gene names to Entrez IDs, removing NAs
+  sel.entrez <- unlist(xx)[res]; sel.entrez <- sel.entrez[!is.na(sel.entrez)]
+  all.entrez <- unlist(xx)# All Entrez genes
+  # Prepare parameters for the GO enrichment analysis
+  params <- new('GOHyperGParams',
+                geneIds=sel.entrez,
+                universeGeneIds=all.entrez,
+                ontology=ont,
+                pvalueCutoff=0.05,
+                conditional=F,
+                testDirection='over',
+                annotation="org.Mm.eg.db"
+  )
+  hgOver <- hyperGTest(params)
+  result <- summary(hgOver)
+  result <- cbind(result, p.adjust(result$Pvalue, method="BH")) # Append corrected for multiple testing p-value
+  colnames(result)[length(colnames(result))] <- "p.adj"
+  result <- result[result$p.adj < 0.1, ] # Subset the results keeping FDR at 10%
+  if (!is.null(fileName)) {
+    write.table(result, paste("results//", fileName, sep=""), sep="\t", row.names=F)
+  }
+  return(list(result, nrow(result)))
+}
+```
+
+```{r reactomeEnrichment, echo=FALSE}
+# Perform Reactome pathway enrichment analysis of topTable produced by limma
+# Returns a list of the results, and total count of significant enrichments
+reactomeEnrichment <- function(res, fileName=NULL)
+{
+  # Convert selected and all gene names to Entrez IDs, removing NAs
+  sel.entrez <- unlist(xx)[res]; sel.entrez <- sel.entrez[!is.na(sel.entrez)]
+  all.entrez <- unlist(xx); all.entrez <- all.entrez[!is.na(all.entrez)]
+  # Prepare pathways and counts
+  entrez2path <- as.list(reactomeEXTID2PATHID) # EntrezIDs to pathway IDs mapping
+  sel.counts <- table(unlist(entrez2path[sel.entrez])) # Selected gene counts in pathways
+  all.counts <- table(unlist(entrez2path[all.entrez])) # All gene counts
+  n.sel <- length(sel.entrez) # Total number of selected genes
+  n.all <- length(all.entrez) # Total number of all genes
+  pathways <- names(sel.counts) # PAthways to test for enrichment
+  pathway.names <- as.list(reactomePATHID2NAME) # Pathway ID to name mapping
+  # For each pathway, construct 2x2 contingency table and calculate the enrichment p-value using Fisher's exact test
+  result <- lapply(pathways, function(p) 
+  {
+                   sel <- sel.counts[[p]] 
+                   all <- all.counts[[p]]
+                   pathway.name <- pathway.names[[p]]
+                   m <- matrix(c(sel, all, n.sel-sel, n.all-all),
+                               byrow=T,nrow=2)
+                   p.value <- fisher.test(m, alternative="greater")$p.value
+                   data.frame(PathwayID=p, 
+                              Pathway=pathway.name,
+                              N.Selected=sel,
+                              N.In.Category=all,
+                              p.value=p.value)
+  }
+  ) # End lapply
+  result <- as.data.frame(do.call(rbind, result)) # Convert list to data frame
+  result <- result[order(result$p.value),] # Order by p-value
+  result <- cbind(result, p.adjust(result$p.value, method="BH")) # Append corrected for multiple testing p-value
+  colnames(result)[length(colnames(result))] <- "p.adj"
+  # result <- result[result$p.adj < 0.1, ] # Subset the results keeping FDR at 10%
+  if (!is.null(fileName)) {
+    write.table(result, paste("results//", fileName, sep=""), sep="\t", row.names=F)
+  }
+  return(list(result, sum(result$p.adj < 0.05)))
+}
+```
+
+```{r loadData}
+unique <- lapply(c("results//genes_uniq_all.txt", "results//genes_uniq_r75.txt", "results//genes_uniq_r50.txt", "results//genes_uniq_r25.txt", "results//genes_uniq_r00.txt"), function(x) read.table(x, sep="\t", header=T))
+```
+
+```{r GO}
+GO <- function(x, filename=NULL) {
+  res.go <- GOEnrichment(x[, 1], fileName=filename)
+  message("The number of enriched GOs:", res.go[[2]])
+  if (res.go[[2]] > 20) {i <- 20} else {i <- res.go[[2]]}
+  if (i > 0) {grid.table(res.go[[1]][1:i, ], gp=gpar(fontsize=7))}
+}
+```
+
+```{r Pathway}
+Pathway <- function(x, filename=NULL) {
+  res.pathway <- reactomeEnrichment(x[, 1], filename)
+  message("The number of enriched pathways:", res.pathway[[2]])
+  if (res.pathway[[2]] > 20) {i <- 20} else {i <- res.pathway[[2]]}
+  if (i > 0) {grid.table(res.pathway[[1]][1:30, ], gp=gpar(fontsize=7))}
+}
+```
+
+Our goal is to see whether thrown away genes may be biologically interesting. What are we losing after RepeatSoaker?
+
+We check unique genes from the Venn diagram for GO and pathway enrichment.
+
+Unique genes without RepeatSoaker
+---------------------------------
+
+```{r GOall}
+GO(unique[[1]], "GO_uniq_all.txt")
+```
+
+```{r Pathwayall}
+Pathway(unique[[1]], "PW_uniq_all.txt")
+```
+
+Unique genes with 75% RepeatSoaker
+----------------------------------
+
+```{r GOR75}
+GO(unique[[2]], "GO_uniq_r75.txt")
+```
+
+```{r PathwayR75}
+Pathway(unique[[2]], "PW_uniq_r75.txt")
+```
+
+Unique genes with 50% RepeatSoaker
+----------------------------------
+
+```{r GOR50}
+GO(unique[[3]], "GO_uniq_r50.txt")
+```
+
+```{r PathwayR50l}
+Pathway(unique[[3]], "PW_uniq_r50.txt")
+```
+
+Unique genes with 25% RepeatSoaker
+---------------------------------
+
+```{r GOR25}
+GO(unique[[4]], "GO_uniq_r25.txt")
+```
+
+```{r PathwayR25}
+Pathway(unique[[4]], "PW_uniq_r25.txt")
+```
+
+Unique genes with 00% RepeatSoaker
+---------------------------------
+
+```{r GOR00}
+GO(unique[[5]], "GO_uniq_r00.txt")
+```
+
+```{r PathwayR00}
+Pathway(unique[[5]], "PW_uniq_r00.txt")
+```

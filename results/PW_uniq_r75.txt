@@ -1,0 +1,34 @@
+"PathwayID"	"Pathway"	"N.Selected"	"N.In.Category"	"p.value"	"p.adj"
+"4810672"	"Mus musculus: ABC-family proteins mediated transport"	3	29	2.50929782530273e-08	8.280682823499e-07
+"4810718"	"Mus musculus: Role of Abl in Robo-Slit signaling"	2	9	1.7968114128044e-06	2.96473883112725e-05
+"4810661"	"Mus musculus: HDL-mediated lipid transport"	2	12	2.97198359336047e-06	3.26918195269651e-05
+"4810432"	"Mus musculus: Lipoprotein metabolism"	2	22	9.0046075273409e-06	7.42880121005625e-05
+"4810625"	"Mus musculus: Signaling by Robo receptor"	2	31	1.72101735997496e-05	0.000113587145758347
+"4810353"	"Mus musculus: Lipid digestion, mobilization, and transport"	2	39	2.67058087174537e-05	0.000146881947945995
+"4810789"	"Mus musculus: Regulation of actin dynamics for phagocytic cup formation"	2	58	5.7532263632251e-05	0.000271223528552041
+"4809870"	"Mus musculus: Transmembrane transport of small molecules"	3	484	9.23307699104485e-05	0.000375835753416133
+"4810382"	"Mus musculus: Fcgamma receptor (FCGR) dependent phagocytosis"	2	78	0.000102500660022582	0.000375835753416133
+"4809858"	"Mus musculus: Metabolism"	4	1504	0.000129765347580255	0.000428225647014841
+"4810745"	"Mus musculus: Mitochondrial ABC transporters"	1	2	0.000568867423121344	0.00170660226936403
+"4810634"	"Mus musculus: Serotonin and melatonin biosynthesis"	1	4	0.000947948915493768	0.00260685951760786
+"4810133"	"Mus musculus: Axon guidance"	2	260	0.00108836371356099	0.00276276942673174
+"4810134"	"Mus musculus: Developmental Biology"	2	376	0.00224106067787648	0.0050021510059028
+"4810633"	"Mus musculus: Amine-derived hormones"	1	11	0.00227370500268309	0.0050021510059028
+"4811155"	"Mus musculus: Cytosolic Iron-sulfur Cluster Assembly"	1	12	0.00246296811306723	0.00507987173320117
+"4810671"	"Mus musculus: ABCA transporters in lipid homeostasis"	1	13	0.00265219858456556	0.00514838548768608
+"4809990"	"Mus musculus: The canonical retinoid cycle in rods (twilight vision)"	1	14	0.00284139642224313	0.0052092267741124
+"4809894"	"Mus musculus: Metabolism of lipids and lipoproteins"	2	519	0.00419794637122052	0.00681406391241474
+"4810015"	"Mus musculus: Innate Immune System"	2	519	0.00419794637122052	0.00681406391241474
+"4810709"	"Mus musculus: CDO in myogenesis"	1	23	0.00454270927494316	0.00681406391241474
+"4810710"	"Mus musculus: Myogenesis"	1	23	0.00454270927494316	0.00681406391241474
+"4810899"	"Mus musculus: PPARA Activates Gene Expression"	1	66	0.0126348399927888	0.0181282486853057
+"4810795"	"Mus musculus: Regulation of Lipid Metabolism by Peroxisome proliferator-activated receptor alpha (PPARalpha)"	1	83	0.0158175253678756	0.0209309587305504
+"4810016"	"Mus musculus: Immune System"	2	1045	0.0160711151263705	0.0209309587305504
+"4809986"	"Mus musculus: Visual phototransduction"	1	89	0.0169385974334234	0.0209309587305504
+"4809988"	"Mus musculus: Diseases associated with visual transduction"	1	90	0.0171253298704503	0.0209309587305504
+"4810922"	"Mus musculus: Factors involved in megakaryocyte development and platelet production"	1	138	0.0260506579269112	0.0307025611281453
+"4809893"	"Mus musculus: Fatty acid, triacylglycerol, and ketone body metabolism"	1	144	0.0271611276408084	0.0309074900740233
+"4809877"	"Mus musculus: Metabolism of amino acids and derivatives"	1	187	0.035085871533911	0.0385944586873021
+"4810243"	"Mus musculus: Hemostasis"	1	446	0.0815902118130846	0.0868540964461868
+"4809901"	"Mus musculus: Disease"	1	672	0.120494414103277	0.124259864544004
+"4809987"	"Mus musculus: Signal Transduction"	1	1858	0.301188541124194	0.301188541124194
