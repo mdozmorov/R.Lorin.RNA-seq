@@ -3,7 +3,7 @@ RepeatSoaker effect on DEGs detection
 ```{r setup, echo=FALSE, include=FALSE, cache=FALSE}
 # Set up the environment
 library(knitr) 
-opts_chunk$set(cache.path='cache/', fig.path='img/', cache=T, tidy=T, fig.keep='high', echo=T, dpi=300, out.width=700, echo=F)
+opts_chunk$set(cache.path='cache/', fig.path='img/', cache=F, tidy=T, fig.keep='high', echo=T, dpi=300, out.width=700, echo=F)
 options(replace.assign=TRUE, width=120)
 set.seed(1)
 ```
@@ -29,7 +29,7 @@ refseq2gene <- function(x, fileName) {
 ```
 
 ```{r loadData}
-cuff_data <- lapply(list(all="data//cuffdiff-/", r75="data//cuffdiff-.75/", r50="data//cuffdiff-.50/", r25="data//cuffdiff-.25", r01="data//cuffdiff-.01/"), readCufflinks) # , r00="data//cuffdiff-.00", rebuild=TRUE
+cuff_data <- lapply(list(all="data//cuffdiff-/", r75="data//cuffdiff-.75/", r50="data//cuffdiff-.50/", r25="data//cuffdiff-.25", r01="data//cuffdiff-.00/"), readCufflinks) # , r00="data//cuffdiff-.00", rebuild=TRUE
 ```
 
 Overlap among DEGs identified in the non-soaked data (index [[1]]) and RepeatSoaked data at 75%, 50, 25 and 1% thresholds (subsequent indexes).
@@ -50,10 +50,36 @@ sapply(sig_genes_names, length)
 names(sig_genes_names) <- names(cuff_data)
 #do.call(plot_venn5, sig_genes_names)
 plot_venn5(sig_genes_names[[1]], sig_genes_names[[2]], sig_genes_names[[3]], sig_genes_names[[4]], sig_genes_names[[5]])
-
 ```
 
 We observe that soaking diminishes the number of differentially expressed genes. More rigorous soaking (less strict overlap threshold) also increases the number of genes not detected previously.
+
+Withour RepeatSoaker, we have (all genes in the sig_genes_names[[1]] oval):
+
+```{r allGenes, results='hide'}
+# Get all genes from sig_genes_names[[1]], no repeatSoaker applied
+sig_genes_nmids_all <- as.character(featureNames(getGenes(cuff_data[[1]], sig_genes_names[[1]]))[, 2])
+message(paste("Number of differentially expressed PROBES, no RepeatSoaker:", length(sig_genes_nmids_all)))
+sig_genes_nmids_all <- unique(unlist(lapply(strsplit(sig_genes_nmids_all, ","), function(v) {append(vector(), unique(v))})))
+message(paste("Number of differentially expressed GENES, no RepeatSoaker:", length(sig_genes_nmids_all)))
+tmp <- refseq2gene(sig_genes_nmids_all, "genes_all.txt")
+```
+
+Some probes map to multiple genes, hence the discrepancy in numbers. 
+
+After trimming the data with all RepeatSoaker settings, we have (the center of the Venn diagram):
+
+```{r commonGenes}
+# Get common genes from the center of the Venn diagram
+sig_genes_names_common <- Reduce(intersect, list(sig_genes_names[[1]], sig_genes_names[[2]], sig_genes_names[[3]], sig_genes_names[[4]], sig_genes_names[[5]]))
+message(paste("Number of differentially expressed PROBES, with RepeatSoaker:", length(sig_genes_names_common)))
+sig_genes_nmids_common <- as.character(featureNames(getGenes(cuff_data[[1]], sig_genes_names_common))[, 2])
+sig_genes_nmids <- unique(unlist(lapply(strsplit(sig_genes_nmids_common, ","), function(v) {append(vector(), unique(v))})))
+message(paste("Number of differentially expressed GENES, with RepeatSoaker:", length(sig_genes_nmids)))
+tmp <- refseq2gene(sig_genes_nmids, "genes_common.txt")
+```
+
+Later, we compare these gene lists (Genes without vs. Genes with RepeatSoaker) for biological meaning.
 
 ```{r Uniq}
 uniq <- function(idx) {
@@ -74,11 +100,10 @@ Now, we check what those genes unique to each RepeatSoaker % are. We will look a
 
 1) Gene names and their description. Note that not all probes can be mapped to genes, and some probes map to the same gene - therefore, the numbers in the Venn diagram and the tables below differ.
 
-2) GO enrichment of those genes, if any. (featureNames from cummeRbund conflicts with org.Mm.ed.db package, currently not functional)
+2) GO and Pathway enrichment of those genes, if any. (featureNames from cummeRbund conflicts with org.Mm.ed.db package, see **Analysis_RepeatSoaker_genes.md** document)
 
-3) Reactome pathway enrichment of those genes, if any. (TODO)
-
-The goal is to (subjectively) judge what we are loosing. 
+Genes unique for different RepeatSoaker settings
+-------------------------------------------------
 
 ```{r u1}
 message("Unique genes for non-RepeatSoaked data")
@@ -88,27 +113,25 @@ grid.table(uniq.all[order(uniq.all[,1]), ], gp=gpar(fontsize=6))
 
 ```{r u2}
 message("Unique genes for 75%-RepeatSoaked data")
-uniq.all <- refseq2gene(uniq(2), "genes_uniq_r75.txt") # Condition-specific gene names
-grid.table(uniq.all[order(uniq.all[,1]), ], gp=gpar(fontsize=6))  
+uniq.r75 <- refseq2gene(uniq(2), "genes_uniq_r75.txt") # Condition-specific gene names
+grid.table(uniq.r75[order(uniq.r75[,1]), ], gp=gpar(fontsize=6))  
 ```
 
 ```{r u3}
 message("Unique genes for 50%-RepeatSoaked data")
-uniq.all <- refseq2gene(uniq(3), "genes_uniq_r50.txt") # Condition-specific gene names
-grid.table(uniq.all[order(uniq.all[,1]), ], gp=gpar(fontsize=6))  
+uniq.r50 <- refseq2gene(uniq(3), "genes_uniq_r50.txt") # Condition-specific gene names
+grid.table(uniq.r50[order(uniq.r50[,1]), ], gp=gpar(fontsize=6))  
 ```
 
 ```{r u4}
 message("Unique genes for 25%-RepeatSoaked data")
-uniq.all <- refseq2gene(uniq(4), "genes_uniq_r25.txt") # Condition-specific gene names
-grid.table(uniq.all[order(uniq.all[,1]), ], gp=gpar(fontsize=6))  
+uniq.r25 <- refseq2gene(uniq(4), "genes_uniq_r25.txt") # Condition-specific gene names
+grid.table(uniq.r25[order(uniq.r25[,1]), ], gp=gpar(fontsize=6))  
 ```
 
 ```{r u5}
-message("Unique genes for 1%-RepeatSoaked data")
-uniq.all <- refseq2gene(uniq(5), "genes_uniq_r01.txt") # Condition-specific gene names
-grid.table(uniq.all[order(uniq.all[,1]), ], gp=gpar(fontsize=6))  
+message("Unique genes for 0%-RepeatSoaked data")
+uniq.r00 <- refseq2gene(uniq(5), "genes_uniq_r00.txt") # Condition-specific gene names
+grid.table(uniq.r00[order(uniq.r00[,1]), ], gp=gpar(fontsize=6))  
 ```
-
-TODO: What we are gaining.
 
