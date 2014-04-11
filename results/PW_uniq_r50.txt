@@ -1,26 +1,36 @@
 "PathwayID"	"Pathway"	"N.Selected"	"N.In.Category"	"p.value"	"p.adj"
-"4810672"	"Mus musculus: ABC-family proteins mediated transport"	3	29	1.27855148783857e-08	3.19637871959644e-07
-"4810661"	"Mus musculus: HDL-mediated lipid transport"	2	12	1.94596923704259e-06	2.43246154630324e-05
-"4810432"	"Mus musculus: Lipoprotein metabolism"	2	22	5.89731292583386e-06	4.91442743819488e-05
-"4810353"	"Mus musculus: Lipid digestion, mobilization, and transport"	2	39	1.74970483731045e-05	0.000109356552331903
-"4809870"	"Mus musculus: Transmembrane transport of small molecules"	3	484	4.7601999470331e-05	0.000215269806285755
-"4809858"	"Mus musculus: Metabolism"	4	1504	5.16647535085812e-05	0.000215269806285755
-"4810745"	"Mus musculus: Mitochondrial ABC transporters"	1	2	0.000465469082024828	0.0016623895786601
-"4810634"	"Mus musculus: Serotonin and melatonin biosynthesis"	1	4	0.000775674800218895	0.00242398375068405
-"4810633"	"Mus musculus: Amine-derived hormones"	1	11	0.00186072101942392	0.00484462526674871
-"4811155"	"Mus musculus: Cytosolic Iron-sulfur Cluster Assembly"	1	12	0.00201564209538763	0.00484462526674871
-"4810671"	"Mus musculus: ABCA transporters in lipid homeostasis"	1	13	0.00217054179739917	0.00484462526674871
-"4809990"	"Mus musculus: The canonical retinoid cycle in rods (twilight vision)"	1	14	0.00232542012803938	0.00484462526674871
-"4809894"	"Mus musculus: Metabolism of lipids and lipoproteins"	2	519	0.00278082947294193	0.00534774898642678
-"4810789"	"Mus musculus: Regulation of actin dynamics for phagocytic cup formation"	1	58	0.00911894813999048	0.0162838359642687
-"4810899"	"Mus musculus: PPARA Activates Gene Expression"	1	66	0.0103497074825634	0.0172495124709389
-"4810382"	"Mus musculus: Fcgamma receptor (FCGR) dependent phagocytosis"	1	78	0.0121932987071921	0.0184655743728653
-"4810795"	"Mus musculus: Regulation of Lipid Metabolism by Peroxisome proliferator-activated receptor alpha (PPARalpha)"	1	83	0.0129605602837588	0.0184655743728653
-"4809986"	"Mus musculus: Visual phototransduction"	1	89	0.0138805748872306	0.0184655743728653
-"4809988"	"Mus musculus: Diseases associated with visual transduction"	1	90	0.0140338365233776	0.0184655743728653
-"4809893"	"Mus musculus: Fatty acid, triacylglycerol, and ketone body metabolism"	1	144	0.0222785893076323	0.0278482366345403
-"4809877"	"Mus musculus: Metabolism of amino acids and derivatives"	1	187	0.0287999659915296	0.03428567379944
-"4810015"	"Mus musculus: Innate Immune System"	1	519	0.0778634530783765	0.0884811966799733
-"4809901"	"Mus musculus: Disease"	1	672	0.099722809791683	0.108394358469221
-"4810016"	"Mus musculus: Immune System"	1	1045	0.151095747512838	0.157391403659207
-"4809987"	"Mus musculus: Signal Transduction"	1	1858	0.254142322401673	0.254142322401673
+"4810767"	"Mus musculus: Muscarinic acetylcholine receptors"	1	5	0.000930745566117941	0.0217144011775883
+"4810120"	"Mus musculus: Transport of nucleosides and free purine and pyrimidine bases across the plasma membrane"	1	7	0.00124082292443362	0.0217144011775883
+"4811102"	"Mus musculus: Signaling by Hippo"	1	20	0.00325424145753805	0.0260135616342217
+"4811086"	"Mus musculus: A tetrasaccharide linker sequence is required for GAG synthesis"	1	25	0.0040276719922524	0.0260135616342217
+"4810121"	"Mus musculus: Transport of vitamins, nucleosides, and related molecules"	1	32	0.00510957851497307	0.0260135616342217
+"4810766"	"Mus musculus: Amine ligand-binding receptors"	1	35	0.00557293285153804	0.0260135616342217
+"4810738"	"Mus musculus: Activation of Chaperones by IRE1alpha"	1	46	0.00727025805096504	0.0260135616342217
+"4811051"	"Mus musculus: Chondroitin sulfate/dermatan sulfate metabolism"	1	46	0.00727025805096504	0.0260135616342217
+"4810913"	"Mus musculus: Heparan sulfate/heparin (HS-GAG) metabolism"	1	48	0.00757858580954807	0.0260135616342217
+"4810736"	"Mus musculus: Unfolded Protein Response"	1	62	0.00973449777337831	0.0260135616342217
+"4810457"	"Mus musculus: Glycosaminoglycan metabolism"	1	110	0.0170946262167743	0.0260135616342217
+"4810458"	"Mus musculus: MPS IX - Natowicz syndrome"	1	110	0.0170946262167743	0.0260135616342217
+"4810459"	"Mus musculus: Mucopolysaccharidoses"	1	110	0.0170946262167743	0.0260135616342217
+"4810460"	"Mus musculus: MPS IIIB - Sanfilippo syndrome B"	1	110	0.0170946262167743	0.0260135616342217
+"4810461"	"Mus musculus: MPS VI - Maroteaux-Lamy syndrome"	1	110	0.0170946262167743	0.0260135616342217
+"4810462"	"Mus musculus: MPS IV - Morquio syndrome A"	1	110	0.0170946262167743	0.0260135616342217
+"4810463"	"Mus musculus: MPS IIIC - Sanfilippo syndrome C"	1	110	0.0170946262167743	0.0260135616342217
+"4810464"	"Mus musculus: MPS VII - Sly syndrome"	1	110	0.0170946262167743	0.0260135616342217
+"4810465"	"Mus musculus: MPS II - Hunter syndrome"	1	110	0.0170946262167743	0.0260135616342217
+"4810466"	"Mus musculus: MPS I - Hurler syndrome"	1	110	0.0170946262167743	0.0260135616342217
+"4810467"	"Mus musculus: MPS IIID - Sanfilippo syndrome D"	1	110	0.0170946262167743	0.0260135616342217
+"4810468"	"Mus musculus: MPS IIIA - Sanfilippo syndrome A"	1	110	0.0170946262167743	0.0260135616342217
+"4810469"	"Mus musculus: MPS IV - Morquio syndrome B"	1	110	0.0170946262167743	0.0260135616342217
+"4810725"	"Mus musculus: G alpha (i) signalling events"	1	200	0.0307639185291709	0.044598077036888
+"4809987"	"Mus musculus: Signal Transduction"	2	1858	0.0318557693120628	0.044598077036888
+"4809869"	"Mus musculus: SLC-mediated transmembrane transport"	1	244	0.0373849747801319	0.0503259275886391
+"4809857"	"Mus musculus: Metabolism of carbohydrates"	1	258	0.0394832265911828	0.0511819603959776
+"4810695"	"Mus musculus: Class A/1 (Rhodopsin-like receptors)"	1	277	0.0423243511199074	0.0529054388998842
+"4810357"	"Mus musculus: GPCR ligand binding"	1	388	0.0587737070757213	0.0709337844017326
+"4809870"	"Mus musculus: Transmembrane transport of small molecules"	1	484	0.0727971347821182	0.084929990579138
+"4809901"	"Mus musculus: Disease"	1	672	0.099722809791683	0.112005423317369
+"4809951"	"Mus musculus: Metabolism of proteins"	1	691	0.102404958461594	0.112005423317369
+"4810240"	"Mus musculus: GPCR downstream signaling"	1	998	0.144769375697679	0.153543277255114
+"4809997"	"Mus musculus: Signaling by GPCR"	1	1091	0.157247200933877	0.161872118608402
+"4809858"	"Mus musculus: Metabolism"	1	1504	0.210726717430069	0.210726717430069
