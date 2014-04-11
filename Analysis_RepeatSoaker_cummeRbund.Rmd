@@ -135,3 +135,24 @@ uniq.r00 <- refseq2gene(uniq(5), "genes_uniq_r00.txt") # Condition-specific gene
 grid.table(uniq.r00[order(uniq.r00[,1]), ], gp=gpar(fontsize=6))  
 ```
 
+
+```{r plotSD}
+plotSumStats <- function(idx){
+  mtx1 <- repFpkmMatrix(genes(cuff_data[[idx]]))
+  mtx1.x <- seq(1:nrow(mtx1))
+  bpts <- pretty(mtx1.x, n=100)
+  INDEX <- cut(mtx1.x, bpts, include.lowest=T)
+  #mtx1.y <- tapply(log2(1 + sort(rowMeans(mtx1))), INDEX, sd)
+  mtx1.y <- tapply(log2(apply(mtx1[order(rowMeans(mtx1)), ], 1, sd)), INDEX, mean)
+  mtx1.x <- seq(1:(length(bpts) - 1))
+  if (idx ==1) plot(mtx1.x, mtx1.y, type="n") # Create empty plot onl once
+  lines(mtx1.x, mtx1.y, type="l", lwd=3, lty=linetype[idx], col=colors[idx], pch=plotchar[idx]) # Then, overlay lines
+}
+colors <-rainbow(length(cuff_data))
+linetype <- c(1:length(cuff_data))
+plotchar <- seq(16, 16 + length(cuff_data), 1)
+sapply(seq(1:length(cuff_data)), function(i) plotSumStats(i))
+legend(0, 10, names(cuff_data), cex=0.8, col=colors, pch=plotchar, lty=linetype, title="condition")
+
+```
+
