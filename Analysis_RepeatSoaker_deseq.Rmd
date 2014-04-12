@@ -178,11 +178,11 @@ ddsHTSEQ <- lapply(DIR, readDDS)
 Overlap among DEGs identified in the non-soaked data (index [[1]]) and RepeatSoaked data at 75%, 50, 25 and 1% thresholds (subsequent indexes).
 
 ```{r diffGeneIDs}
-resDDS <- function(DDS) {
+resDDS <- function(DDS, pval=0.01, lfc=0) {
   dds <- DESeq(DDS)
   res <- results(dds)
   res <- res[complete.cases(res), ]
-  return(res[res$padj < 0.01, ])
+  return(res[res$padj < pval & abs(res$log2FoldChange) > lfc, ])
 }
 
 res <- lapply(ddsHTSEQ, resDDS)
@@ -350,3 +350,5 @@ GOKEGG(uniq.r00, use="GO", "GO_uniq_r00.txt")
 ```{r Pathwayr00}
 Pathway(uniq.r00, "PW_uniq_r00.txt")
 ```
+
+
