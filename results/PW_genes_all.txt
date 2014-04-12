@@ -1,0 +1,1076 @@
+"PathwayID"	"Pathway"	"N.Selected"	"N.In.Category"	"p.value"	"p.adj"
+"4809858"	"Mus musculus: Metabolism"	246	1504	3.067853531742e-85	3.29794254662265e-82
+"4809987"	"Mus musculus: Signal Transduction"	268	1858	2.4368850499127e-82	1.30982571432808e-79
+"4810016"	"Mus musculus: Immune System"	173	1045	3.0729150728497e-60	1.10112790110448e-57
+"4810015"	"Mus musculus: Innate Immune System"	113	519	1.43995404439752e-49	3.86987649431834e-47
+"4810134"	"Mus musculus: Developmental Biology"	96	376	2.54683392402754e-47	5.47569293665922e-45
+"4810357"	"Mus musculus: GPCR ligand binding"	93	388	6.3818283894657e-44	1.14341091977927e-41
+"4809901"	"Mus musculus: Disease"	117	672	9.430567120879e-43	1.31445693244482e-40
+"4810246"	"Mus musculus: Extracellular matrix organization"	76	244	9.78200507865911e-43	1.31445693244482e-40
+"4810695"	"Mus musculus: Class A/1 (Rhodopsin-like receptors)"	74	277	7.38388313898974e-38	8.8196381937933e-36
+"4810003"	"Mus musculus: Signaling by PDGF"	59	161	1.16469526999846e-36	1.25204741524834e-34
+"4811022"	"Mus musculus: Degradation of the extracellular matrix"	53	119	1.76979365227995e-36	1.72957106927359e-34
+"4809894"	"Mus musculus: Metabolism of lipids and lipoproteins"	95	519	1.97327922757314e-36	1.76772930803427e-34
+"4810133"	"Mus musculus: Axon guidance"	70	260	4.61207438986909e-36	3.81383074546867e-34
+"4810010"	"Mus musculus: Signaling by EGFR in Cancer"	56	159	3.95512540924781e-34	3.03697129638671e-32
+"4810009"	"Mus musculus: Signaling by EGFR"	55	157	1.90333206696696e-33	1.36405464799299e-31
+"4810243"	"Mus musculus: Hemostasis"	83	446	2.01390294788362e-32	1.35309104310931e-30
+"4809931"	"Mus musculus: Phase 1 - Functionalization of compounds"	44	91	1.05783113894012e-31	6.68922631976841e-30
+"4810021"	"Mus musculus: Adaptive Immune System"	91	562	2.29600333971105e-31	1.37122421677188e-29
+"4810000"	"Mus musculus: NGF signalling via TRKA from the plasma membrane"	56	185	2.61947424134562e-31	1.48207095234028e-29
+"4809881"	"Mus musculus: Transmission across Chemical Synapses"	53	174	8.12033447909448e-30	4.36467978251329e-28
+"4810001"	"Mus musculus: Signalling by NGF"	64	279	1.09789933347676e-29	5.62019896898819e-28
+"4810089"	"Mus musculus: Cytochrome P450 - arranged by substrate type"	38	75	3.77102135240201e-28	1.8426581608328e-26
+"4811021"	"Mus musculus: Collagen degradation"	34	54	1.09966115011499e-27	5.13972059292877e-26
+"4810002"	"Mus musculus: Downstream signal transduction"	45	136	8.99329227034973e-27	4.02824549609415e-25
+"4809863"	"Mus musculus: Biological oxidations"	48	162	1.06817353635431e-26	4.59314620632352e-25
+"4809882"	"Mus musculus: Neuronal System"	56	242	2.59814155544271e-26	1.05834223492372e-24
+"4809870"	"Mus musculus: Transmembrane transport of small molecules"	77	484	2.65816189236656e-26	1.05834223492372e-24
+"4811028"	"Mus musculus: Collagen formation"	35	70	6.8224667946616e-26	2.61933993009329e-24
+"4810142"	"Mus musculus: Signaling by SCF-KIT"	42	120	7.21802248831869e-26	2.67564626722158e-24
+"4810580"	"Mus musculus: Role of LAT2/NTAL/LAB on calcium mobilization"	38	94	2.36153251529058e-25	8.46215817979125e-24
+"4810005"	"Mus musculus: Downstream signaling of activated FGFR"	42	125	2.6761860726027e-25	9.28032267112228e-24
+"4810006"	"Mus musculus: Signaling by FGFR"	43	138	8.66703670317629e-25	2.91158264247328e-23
+"4810012"	"Mus musculus: Signaling by ERBB2"	43	139	1.09939582183803e-24	3.58136517719964e-23
+"4811135"	"Mus musculus: Constitutive PI3K/AKT Signaling in Cancer"	35	78	1.15579828299921e-24	3.65436221830632e-23
+"4810007"	"Mus musculus: Signaling by FGFR in disease"	44	148	1.21048869927896e-24	3.71792957635681e-23
+"4810480"	"Mus musculus: GAB1 signalosome"	36	86	1.65252235054003e-24	4.80124736981225e-23
+"4810571"	"Mus musculus: PI3K/AKT activation"	36	86	1.65252235054003e-24	4.80124736981225e-23
+"4809997"	"Mus musculus: Signaling by GPCR"	115	1091	2.02076889333372e-24	5.71664884298356e-23
+"4810013"	"Mus musculus: DAP12 signaling"	44	151	2.3810943074268e-24	6.5632727704713e-23
+"4810481"	"Mus musculus: PI-3K cascade"	35	82	4.31632188991135e-24	1.05455591628516e-22
+"4810575"	"Mus musculus: PIP3 activates AKT signaling"	35	82	4.31632188991135e-24	1.05455591628516e-22
+"4810577"	"Mus musculus: PI3K events in ERBB4 signaling"	35	82	4.31632188991135e-24	1.05455591628516e-22
+"4810578"	"Mus musculus: PI3K events in ERBB2 signaling"	35	82	4.31632188991135e-24	1.05455591628516e-22
+"4810579"	"Mus musculus: PI3K/AKT Signaling in Cancer"	35	82	4.31632188991135e-24	1.05455591628516e-22
+"4810023"	"Mus musculus: Fc epsilon receptor (FCERI) signaling"	45	164	5.70748651886936e-24	1.36345511284101e-22
+"4811053"	"Mus musculus: Collagen biosynthesis and modifying enzymes"	30	51	5.88783360733433e-24	1.37596111475748e-22
+"4810141"	"Mus musculus: Signaling by ERBB4"	44	158	1.09674707162197e-23	2.5085172382843e-22
+"4810014"	"Mus musculus: DAP12 interactions"	44	161	2.06691100584839e-23	4.62901944018128e-22
+"4810725"	"Mus musculus: G alpha (i) signalling events"	48	200	2.44823218652832e-23	5.37112163371009e-22
+"4810132"	"Mus musculus: NCAM signaling for neurite out-growth"	30	61	3.05977824975474e-22	6.57852323697269e-21
+"4810694"	"Mus musculus: Peptide ligand-binding receptors"	44	176	4.13907444210423e-22	8.72451965737657e-21
+"4811027"	"Mus musculus: Assembly of collagen fibrils and other multimeric structures"	27	45	7.13917658954874e-22	1.47588746803171e-20
+"4810020"	"Mus musculus: Signaling by the B Cell Receptor (BCR)"	44	180	8.80219687681595e-22	1.78535125331644e-20
+"4810711"	"Mus musculus: NCAM1 interactions"	25	35	1.04218534731376e-21	2.07472083030054e-20
+"4810242"	"Mus musculus: Platelet activation, signaling and aggregation"	43	186	1.58318100559082e-20	3.09439923820025e-19
+"4810240"	"Mus musculus: GPCR downstream signaling"	101	998	1.96779605440822e-20	3.77746564015864e-19
+"4810204"	"Mus musculus: Neurotransmitter Receptor Binding And Downstream Transmission In The  Postsynaptic Cell"	36	128	9.14213039378657e-20	1.72417371461764e-18
+"4810807"	"Mus musculus: Ion channel transport"	35	122	1.730903483265e-19	3.20814007674117e-18
+"4810245"	"Mus musculus: Integrin cell surface interactions"	29	77	5.11093898152386e-19	9.31230407650534e-18
+"4809920"	"Mus musculus: Apoptosis"	38	159	9.9488040579644e-19	1.78249406038529e-17
+"4810576"	"Mus musculus: Downstream Signaling Events Of B Cell Receptor (BCR)"	37	152	1.68673494751402e-18	2.97252470258617e-17
+"4810026"	"Mus musculus: Signaling by Insulin receptor"	33	116	2.2908236418166e-18	3.97199260476265e-17
+"4809893"	"Mus musculus: Fatty acid, triacylglycerol, and ketone body metabolism"	35	144	1.46098096918232e-17	2.49294371725555e-16
+"4811141"	"Mus musculus: ECM proteoglycans"	24	55	3.77616473822372e-17	6.34277670873516e-16
+"4810004"	"Mus musculus: Phospholipase C-mediated cascade"	23	51	9.65691828273074e-17	1.59710571599008e-15
+"4810354"	"Mus musculus: G alpha (s) signalling events"	27	94	2.21894221881608e-15	3.6141861897383e-14
+"4810035"	"Mus musculus: PI3K Cascade"	24	71	3.93986707640492e-15	6.32142851811237e-14
+"4809951"	"Mus musculus: Metabolism of proteins"	71	691	4.68541590813194e-15	7.40709132535563e-14
+"4810138"	"Mus musculus: Gastrin-CREB signalling pathway via PKC and MAPK"	35	180	5.37451824097653e-15	8.37334363630401e-14
+"4810088"	"Mus musculus: Xenobiotics"	19	37	7.13148666144306e-15	1.0951925944359e-13
+"4810031"	"Mus musculus: IRS-mediated signalling"	25	82	7.62320017220662e-15	1.15421692748199e-13
+"4810025"	"Mus musculus: Insulin receptor signalling cascade"	26	91	8.08339278393238e-15	1.20689545037879e-13
+"4810498"	"Mus musculus: FGFR ligand binding and activation"	16	21	1.05480892177917e-14	1.55331450809946e-13
+"4810028"	"Mus musculus: IRS-related events"	25	85	1.51599319348913e-14	2.20228740946056e-13
+"4810032"	"Mus musculus: IRS-related events triggered by IGF1R"	25	86	1.89621407601649e-14	2.7179068422903e-13
+"4810251"	"Mus musculus: G alpha (q) signalling events"	32	158	2.91257186735648e-14	4.11975625974766e-13
+"4810675"	"Mus musculus: Platelet degranulation "	24	81	4.42198849782712e-14	6.15746054063096e-13
+"4810033"	"Mus musculus: IGF1R signaling cascade"	25	90	4.52501751357996e-14	6.15746054063096e-13
+"4810034"	"Mus musculus: Signaling by Type 1 Insulin-like Growth Factor 1 Receptor (IGF1R)"	25	90	4.52501751357996e-14	6.15746054063096e-13
+"4810899"	"Mus musculus: PPARA Activates Gene Expression"	22	66	6.89113203920221e-14	9.25995867767797e-13
+"4810244"	"Mus musculus: Response to elevated platelet cytosolic Ca2+"	24	86	1.3285727661625e-13	1.76322928842554e-12
+"4810602"	"Mus musculus: Apoptotic cleavage of cellular proteins"	17	34	2.61466672146183e-13	3.4277642994774e-12
+"4810997"	"Mus musculus: SHC-mediated cascade"	16	28	2.75012486833794e-13	3.56190871501601e-12
+"4810638"	"Mus musculus: Cell-Cell communication"	25	100	3.38766496534558e-13	4.33540456874583e-12
+"4810766"	"Mus musculus: Amine ligand-binding receptors"	17	35	3.76623279261028e-13	4.76317676712477e-12
+"4810795"	"Mus musculus: Regulation of Lipid Metabolism by Peroxisome proliferator-activated receptor alpha (PPARalpha)"	23	83	4.828288350985e-13	6.03536043873125e-12
+"4810603"	"Mus musculus: Apoptotic execution  phase"	19	50	5.18363297730869e-13	6.40506373632971e-12
+"4810131"	"Mus musculus: FRS2-mediated cascade"	17	36	5.37572842217689e-13	6.56694097027291e-12
+"4810815"	"Mus musculus: Cell-cell junction organization"	17	37	7.60654468941861e-13	9.18768038328652e-12
+"4810171"	"Mus musculus: L1CAM interactions"	24	96	9.99283956655018e-13	1.19358917044905e-11
+"4811077"	"Mus musculus: Signaling by FGFR mutants"	17	38	1.06739670466951e-12	1.26093566760409e-11
+"4810944"	"Mus musculus: Negative regulation of FGFR signaling"	17	39	1.48596953147836e-12	1.736323093847e-11
+"4810816"	"Mus musculus: Cell junction organization"	20	63	1.97039064295401e-12	2.27760208728555e-11
+"4810814"	"Mus musculus: Adherens junctions interactions"	15	27	2.07894689535789e-12	2.37751905586142e-11
+"4810378"	"Mus musculus: Complement cascade"	16	36	5.3430906279093e-12	6.04612886842369e-11
+"4809812"	"Mus musculus: Cell Cycle, Mitotic"	46	398	8.33466572293126e-12	9.33308922099073e-11
+"4810094"	"Mus musculus: Arachidonic acid metabolism"	20	70	9.87556224313728e-12	1.09445664034769e-10
+"4810500"	"Mus musculus: FGFR2 ligand binding and activation"	12	15	1.56325267125424e-11	1.6804966215983e-10
+"4811103"	"Mus musculus: Activated point mutants of FGFR2"	12	15	1.56325267125424e-11	1.6804966215983e-10
+"4811104"	"Mus musculus: Signaling by FGFR2 mutants"	12	15	1.56325267125424e-11	1.6804966215983e-10
+"4810512"	"Mus musculus: Membrane Trafficking"	31	195	1.9055051417808e-11	2.02813666080629e-10
+"4811140"	"Mus musculus: Non-integrin membrane-ECM interactions"	17	51	4.70292946033705e-11	4.95651879398268e-10
+"4810956"	"Mus musculus: Ligand-gated ion channel transport"	12	18	7.10151811554802e-11	7.41177861574186e-10
+"4810497"	"Mus musculus: FGFR1 ligand binding and activation"	11	14	1.2762216271882e-10	1.3191713934878e-09
+"4809877"	"Mus musculus: Metabolism of amino acids and derivatives"	29	187	1.41587874709023e-10	1.44959014583048e-09
+"4809846"	"Mus musculus: Cellular responses to stress"	27	162	1.45766707848653e-10	1.47829444280473e-09
+"4810356"	"Mus musculus: Class B/2 (Secretin family receptors)"	18	65	1.6323892736176e-10	1.6400172608775e-09
+"4810248"	"Mus musculus: Cell surface interactions at the vascular wall"	20	86	2.29009446325029e-10	2.27949217406858e-09
+"4810137"	"Mus musculus: Cytokine Signaling in Immune system"	33	246	2.38148324083029e-10	2.34871053568125e-09
+"4810230"	"Mus musculus: Intrinsic Pathway for Apoptosis"	15	43	3.83413514496187e-10	3.7469957098491e-09
+"4809825"	"Mus musculus: Mitotic G1-G1/S phases"	23	125	6.07043965132945e-10	5.77583359564567e-09
+"4810505"	"Mus musculus: FGFR4 ligand binding and activation"	10	12	6.07134136100428e-10	5.77583359564567e-09
+"4810957"	"Mus musculus: GABA A receptor activation"	10	12	6.07134136100428e-10	5.77583359564567e-09
+"4811128"	"Mus musculus: Binding and Uptake of Ligands by Scavenger Receptors"	15	45	6.44685058069847e-10	6.07926699495689e-09
+"4810528"	"Mus musculus: Endogenous sterols"	10	13	1.042531864224e-09	9.74540655687654e-09
+"4809837"	"Mus musculus: Cyclin D associated events in G1"	13	32	1.26579529293556e-09	1.16301704265446e-08
+"4809838"	"Mus musculus: G1 Phase"	13	32	1.26579529293556e-09	1.16301704265446e-08
+"4811110"	"Mus musculus: MHC class II antigen presentation"	20	97	1.41920219110967e-09	1.29291725037534e-08
+"4810765"	"Mus musculus: Adrenoceptors"	9	9	1.54046621606578e-09	1.39159763216026e-08
+"4809813"	"Mus musculus: Cell Cycle"	49	534	2.51714802940623e-09	2.24775684150822e-08
+"4809857"	"Mus musculus: Metabolism of carbohydrates"	32	258	2.53003328206971e-09	2.24775684150822e-08
+"4811130"	"Mus musculus: Scavenging by Class A Receptors"	11	22	4.35528600384897e-09	3.83764955257184e-08
+"4809845"	"Mus musculus: Cellular Senescence"	23	141	4.69922989357094e-09	4.10705051673883e-08
+"4810496"	"Mus musculus: FGFR1c ligand binding and activation"	9	11	5.01568952345228e-09	4.147589413624e-08
+"4810499"	"Mus musculus: FGFR2c ligand binding and activation"	9	11	5.01568952345228e-09	4.147589413624e-08
+"4810502"	"Mus musculus: FGFR3c ligand binding and activation"	9	11	5.01568952345228e-09	4.147589413624e-08
+"4810503"	"Mus musculus: FGFR3 ligand binding and activation"	9	11	5.01568952345228e-09	4.147589413624e-08
+"4811096"	"Mus musculus: Signaling by activated point mutants of FGFR3"	9	11	5.01568952345228e-09	4.147589413624e-08
+"4811097"	"Mus musculus: Signaling by FGFR3 mutants"	9	11	5.01568952345228e-09	4.147589413624e-08
+"4811101"	"Mus musculus: Signaling by activated point mutants of FGFR1"	9	11	5.01568952345228e-09	4.147589413624e-08
+"4810965"	"Mus musculus: Regulation of Complement cascade"	11	23	6.24750795707466e-09	5.12677179683608e-08
+"4810806"	"Mus musculus: Ion transport by P-type ATPases"	12	30	6.31271173358688e-09	5.14103417697417e-08
+"4811134"	"Mus musculus: Anchoring fibril formation"	9	12	8.52154646998597e-09	6.88771613175558e-08
+"4810676"	"Mus musculus: Clathrin derived vesicle budding"	16	67	1.02632218657662e-08	8.17256555977681e-08
+"4810677"	"Mus musculus: trans-Golgi Network Vesicle Budding"	16	67	1.02632218657662e-08	8.17256555977681e-08
+"4809986"	"Mus musculus: Visual phototransduction"	18	89	1.20677450849578e-08	9.53884262230122e-08
+"4809988"	"Mus musculus: Diseases associated with visual transduction"	18	90	1.40407519008995e-08	1.10173783163993e-07
+"4810824"	"Mus musculus: Golgi Associated Vesicle Biogenesis"	15	60	1.74466215313478e-08	1.35906653233325e-07
+"4810510"	"Mus musculus: Gap junction trafficking"	11	28	3.14934518516734e-08	2.43564465759345e-07
+"4810266"	"Mus musculus: Formation of Fibrin Clot (Clotting Cascade)"	11	29	4.21540240030472e-08	3.2138706243458e-07
+"4810484"	"Mus musculus: EGFR downregulation"	11	29	4.21540240030472e-08	3.2138706243458e-07
+"4810408"	"Mus musculus: GABA receptor activation"	14	55	4.2855825544197e-08	3.24436707464872e-07
+"4810432"	"Mus musculus: Lipoprotein metabolism"	10	22	4.49380000366736e-08	3.37820629646323e-07
+"4810511"	"Mus musculus: Gap junction trafficking and regulation"	11	30	5.59063863016177e-08	4.17356703293326e-07
+"4810353"	"Mus musculus: Lipid digestion, mobilization, and transport"	12	39	6.90434084862642e-08	5.08494905463232e-07
+"4810563"	"Mus musculus: Formation of annular gap junctions"	8	11	6.96925443345272e-08	5.08494905463232e-07
+"4810850"	"Mus musculus: Passive Transport by Aquaporins"	8	11	6.96925443345272e-08	5.08494905463232e-07
+"4810667"	"Mus musculus: Peptide hormone metabolism"	13	48	7.00067404730776e-08	5.08494905463232e-07
+"4810509"	"Mus musculus: Gap junction degradation"	8	12	1.1281044754191e-07	8.08474874050357e-07
+"4810661"	"Mus musculus: HDL-mediated lipid transport"	8	12	1.1281044754191e-07	8.08474874050357e-07
+"4811076"	"Mus musculus: Signaling by FGFR1 mutants"	10	25	1.16941458405273e-07	8.32530250236213e-07
+"4810693"	"Mus musculus: Chemokine receptors bind chemokines"	13	51	1.27874941606793e-07	9.04378698863831e-07
+"4810853"	"Mus musculus: Lysosome Vesicle Biogenesis"	10	26	1.57167344782344e-07	1.1042803636668e-06
+"4811122"	"Mus musculus: Synthesis of epoxy (EET) and dihydroxyeicosatrienoic acids (DHET)"	9	19	1.62824022284328e-07	1.13659625945229e-06
+"4810644"	"Mus musculus: Depolarization of the Presynaptic Terminal Triggers the Opening of Calcium Channels"	7	8	1.99836192499114e-07	1.37707632651633e-06
+"4810762"	"Mus musculus: Folding of actin by CCT/TriC"	7	8	1.99836192499114e-07	1.37707632651633e-06
+"4810796"	"Mus musculus: Circadian Clock"	11	35	2.03176737493908e-07	1.39117829812708e-06
+"4809927"	"Mus musculus: Purine metabolism"	11	36	2.57423031255982e-07	1.74043873333447e-06
+"4811046"	"Mus musculus: Molecules associated with elastic fibres"	11	36	2.57423031255982e-07	1.74043873333447e-06
+"4810865"	"Mus musculus: CREB phosphorylation through the activation of CaMKII"	8	14	2.70123934421576e-07	1.81489518439496e-06
+"4810785"	"Mus musculus: Glutamate Binding, Activation of AMPA Receptors and Synaptic Plasticity"	10	28	2.75401159703308e-07	1.82750769556208e-06
+"4810801"	"Mus musculus: Trafficking of AMPA receptors"	10	28	2.75401159703308e-07	1.82750769556208e-06
+"4810401"	"Mus musculus: Cyclin A/B1 associated events during G2/M transition"	9	21	3.17948604893331e-07	2.09690030834559e-06
+"4810382"	"Mus musculus: Fcgamma receptor (FCGR) dependent phagocytosis"	15	78	3.4467180729294e-07	2.24558904751461e-06
+"4810591"	"Mus musculus: Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell"	15	78	3.4467180729294e-07	2.24558904751461e-06
+"4810789"	"Mus musculus: Regulation of actin dynamics for phagocytic cup formation"	13	58	4.5745839858988e-07	2.96245649689229e-06
+"4810686"	"Mus musculus: Platelet Aggregation (Plug Formation)"	11	39	5.04612024345321e-07	3.24825105491748e-06
+"4810709"	"Mus musculus: CDO in myogenesis"	9	23	5.87628993823535e-07	3.6941588793e-06
+"4810710"	"Mus musculus: Myogenesis"	9	23	5.87628993823535e-07	3.6941588793e-06
+"4810979"	"Mus musculus: G0 and Early G1"	9	23	5.87628993823535e-07	3.6941588793e-06
+"4811121"	"Mus musculus: Synthesis of (16-20)-hydroxyeicosatetraenoic acids (HETE)"	9	23	5.87628993823535e-07	3.6941588793e-06
+"4811047"	"Mus musculus: Elastic fibre formation"	11	40	6.24393393706564e-07	3.90245871066602e-06
+"4810213"	"Mus musculus: Aquaporin-mediated transport"	12	51	8.08119610703004e-07	4.99269299715936e-06
+"4810574"	"Mus musculus: Costimulation by the CD28 family"	12	51	8.08119610703004e-07	4.99269299715936e-06
+"4810736"	"Mus musculus: Unfolded Protein Response"	13	62	8.83017889683185e-07	5.42425275091099e-06
+"4810154"	"Mus musculus: Toll-Like Receptors Cascades"	17	110	9.06065737790192e-07	5.53420834161623e-06
+"4810011"	"Mus musculus: PLCG1 events in ERBB2 signaling"	10	33	9.6263035917222e-07	5.84648381983128e-06
+"4810288"	"Mus musculus: Mitotic G2-G2/M phases"	17	112	1.13175796257839e-06	6.83505511107735e-06
+"4809875"	"Mus musculus: The citric acid (TCA) cycle and respiratory electron transport"	20	155	1.33841712810896e-06	8.03797995931359e-06
+"4810494"	"Mus musculus: Iron uptake and transport"	11	44	1.39166080667898e-06	8.28393278221639e-06
+"4810604"	"Mus musculus: Caspase-mediated cleavage of cytoskeletal proteins"	7	12	1.39478310100574e-06	8.28393278221639e-06
+"4810377"	"Mus musculus: Initial triggering of complement"	8	19	1.62101675889869e-06	9.47061421639182e-06
+"4810607"	"Mus musculus: eNOS activation and regulation"	8	19	1.62101675889869e-06	9.47061421639182e-06
+"4810608"	"Mus musculus: Metabolism of nitric oxide"	8	19	1.62101675889869e-06	9.47061421639182e-06
+"4810504"	"Mus musculus: FGFR3b ligand binding and activation"	6	7	1.69203974855869e-06	9.83212286324647e-06
+"508751"	"Mus musculus: Circadian Clock"	10	36	1.87207914958852e-06	1.08198122892885e-05
+"4810905"	"Mus musculus: Activation of Nicotinic Acetylcholine Receptors"	7	13	2.08507606825549e-06	1.17971409124982e-05
+"4810906"	"Mus musculus: Acetylcholine Binding And Downstream Events"	7	13	2.08507606825549e-06	1.17971409124982e-05
+"4810907"	"Mus musculus: Postsynaptic nicotinic acetylcholine receptors"	7	13	2.08507606825549e-06	1.17971409124982e-05
+"4810992"	"Mus musculus: Reversible Hydration of Carbon Dioxide"	7	13	2.08507606825549e-06	1.17971409124982e-05
+"4810425"	"Mus musculus: Signaling by NODAL"	8	20	2.20429385354443e-06	1.24063659296349e-05
+"4811024"	"Mus musculus: Defensins"	9	29	2.86196615332642e-06	1.60240292438849e-05
+"4810605"	"Mus musculus: Apoptotic cleavage of cell adhesion  proteins"	6	8	2.87880068014784e-06	1.60347706277665e-05
+"4810202"	"Mus musculus: Post NMDA receptor activation events"	9	30	3.61270381956664e-06	2.0018848484712e-05
+"4810866"	"Mus musculus: Ras activation uopn Ca2+ infux through NMDA receptor"	7	15	4.33131814336624e-06	2.38777795083011e-05
+"4810229"	"Mus musculus: Apoptotic factor-mediated response"	6	9	4.66477700524699e-06	2.5584873880819e-05
+"4810008"	"Mus musculus: EGFR interacts with phospholipase C-gamma"	9	32	5.63153284189103e-06	3.07304457108267e-05
+"4811085"	"Mus musculus: FCGR activation"	7	16	6.05027226805495e-06	3.28487004452478e-05
+"4810198"	"Mus musculus: CaMK IV-mediated phosphorylation of CREB"	5	5	8.10507817784492e-06	4.33480549312601e-05
+"4810487"	"Mus musculus: G2 Phase"	5	5	8.10507817784492e-06	4.33480549312601e-05
+"4810769"	"Mus musculus: Dopamine receptors"	5	5	8.10507817784492e-06	4.33480549312601e-05
+"4810211"	"Mus musculus: Integration of energy metabolism"	15	104	8.26697447251394e-06	4.39544492692669e-05
+"4809887"	"Mus musculus: Branched-chain amino acid catabolism"	7	17	8.30023553642901e-06	4.39544492692669e-05
+"4810139"	"Mus musculus: SHC1 events in ERBB2 signaling"	8	25	8.51411801652541e-06	4.39636084201616e-05
+"4810601"	"Mus musculus: Signaling by BMP"	8	25	8.51411801652541e-06	4.39636084201616e-05
+"4810864"	"Mus musculus: CREB phosphorylation through the activation of Ras"	8	25	8.51411801652541e-06	4.39636084201616e-05
+"4811158"	"Mus musculus: Syndecan interactions"	8	25	8.51411801652541e-06	4.39636084201616e-05
+"4810019"	"Mus musculus: Antigen Activates B Cell Receptor Leading to Generation of Second Messengers"	9	34	8.54734340447793e-06	4.39636084201616e-05
+"4810203"	"Mus musculus: Activation of NMDA receptor upon glutamate binding and postsynaptic events"	9	34	8.54734340447793e-06	4.39636084201616e-05
+"4810808"	"Mus musculus: Phagosomal maturation (early endosomal stage)"	9	35	1.04342741333783e-05	5.31604013904343e-05
+"4810809"	"Mus musculus: Latent infection of Homo sapiens with Mycobacterium tuberculosis"	9	35	1.04342741333783e-05	5.31604013904343e-05
+"4810585"	"Mus musculus: AKT phosphorylates targets in the cytosol"	6	11	1.09036277881686e-05	5.4975865803209e-05
+"4810904"	"Mus musculus: Presynaptic nicotinic acetylcholine receptors"	6	11	1.09036277881686e-05	5.4975865803209e-05
+"4810706"	"Mus musculus: Semaphorin interactions"	12	68	1.09440328203597e-05	5.4975865803209e-05
+"4809855"	"Mus musculus: Gluconeogenesis"	10	46	1.21563146345257e-05	6.0500177000533e-05
+"4810959"	"Mus musculus: Retinoid metabolism and transport"	10	46	1.21563146345257e-05	6.0500177000533e-05
+"4810533"	"Mus musculus: Metabolism of steroid hormones and vitamin D"	8	27	1.36183441112503e-05	6.71546785302478e-05
+"4810534"	"Mus musculus: Steroid hormones"	8	27	1.36183441112503e-05	6.71546785302478e-05
+"4810922"	"Mus musculus: Factors involved in megakaryocyte development and platelet production"	17	138	1.40199015344368e-05	6.88191513676691e-05
+"4810201"	"Mus musculus: CREB phosphorylation through the activation of CaMKK"	5	6	1.44576574388665e-05	7.06453715762795e-05
+"4810763"	"Mus musculus: Association of TriC/CCT with target proteins during biosynthesis"	7	19	1.48971346066018e-05	7.24634375660495e-05
+"4810287"	"Mus musculus: G2/M Transition"	15	110	1.50852319745343e-05	7.3047857534344e-05
+"4810170"	"Mus musculus: Signal transduction by L1"	9	37	1.52909566522412e-05	7.37120107675305e-05
+"4810611"	"Mus musculus: Phosphorylation of CD3 and TCR zeta chains"	6	12	1.59021457606105e-05	7.53075184698514e-05
+"4811026"	"Mus musculus: Tetrahydrobiopterin (BH4) synthesis, recycling, salvage and regulation"	6	12	1.59021457606105e-05	7.53075184698514e-05
+"4811050"	"Mus musculus: CS/DS degradation"	6	12	1.59021457606105e-05	7.53075184698514e-05
+"4811150"	"Mus musculus: Condensation of Prometaphase Chromosomes"	6	12	1.59021457606105e-05	7.53075184698514e-05
+"4810918"	"Mus musculus: Interferon Signaling"	15	111	1.66112119326931e-05	7.83204071387941e-05
+"4809928"	"Mus musculus: Metabolism of nucleotides"	13	84	1.67267614155756e-05	7.85208232390556e-05
+"4809856"	"Mus musculus: Glucose metabolism"	13	85	1.87124776314294e-05	8.74604932773329e-05
+"4809853"	"Mus musculus: Oncogene Induced Senescence"	7	20	1.95437758532979e-05	9.09504720445683e-05
+"4810325"	"Mus musculus: Post-translational protein modification"	19	174	2.12342608231278e-05	9.83915102795795e-05
+"4810475"	"Mus musculus: Chylomicron-mediated lipid transport"	6	13	2.25978516035049e-05	0.000103814916554563
+"4810898"	"Mus musculus: BMAL1:CLOCK/NPAS2 Activates Circadian Expression"	6	13	2.25978516035049e-05	0.000103814916554563
+"4810227"	"Mus musculus: Activation of caspases through apoptosome-mediated cleavage"	5	7	2.41151617261539e-05	0.000109686828550983
+"4810228"	"Mus musculus: Cytochrome c-mediated apoptotic response"	5	7	2.41151617261539e-05	0.000109686828550983
+"4810967"	"Mus musculus: Nuclear signaling by ERBB4"	11	62	2.41821194107748e-05	0.000109686828550983
+"4810143"	"Mus musculus: GRB2 events in ERBB2 signaling"	7	21	2.53236031865489e-05	0.000113903236090126
+"4810363"	"Mus musculus: Formation of ATP by chemiosmotic coupling"	7	21	2.53236031865489e-05	0.000113903236090126
+"4810347"	"Mus musculus: Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins."	15	117	2.8980655252351e-05	0.000128736381802799
+"4810558"	"Mus musculus: Rho GTPase cycle"	15	117	2.8980655252351e-05	0.000128736381802799
+"4810559"	"Mus musculus: Signaling by Rho GTPases"	15	117	2.8980655252351e-05	0.000128736381802799
+"4810703"	"Mus musculus: Recycling pathway of L1"	9	41	3.09253407203176e-05	0.000136809634873833
+"4809919"	"Mus musculus: Extrinsic Pathway for Apoptosis"	6	14	3.13890411186119e-05	0.000138291881977491
+"4810324"	"Mus musculus: PTM: gamma carboxylation, hypusine formation and arylsulfatase activation"	7	22	3.2440345206635e-05	0.000142340290192378
+"4810237"	"Mus musculus: BH3-only proteins associate with and inactivate anti-apoptotic BCL-2 members"	5	8	3.8129612962151e-05	0.000165948720381831
+"4810326"	"Mus musculus: Transport of gamma-carboxylated protein precursors from the endoplasmic reticulum to the Golgi apparatus"	5	8	3.8129612962151e-05	0.000165948720381831
+"4809852"	"Mus musculus: Oxidative Stress Induced Senescence"	13	92	3.93775940119505e-05	0.000170689167592124
+"4810613"	"Mus musculus: Generation of second messenger molecules"	7	23	4.11215929295151e-05	0.000177532981523007
+"4810479"	"Mus musculus: Retrograde neurotrophin signalling"	6	15	4.27290095716667e-05	0.000183002730237218
+"4810749"	"Mus musculus: PD-1 signaling"	6	15	4.27290095716667e-05	0.000183002730237218
+"4810136"	"Mus musculus: Signaling by Interleukins"	14	108	4.7436607056128e-05	0.000202358542005308
+"4810917"	"Mus musculus: Interferon gamma signaling"	11	68	5.13693697037301e-05	0.00021826906099411
+"4810457"	"Mus musculus: Glycosaminoglycan metabolism"	14	110	5.68050747971736e-05	0.000228936909153168
+"4810458"	"Mus musculus: MPS IX - Natowicz syndrome"	14	110	5.68050747971736e-05	0.000228936909153168
+"4810459"	"Mus musculus: Mucopolysaccharidoses"	14	110	5.68050747971736e-05	0.000228936909153168
+"4810460"	"Mus musculus: MPS IIIB - Sanfilippo syndrome B"	14	110	5.68050747971736e-05	0.000228936909153168
+"4810461"	"Mus musculus: MPS VI - Maroteaux-Lamy syndrome"	14	110	5.68050747971736e-05	0.000228936909153168
+"4810462"	"Mus musculus: MPS IV - Morquio syndrome A"	14	110	5.68050747971736e-05	0.000228936909153168
+"4810463"	"Mus musculus: MPS IIIC - Sanfilippo syndrome C"	14	110	5.68050747971736e-05	0.000228936909153168
+"4810464"	"Mus musculus: MPS VII - Sly syndrome"	14	110	5.68050747971736e-05	0.000228936909153168
+"4810465"	"Mus musculus: MPS II - Hunter syndrome"	14	110	5.68050747971736e-05	0.000228936909153168
+"4810466"	"Mus musculus: MPS I - Hurler syndrome"	14	110	5.68050747971736e-05	0.000228936909153168
+"4810467"	"Mus musculus: MPS IIID - Sanfilippo syndrome D"	14	110	5.68050747971736e-05	0.000228936909153168
+"4810468"	"Mus musculus: MPS IIIA - Sanfilippo syndrome A"	14	110	5.68050747971736e-05	0.000228936909153168
+"4810469"	"Mus musculus: MPS IV - Morquio syndrome B"	14	110	5.68050747971736e-05	0.000228936909153168
+"4810092"	"Mus musculus: Fatty acids"	6	16	5.71281438572796e-05	0.000228936909153168
+"4810322"	"Mus musculus: Removal of aminoterminal propeptides from gamma-carboxylated proteins"	5	9	5.77133975632636e-05	0.000228936909153168
+"4810327"	"Mus musculus: Gamma-carboxylation of protein precursors"	5	9	5.77133975632636e-05	0.000228936909153168
+"4810606"	"Mus musculus: eNOS activation"	5	9	5.77133975632636e-05	0.000228936909153168
+"4810737"	"Mus musculus: PERK regulated gene expression"	5	9	5.77133975632636e-05	0.000228936909153168
+"4810582"	"Mus musculus: Interleukin-3, 5 and GM-CSF signaling"	9	45	5.83868089845326e-05	0.000230756689920487
+"4810159"	"Mus musculus: TRIF-mediated TLR3/TLR4 signaling "	12	83	6.33519650310492e-05	0.00024764859057592
+"4810160"	"Mus musculus: MyD88-independent cascade "	12	83	6.33519650310492e-05	0.00024764859057592
+"4810161"	"Mus musculus: Toll Like Receptor 3 (TLR3) Cascade"	12	83	6.33519650310492e-05	0.00024764859057592
+"4809992"	"Mus musculus: CaM pathway"	7	25	6.42143001504855e-05	0.000248310693027956
+"4810199"	"Mus musculus: Calmodulin induced events"	7	25	6.42143001504855e-05	0.000248310693027956
+"4810760"	"Mus musculus: Prefoldin mediated transfer of substrate  to CCT/TriC"	7	25	6.42143001504855e-05	0.000248310693027956
+"4809844"	"Mus musculus: DNA Damage/Telomere Stress Induced Senescence"	8	35	6.65426289115689e-05	0.000256391849748876
+"4810610"	"Mus musculus: TCR signaling"	10	58	6.96238152129046e-05	0.000267305719120973
+"4809917"	"Mus musculus: FasL/ CD95L signaling"	4	4	7.13392123150809e-05	0.000270988173988381
+"4810200"	"Mus musculus: Activation of CaMK IV"	4	4	7.13392123150809e-05	0.000270988173988381
+"4810403"	"Mus musculus: Cyclin B2 mediated events"	4	4	7.13392123150809e-05	0.000270988173988381
+"4810788"	"Mus musculus: CRMPs in Sema3A signaling"	6	17	7.51556279475935e-05	0.000284479929731208
+"4810018"	"Mus musculus: Muscle contraction"	9	47	7.84526694757026e-05	0.000295917963811861
+"4810265"	"Mus musculus: Common Pathway"	5	10	8.42377078422719e-05	0.000312260468725663
+"4810612"	"Mus musculus: Translocation of ZAP-70 to Immunological synapse"	5	10	8.42377078422719e-05	0.000312260468725663
+"4810886"	"Mus musculus: Activation of Ca-permeable Kainate Receptor"	5	10	8.42377078422719e-05	0.000312260468725663
+"4810887"	"Mus musculus: Ionotropic activity of Kainate Receptors"	5	10	8.42377078422719e-05	0.000312260468725663
+"4811099"	"Mus musculus: Dermatan sulfate biosynthesis"	5	10	8.42377078422719e-05	0.000312260468725663
+"4810913"	"Mus musculus: Heparan sulfate/heparin (HS-GAG) metabolism"	9	48	9.04789156944187e-05	0.000334243417084193
+"4809993"	"Mus musculus: Ca-dependent events"	7	27	9.69426479470597e-05	0.000356288488631511
+"4810310"	"Mus musculus: Intrinsic Pathway"	6	18	9.74407587513155e-05	0.000356288488631511
+"4810664"	"Mus musculus: Synthesis of PC"	6	18	9.74407587513155e-05	0.000356288488631511
+"4811157"	"Mus musculus: Stimuli-sensing channels"	11	74	0.000101474689969405	0.000369780649888508
+"4809824"	"Mus musculus: G1/S Transition"	13	102	0.000102027719708072	0.000370539860426273
+"4810152"	"Mus musculus: Activated TLR4 signalling"	12	88	0.000104851909814577	0.000379514488386097
+"4810029"	"Mus musculus: Insulin receptor recycling"	7	28	0.000117773723906012	0.000420233897179447
+"4810249"	"Mus musculus: GPVI-mediated activation cascade"	7	28	0.000117773723906012	0.000420233897179447
+"4810660"	"Mus musculus: Laminin interactions"	7	28	0.000117773723906012	0.000420233897179447
+"4810756"	"Mus musculus: Cooperation of Prefoldin and TriC/CCT  in actin and tubulin folding"	7	28	0.000117773723906012	0.000420233897179447
+"4810323"	"Mus musculus: Gamma-carboxylation, transport, and amino-terminal cleavage of proteins"	5	11	0.000119229152223006	0.000420233897179447
+"4810633"	"Mus musculus: Amine-derived hormones"	5	11	0.000119229152223006	0.000420233897179447
+"4810909"	"Mus musculus: Highly calcium permeable postsynaptic nicotinic acetylcholine receptors"	5	11	0.000119229152223006	0.000420233897179447
+"4811176"	"Mus musculus: Regulation by c-FLIP"	5	11	0.000119229152223006	0.000420233897179447
+"4810684"	"Mus musculus: GABA synthesis, release, reuptake and degradation"	6	19	0.000124673873754979	0.000430959260468891
+"4810235"	"Mus musculus: SMAC binds to IAPs "	4	5	0.000125078408619808	0.000430959260468891
+"4810236"	"Mus musculus: SMAC-mediated apoptotic response"	4	5	0.000125078408619808	0.000430959260468891
+"4810238"	"Mus musculus: SMAC-mediated dissociation of IAP:caspase complexes "	4	5	0.000125078408619808	0.000430959260468891
+"4810267"	"Mus musculus: Extrinsic Pathway"	4	5	0.000125078408619808	0.000430959260468891
+"4810501"	"Mus musculus: FGFR2b ligand binding and activation"	4	5	0.000125078408619808	0.000430959260468891
+"4810508"	"Mus musculus: FGFR1b ligand binding and activation"	4	5	0.000125078408619808	0.000430959260468891
+"4809843"	"Mus musculus: Cell Cycle Checkpoints"	14	120	0.000131985734817862	0.000453305638751445
+"4810348"	"Mus musculus: Regulation of Insulin Secretion"	11	77	0.000139261876811385	0.000476772348956176
+"4810672"	"Mus musculus: ABC-family proteins mediated transport"	7	29	0.000142096382848955	0.000481872591680212
+"4810685"	"Mus musculus: Integrin alphaIIb beta3 signaling"	7	29	0.000142096382848955	0.000481872591680212
+"4810936"	"Mus musculus: Transferrin endocytosis and recycling"	7	29	0.000142096382848955	0.000481872591680212
+"4810757"	"Mus musculus: Chaperonin-mediated protein folding"	8	40	0.000149863621146836	0.000506614442556128
+"4811023"	"Mus musculus: Alpha-defensins"	6	20	0.000157606895499492	0.000531120415868194
+"4809918"	"Mus musculus: Death Receptor  Signalling"	5	12	0.000164364787404188	0.000550442823861378
+"4810426"	"Mus musculus: Signaling by Activin"	5	12	0.000164364787404188	0.000550442823861378
+"4810153"	"Mus musculus: Toll Like Receptor 4 (TLR4) Cascade"	12	93	0.000167805265315553	0.000560219441659068
+"4809998"	"Mus musculus: DAG and IP3 signaling"	7	30	0.000170333564868644	0.000565149945166027
+"4811048"	"Mus musculus: Glycosphingolipid metabolism"	7	30	0.000170333564868644	0.000565149945166027
+"4810739"	"Mus musculus: Transcriptional Regulation of White Adipocyte Differentiation"	9	53	0.000176313864542708	0.000583192013487418
+"4809970"	"Mus musculus: DNA Repair"	13	110	0.000201753560305531	0.000661485382069801
+"4809884"	"Mus musculus: Neurotransmitter Release Cycle"	7	31	0.000202939014752112	0.000661485382069801
+"4810625"	"Mus musculus: Signaling by Robo receptor"	7	31	0.000202939014752112	0.000661485382069801
+"4810272"	"Mus musculus: Neurotransmitter Clearance In The Synaptic Cleft"	4	6	0.00020306062891445	0.000661485382069801
+"4810903"	"Mus musculus: Highly sodium permeable acetylcholine nicotinic receptors"	4	6	0.00020306062891445	0.000661485382069801
+"4810712"	"Mus musculus: Mitotic Prometaphase"	14	126	0.000209851010503955	0.000681540290911637
+"4810894"	"Mus musculus: G1/S-Specific Transcription"	5	13	0.000221465803420949	0.000717095598426265
+"4809999"	"Mus musculus: PLC-gamma1 signalling"	7	32	0.000240397687448762	0.00077605860062288
+"4810429"	"Mus musculus: Generic Transcription Pathway"	14	128	0.000243370195637785	0.000783302276379098
+"4809851"	"Mus musculus: G2/M Checkpoints"	8	44	0.000266305162110782	0.000852018003777056
+"4810212"	"Mus musculus: Regulation of Water Balance by Renal Aquaporins"	8	44	0.000266305162110782	0.000852018003777056
+"4809991"	"Mus musculus: Purine salvage"	5	14	0.000292490071927179	0.000930256885567212
+"4811100"	"Mus musculus: Metabolism of Angiotensinogen to Angiotensins"	5	14	0.000292490071927179	0.000930256885567212
+"4809925"	"Mus musculus: Creatine metabolism"	4	7	0.000310833755471927	0.000985682262927203
+"4810317"	"Mus musculus: Bile acid and bile salt metabolism"	7	34	0.000331972214674255	0.00104961803169066
+"4810758"	"Mus musculus: Protein folding"	8	46	0.000347585861325936	0.00109576187954657
+"4810888"	"Mus musculus: Activation of Kainate Receptors upon glutamate binding"	5	15	0.000379523748863368	0.00119294745622257
+"4810355"	"Mus musculus: Glucagon-type ligand receptors"	7	35	0.000387216095938684	0.00121357814324806
+"4809822"	"Mus musculus: S Phase"	13	120	0.000434815276789401	0.00135879773996688
+"4811086"	"Mus musculus: A tetrasaccharide linker sequence is required for GAG synthesis"	6	25	0.000438390123231895	0.0013659982100704
+"4810068"	"Mus musculus: Triglyceride Biosynthesis"	7	36	0.000449569270082845	0.00139678313681809
+"4809930"	"Mus musculus: Ethanol oxidation"	4	8	0.000454193052344814	0.00140303888296171
+"4810983"	"Mus musculus: Regulation of Gene Expression by Hypoxia-inducible Factor"	4	8	0.000454193052344814	0.00140303888296171
+"4809892"	"Mus musculus: Mitochondrial Fatty Acid Beta-Oxidation"	5	16	0.000484772104892026	0.00148894289359694
+"4810691"	"Mus musculus: p130Cas linkage to MAPK signaling for integrins"	5	16	0.000484772104892026	0.00148894289359694
+"4810225"	"Mus musculus: E2F mediated regulation of DNA replication"	6	26	0.000524738390096835	0.00160253911748323
+"4810526"	"Mus musculus: Synthesis of bile acids and bile salts"	6	26	0.000524738390096835	0.00160253911748323
+"4810720"	"Mus musculus: Nuclear Receptor transcription pathway"	8	50	0.000570750806772918	0.00173812214527163
+"4811092"	"Mus musculus: Chondroitin sulfate biosynthesis"	5	17	0.000610549740490479	0.00185407053962504
+"4809854"	"Mus musculus: G2/M DNA damage checkpoint"	4	9	0.000639110136514887	0.00188984039597234
+"4809981"	"Mus musculus: Dimerization of procaspase-8"	4	9	0.000639110136514887	0.00188984039597234
+"4809982"	"Mus musculus: Caspase-8 activation"	4	9	0.000639110136514887	0.00188984039597234
+"4810099"	"Mus musculus: mitochondrial fatty acid beta-oxidation of saturated fatty acids"	4	9	0.000639110136514887	0.00188984039597234
+"4810697"	"Mus musculus: Role of DCC in regulating apoptosis"	4	9	0.000639110136514887	0.00188984039597234
+"4810908"	"Mus musculus: Highly calcium permeable nicotinic acetylcholine receptors"	4	9	0.000639110136514887	0.00188984039597234
+"4810990"	"Mus musculus: Uptake of Carbon Dioxide and Release of Oxygen by Erythrocytes"	4	9	0.000639110136514887	0.00188984039597234
+"4810991"	"Mus musculus: O2/CO2 exchange in erythrocytes"	4	9	0.000639110136514887	0.00188984039597234
+"4810993"	"Mus musculus: Uptake of Oxygen and Release of Carbon Dioxide by Erythrocytes"	4	9	0.000639110136514887	0.00188984039597234
+"4810518"	"Mus musculus: Oligomerization of connexins into connexons"	3	3	0.000645182721229625	0.00188984039597234
+"4810519"	"Mus musculus: Transport of connexins along the secretory pathway"	3	3	0.000645182721229625	0.00188984039597234
+"4810768"	"Mus musculus: Adrenaline signalling through Alpha-2 adrenergic receptor"	3	3	0.000645182721229625	0.00188984039597234
+"4810813"	"Mus musculus: Adenosine P1 receptors"	3	3	0.000645182721229625	0.00188984039597234
+"4810483"	"Mus musculus: Senescence-Associated Secretory Phenotype (SASP)"	10	80	0.000717536819350524	0.00209606543696145
+"4810748"	"Mus musculus: CD28 dependent Vav1 pathway"	4	10	0.000871668832095536	0.00253255133649379
+"4810773"	"Mus musculus: Formyl peptide receptors bind formyl peptides and many other ligands"	4	10	0.000871668832095536	0.00253255133649379
+"4809994"	"Mus musculus: PLC beta mediated events"	7	41	0.000891569349089376	0.00257644368352441
+"4810609"	"Mus musculus: Downstream TCR signaling"	7	41	0.000891569349089376	0.00257644368352441
+"4811007"	"Mus musculus: Fertilization"	5	19	0.000933436003243903	0.0026830045547786
+"4811008"	"Mus musculus: Reproduction"	5	19	0.000933436003243903	0.0026830045547786
+"4809995"	"Mus musculus: G-protein mediated events"	7	42	0.00101116255621597	0.00289866599448579
+"4810156"	"Mus musculus: Toll Like Receptor 2 (TLR2) Cascade"	9	70	0.00109123649677998	0.00310820036706011
+"4810157"	"Mus musculus: Toll Like Receptor TLR6:TLR2 Cascade"	9	70	0.00109123649677998	0.00310820036706011
+"4810488"	"Mus musculus: Phosphorylation of proteins involved in G1/S transition by active Cyclin E:Cdk2 complexes"	3	4	0.00110160403706968	0.00310820036706011
+"4810797"	"Mus musculus: Circadian Repression of Expression by REV-ERBA"	3	4	0.00110160403706968	0.00310820036706011
+"4906338"	"Gallus gallus: Axon guidance"	3	4	0.00110160403706968	0.00310820036706011
+"4906339"	"Gallus gallus: Developmental Biology"	3	4	0.00110160403706968	0.00310820036706011
+"4810628"	"Mus musculus: Tie2 Signaling"	5	20	0.00113562653561613	0.00317916282757121
+"4810747"	"Mus musculus: CTLA4 inhibitory signaling"	5	20	0.00113562653561613	0.00317916282757121
+"4810779"	"Mus musculus: G alpha (z) signalling events"	5	20	0.00113562653561613	0.00317916282757121
+"4810495"	"Mus musculus: Heme biosynthesis"	4	11	0.00115800742273309	0.00323339734918979
+"4810239"	"Mus musculus: G alpha (12/13) signalling events"	8	57	0.00122949759573835	0.00342411895186199
+"4809872"	"Mus musculus: Glycolysis"	7	44	0.00128795136861395	0.00357764269059431
+"4809977"	"Mus musculus: Formation of incision complex in GG-NER"	5	21	0.00136848835469152	0.00375286985023824
+"4809980"	"Mus musculus: Dual incision reaction in GG-NER"	5	21	0.00136848835469152	0.00375286985023824
+"4810017"	"Mus musculus: Smooth Muscle Contraction"	5	21	0.00136848835469152	0.00375286985023824
+"4810921"	"Mus musculus: Advanced glycosylation endproduct receptor signaling"	5	21	0.00136848835469152	0.00375286985023824
+"4810977"	"Mus musculus: Signaling by constitutively active EGFR"	5	21	0.00136848835469152	0.00375286985023824
+"442533"	"Mus musculus: Transcriptional Regulation of Adipocyte Differentiation in 3T3-L1 Pre-adipocytes"	7	45	0.00144687411184778	0.0039476895183664
+"4811069"	"Mus musculus: Activation of Chaperone Genes by XBP1(S)"	7	45	0.00144687411184778	0.0039476895183664
+"4810376"	"Mus musculus: Creation of C4 and C2 activators"	4	12	0.00150426684623645	0.00408355267602066
+"4811068"	"Mus musculus: Trafficking and processing of endosomal TLR"	4	12	0.00150426684623645	0.00408355267602066
+"4810330"	"Mus musculus: PKB-mediated events"	6	33	0.0015554761933542	0.00421193175782309
+"4810738"	"Mus musculus: Activation of Chaperones by IRE1alpha"	7	46	0.0016206768918914	0.00436648536035904
+"4811051"	"Mus musculus: Chondroitin sulfate/dermatan sulfate metabolism"	7	46	0.0016206768918914	0.00436648536035904
+"4810259"	"Mus musculus: Activation of BH3-only proteins"	5	22	0.00163472354868671	0.00439331953709554
+"4810231"	"Mus musculus: Formation of apoptosome"	3	5	0.00171976293192243	0.00453123811719758
+"4810486"	"Mus musculus: NGF-independant TRKA activation"	3	5	0.00171976293192243	0.00453123811719758
+"4810636"	"Mus musculus: Vitamins"	3	5	0.00171976293192243	0.00453123811719758
+"4810713"	"Mus musculus: Electric Transmission Across Gap Junctions"	3	5	0.00171976293192243	0.00453123811719758
+"4810714"	"Mus musculus: Transmission across Electrical Synapses "	3	5	0.00171976293192243	0.00453123811719758
+"4810767"	"Mus musculus: Muscarinic acetylcholine receptors"	3	5	0.00171976293192243	0.00453123811719758
+"4811095"	"Mus musculus: Crosslinking of collagen fibrils"	3	5	0.00171976293192243	0.00453123811719758
+"4811123"	"Mus musculus: Synthesis of 12-eicosatetraenoic acid derivatives"	3	5	0.00171976293192243	0.00453123811719758
+"4810541"	"Mus musculus: p75 NTR receptor-mediated signalling"	10	91	0.00174733288722441	0.0045926231143429
+"4810890"	"Mus musculus: Growth hormone receptor signaling"	7	47	0.00181028619431604	0.00474648209485304
+"4810837"	"Mus musculus: Sphingolipid metabolism"	8	61	0.00181653339864202	0.00475127348793229
+"4809968"	"Mus musculus: Purine ribonucleoside monophosphate biosynthesis"	4	13	0.00191654440280022	0.00498858409929839
+"4810572"	"Mus musculus: CD28 dependent PI3K/Akt signaling"	4	13	0.00191654440280022	0.00498858409929839
+"4810573"	"Mus musculus: CD28 co-stimulation"	5	23	0.00193707890104908	0.0050177345027175
+"4810819"	"Mus musculus: Fanconi Anemia pathway"	5	23	0.00193707890104908	0.0050177345027175
+"4810022"	"Mus musculus: FCERI mediated Ca+2 mobilization"	6	35	0.00202822270526658	0.00524120050038839
+"4810336"	"Mus musculus: Asparagine N-linked glycosylation"	9	78	0.00215781489160941	0.00556271225055182
+"4809996"	"Mus musculus: Opioid Signalling"	8	63	0.00218300538502262	0.00561418849018975
+"4810381"	"Mus musculus: Role of phospholipids in phagocytosis"	5	24	0.00227833504134432	0.00583145278439319
+"4810520"	"Mus musculus: Cholesterol biosynthesis"	5	24	0.00227833504134432	0.00583145278439319
+"4809836"	"Mus musculus: Cyclin E associated events during G1/S transition "	8	64	0.00238676897611078	0.00607274474613011
+"4810438"	"Mus musculus: Cyclin A:Cdk2-associated events at S phase entry"	8	64	0.00238676897611078	0.00607274474613011
+"4810657"	"Mus musculus: Synthesis of Leukotrienes (LT) and Eoxins (EX)"	4	14	0.00240085257405144	0.00607274474613011
+"4810698"	"Mus musculus: DCC mediated attractive signaling"	4	14	0.00240085257405144	0.00607274474613011
+"4810852"	"Mus musculus: Unblocking of NMDA receptor, glutamate binding and activation"	4	14	0.00240085257405144	0.00607274474613011
+"4810045"	"Mus musculus: Chk1/Chk2(Cds1) mediated inactivation of Cyclin B:Cdk1 complex"	3	6	0.00251710519357374	0.00629276298393436
+"4810374"	"Mus musculus: Activation of TRKA receptors"	3	6	0.00251710519357374	0.00629276298393436
+"4810507"	"Mus musculus: Klotho-mediated ligand binding"	3	6	0.00251710519357374	0.00629276298393436
+"4810546"	"Mus musculus: NADE modulates death signalling"	3	6	0.00251710519357374	0.00629276298393436
+"4811118"	"Mus musculus: Synthesis of Lipoxins (LX)"	3	6	0.00251710519357374	0.00629276298393436
+"4810297"	"Mus musculus: Signaling by NOTCH"	9	80	0.00252408245087126	0.00629556527769514
+"4810247"	"Mus musculus: Platelet Adhesion to exposed collagen"	4	15	0.00296308257461791	0.00735638283536778
+"4810258"	"Mus musculus: Activation of BAD and translocation to mitochondria "	4	15	0.00296308257461791	0.00735638283536778
+"4810547"	"Mus musculus: Cell death signalling via NRAGE, NRIF and NADE"	8	68	0.00335486123661603	0.00830985214138762
+"4810119"	"Mus musculus: mitochondrial fatty acid beta-oxidation of unsaturated fatty acids"	3	7	0.00350883857842772	0.00853393998147014
+"4810379"	"Mus musculus: Activation of C3 and C5"	3	7	0.00350883857842772	0.00853393998147014
+"4810630"	"Mus musculus: Vitamin D (calciferol) metabolism"	3	7	0.00350883857842772	0.00853393998147014
+"4810702"	"Mus musculus: Neurofascin interactions"	3	7	0.00350883857842772	0.00853393998147014
+"4810717"	"Mus musculus: NrCAM interactions"	3	7	0.00350883857842772	0.00853393998147014
+"4810761"	"Mus musculus: Beta-oxidation of very long chain fatty acids"	3	7	0.00350883857842772	0.00853393998147014
+"4810772"	"Mus musculus: Hormone ligand-binding receptors"	3	7	0.00350883857842772	0.00853393998147014
+"4810978"	"Mus musculus: Regulation of Signaling by NODAL"	3	7	0.00350883857842772	0.00853393998147014
+"4810581"	"Mus musculus: Interleukin receptor SHC signaling"	5	27	0.00356359970903584	0.00860869592632254
+"4810626"	"Mus musculus: Basigin interactions"	5	27	0.00356359970903584	0.00860869592632254
+"4811059"	"Mus musculus: Activation of Gene Expression by SREBP (SREBF)"	5	27	0.00356359970903584	0.00860869592632254
+"4810335"	"Mus musculus: Biosynthesis of the N-glycan precursor (dolichol lipid-linked oligosaccharide, LLO) and transfer to a nascent protein"	5	28	0.00408857383793115	0.00985474635824211
+"4810135"	"Mus musculus: Interleukin-2 signaling"	6	41	0.00410426523858729	0.00987043653575244
+"4810067"	"Mus musculus: Fatty Acyl-CoA Biosynthesis"	4	17	0.00434407820485996	0.0103316019252754
+"4810241"	"Mus musculus: Thrombin signalling through proteinase activated receptors (PARs)"	4	17	0.00434407820485996	0.0103316019252754
+"4810334"	"Mus musculus: Synthesis of substrates in N-glycan biosythesis"	4	17	0.00434407820485996	0.0103316019252754
+"4810515"	"Mus musculus: Gap junction assembly"	4	17	0.00434407820485996	0.0103316019252754
+"4810924"	"Mus musculus: Regulation of signaling by CBL"	4	17	0.00434407820485996	0.0103316019252754
+"4810064"	"Mus musculus: TNF signaling"	3	8	0.00470809038703616	0.0110506488342006
+"4810435"	"Mus musculus: Classical antibody-mediated complement activation"	3	8	0.00470809038703616	0.0110506488342006
+"4810555"	"Mus musculus: VEGF binds to VEGFR leading to receptor dimerization"	3	8	0.00470809038703616	0.0110506488342006
+"4810989"	"Mus musculus: Cross-presentation of particulate exogenous antigens (phagosomes)"	3	8	0.00470809038703616	0.0110506488342006
+"4811010"	"Mus musculus: Interaction With The Zona Pellucida"	3	8	0.00470809038703616	0.0110506488342006
+"4811154"	"Mus musculus: TRIF-mediated programmed cell death"	3	8	0.00470809038703616	0.0110506488342006
+"4810485"	"Mus musculus: SCF(Skp2)-mediated degradation of p27/p21"	7	58	0.00522454058482137	0.0122361244633616
+"4810384"	"Mus musculus: MAPK targets/ Nuclear events mediated by MAP kinases"	5	30	0.00530013256078371	0.0123593112859924
+"4810794"	"Mus musculus: Inhibition of Insulin Secretion by Adrenaline/Noradrenaline"	5	30	0.00530013256078371	0.0123593112859924
+"4810931"	"Mus musculus: Meiotic Recombination"	7	59	0.00568309350795054	0.0132236483139542
+"4809984"	"Mus musculus: Inactivation, recovery and regulation of the phototransduction cascade"	5	31	0.00599222090326741	0.013719813286795
+"4810365"	"Mus musculus: mTOR signalling"	5	31	0.00599222090326741	0.013719813286795
+"4810740"	"Mus musculus: Regulation of Insulin-like Growth Factor (IGF) Transport and Uptake by Insulin-like Growth Factor Binding Proteins (IGFBPs)"	5	31	0.00599222090326741	0.013719813286795
+"4809815"	"Mus musculus: Mitotic M-M/G1 phases"	18	266	0.00607231103434226	0.013719813286795
+"4809890"	"Mus musculus: Citric acid cycle (TCA cycle)"	4	19	0.00610311559054926	0.013719813286795
+"4810232"	"Mus musculus: Activation and oligomerization of BAK protein"	2	2	0.00611689193503687	0.013719813286795
+"4810233"	"Mus musculus: Activation, translocation and oligomerization of BAX"	2	2	0.00611689193503687	0.013719813286795
+"4810631"	"Mus musculus: Regulation of thyroid hormone activity"	2	2	0.00611689193503687	0.013719813286795
+"4810721"	"Mus musculus: Glycoprotein hormones"	2	2	0.00611689193503687	0.013719813286795
+"4810928"	"Mus musculus: GABA synthesis"	2	2	0.00611689193503687	0.013719813286795
+"4810958"	"Mus musculus: GABA A (rho) receptor activation"	2	2	0.00611689193503687	0.013719813286795
+"4811090"	"Mus musculus: Pre-NOTCH Transcription and Translation"	2	2	0.00611689193503687	0.013719813286795
+"4809878"	"Mus musculus: Urea cycle"	3	9	0.0061260561652666	0.013719813286795
+"4810071"	"Mus musculus: Import of palmitoyl-CoA into the mitochondrial matrix"	3	9	0.0061260561652666	0.013719813286795
+"4810718"	"Mus musculus: Role of Abl in Robo-Slit signaling"	3	9	0.0061260561652666	0.013719813286795
+"4810744"	"Mus musculus: Incretin Synthesis, Secretion, and Inactivation"	3	9	0.0061260561652666	0.013719813286795
+"4810817"	"Mus musculus: Lysosphingolipid and LPA receptors"	3	9	0.0061260561652666	0.013719813286795
+"4811025"	"Mus musculus: Beta defensins"	3	9	0.0061260561652666	0.013719813286795
+"4811045"	"Mus musculus: Activation of Matrix Metalloproteinases"	6	45	0.00616682256594353	0.0137632910258583
+"4809842"	"Mus musculus: G1/S DNA Damage Checkpoints"	7	60	0.00617107560415228	0.0137632910258583
+"4809985"	"Mus musculus: The phototransduction cascade"	5	32	0.00674545180249756	0.0150131691256416
+"4810057"	"Mus musculus: Double-Strand Break Repair"	4	20	0.00713705150801033	0.0158192378785796
+"4810140"	"Mus musculus: SHC1 events in ERBB4 signaling"	4	20	0.00713705150801033	0.0158192378785796
+"4810158"	"Mus musculus: TRAF6 Mediated Induction of proinflammatory cytokines"	7	62	0.00723978647288924	0.0160139309842715
+"1368110"	"Mus musculus: Bmal1:Clock/Npas2 Activates Circadian Expression"	3	10	0.00777213997389208	0.0169130576354939
+"4810091"	"Mus musculus: Methylation"	3	10	0.00777213997389208	0.0169130576354939
+"4810556"	"Mus musculus: VEGF ligand-receptor interactions"	3	10	0.00777213997389208	0.0169130576354939
+"4810557"	"Mus musculus: Signaling by VEGF"	3	10	0.00777213997389208	0.0169130576354939
+"4810805"	"Mus musculus: Reduction of cytosolic Ca++ levels"	3	10	0.00777213997389208	0.0169130576354939
+"4810821"	"Mus musculus: Calcitonin-like ligand receptors"	3	10	0.00777213997389208	0.0169130576354939
+"4810855"	"Mus musculus: Type I hemidesmosome assembly"	3	10	0.00777213997389208	0.0169130576354939
+"4811019"	"Mus musculus: Mitochondrial Iron-Sulfur Cluster Biogenesis"	3	10	0.00777213997389208	0.0169130576354939
+"4811153"	"Mus musculus: Regulation of PLK1 Activity at G2/M Transition"	8	80	0.00813462093960033	0.0176660959799401
+"4809978"	"Mus musculus: Global Genomic NER (GG-NER)"	5	34	0.00844584714516131	0.0182681804447654
+"4810295"	"Mus musculus: Activated NOTCH1 Transmits Signal to the Nucleus"	5	34	0.00844584714516131	0.0182681804447654
+"4811058"	"Mus musculus: Resolution of Sister Chromatid Cohesion"	10	118	0.00942667552495823	0.0203487473681327
+"4810398"	"Mus musculus: NF-kB activation through FADD/RIP-1 pathway mediated by caspase-8 and -10"	3	11	0.00965408664892752	0.0207562862951942
+"4811039"	"Mus musculus: Synthesis of PE"	3	11	0.00965408664892752	0.0207562862951942
+"4810996"	"Mus musculus: Mitochondrial Protein Import"	6	50	0.00969436188169789	0.0208012754946611
+"1368092"	"Mus musculus: Rora Activates Circadian Expression"	2	3	0.00997438772428248	0.0209423179757884
+"186666"	"Mus musculus: FOXO1-mediated regulation of Pdx1 expression"	2	3	0.00997438772428248	0.0209423179757884
+"4707147"	"Bos taurus: Binding and Uptake of Ligands by Scavenger Receptors"	2	3	0.00997438772428248	0.0209423179757884
+"4707149"	"Bos taurus: Scavenging by Class A Receptors"	2	3	0.00997438772428248	0.0209423179757884
+"4810262"	"Mus musculus: FMO oxidizes nucleophiles"	2	3	0.00997438772428248	0.0209423179757884
+"4810333"	"Mus musculus: Synthesis of dolichyl-phosphate mannose"	2	3	0.00997438772428248	0.0209423179757884
+"4810723"	"Mus musculus: Dopamine clearance from the synaptic cleft"	2	3	0.00997438772428248	0.0209423179757884
+"4811017"	"Mus musculus: betaKlotho-mediated ligand binding"	2	3	0.00997438772428248	0.0209423179757884
+"4811143"	"Mus musculus: Electron Transport from NADPH to Ferredoxin"	2	3	0.00997438772428248	0.0209423179757884
+"4906844"	"Gallus gallus: Semaphorin interactions"	2	3	0.00997438772428248	0.0209423179757884
+"4906924"	"Gallus gallus: CRMPs in Sema3A signaling"	2	3	0.00997438772428248	0.0209423179757884
+"4809850"	"Mus musculus: Activation of ATR in response to replication stress"	5	36	0.0104217080990326	0.0217913894612579
+"4810151"	"Mus musculus: MyD88:Mal cascade initiated on plasma membrane"	7	67	0.0105045129055902	0.0217913894612579
+"4810155"	"Mus musculus: Toll Like Receptor TLR1:TLR2 Cascade"	7	67	0.0105045129055902	0.0217913894612579
+"4810166"	"Mus musculus: MyD88 cascade initiated on plasma membrane"	7	67	0.0105045129055902	0.0217913894612579
+"4810167"	"Mus musculus: Toll Like Receptor 10 (TLR10) Cascade"	7	67	0.0105045129055902	0.0217913894612579
+"4810168"	"Mus musculus: Toll Like Receptor 5 (TLR5) Cascade"	7	67	0.0105045129055902	0.0217913894612579
+"4810077"	"Mus musculus: Glycerophospholipid biosynthesis"	8	84	0.0105206801212957	0.0217913894612579
+"4810658"	"Mus musculus: Miscellaneous substrates"	3	12	0.0117781064554761	0.0241631000756428
+"4810893"	"Mus musculus: Calnexin/calreticulin cycle"	3	12	0.0117781064554761	0.0241631000756428
+"4811018"	"Mus musculus: Downregulation of ERBB2:ERBB3 signaling"	3	12	0.0117781064554761	0.0241631000756428
+"4811108"	"Mus musculus: alpha-linolenic (omega3) and linoleic (omega6) acid metabolism"	3	12	0.0117781064554761	0.0241631000756428
+"4811109"	"Mus musculus: alpha-linolenic acid (ALA) metabolism"	3	12	0.0117781064554761	0.0241631000756428
+"4810315"	"Mus musculus: Metabolism of porphyrins"	4	24	0.0124068102959338	0.0254044210821502
+"1445146"	"Mus musculus: Translocation of Glut4 to the Plasma Membrane"	7	70	0.0129139021747551	0.0257082311812254
+"4810412"	"Mus musculus: Signaling by TGF-beta Receptor Complex"	7	70	0.0129139021747551	0.0257082311812254
+"4810413"	"Mus musculus: SMAD2/3 Phosphorylation Motif Mutants in Cancer"	7	70	0.0129139021747551	0.0257082311812254
+"4810414"	"Mus musculus: Loss of Function of SMAD2/3 in Cancer"	7	70	0.0129139021747551	0.0257082311812254
+"4810415"	"Mus musculus: Signaling by TGF-beta Receptor Complex in Cancer"	7	70	0.0129139021747551	0.0257082311812254
+"4810416"	"Mus musculus: SMAD4 MH2 Domain Mutants in Cancer"	7	70	0.0129139021747551	0.0257082311812254
+"4810417"	"Mus musculus: Loss of Function of SMAD4 in Cancer"	7	70	0.0129139021747551	0.0257082311812254
+"4810418"	"Mus musculus: SMAD2/3 MH2 Domain Mutants in Cancer"	7	70	0.0129139021747551	0.0257082311812254
+"4810419"	"Mus musculus: TGFBR2 MSI Frameshift Mutants in Cancer"	7	70	0.0129139021747551	0.0257082311812254
+"4810420"	"Mus musculus: Loss of Function of TGFBR2 in Cancer"	7	70	0.0129139021747551	0.0257082311812254
+"4810421"	"Mus musculus: TGFBR2 Kinase Domain Mutants in Cancer"	7	70	0.0129139021747551	0.0257082311812254
+"4810422"	"Mus musculus: TGFBR1 KD Mutants in Cancer"	7	70	0.0129139021747551	0.0257082311812254
+"4810423"	"Mus musculus: Loss of Function of TGFBR1 in Cancer"	7	70	0.0129139021747551	0.0257082311812254
+"4810424"	"Mus musculus: TGFBR1 LBD Mutants in Cancer"	7	70	0.0129139021747551	0.0257082311812254
+"4811020"	"Mus musculus: Translocation of GLUT4 to the Plasma Membrane"	7	70	0.0129139021747551	0.0257082311812254
+"4810207"	"Mus musculus: DARPP-32 events"	4	25	0.0140273663366681	0.0277705687143982
+"4810454"	"Mus musculus: Sulfur amino acid metabolism"	4	25	0.0140273663366681	0.0277705687143982
+"4810707"	"Mus musculus: Sema4D induced cell migration and growth-cone collapse"	4	25	0.0140273663366681	0.0277705687143982
+"4810671"	"Mus musculus: ABCA transporters in lipid homeostasis"	3	13	0.0141489925191468	0.0279598657317699
+"4810150"	"Mus musculus: MAP kinase activation in TLR cascade"	6	55	0.0144638199679969	0.0283038030445047
+"4810053"	"Mus musculus: TRAIL  signaling"	2	4	0.0146389902258089	0.0283038030445047
+"4810437"	"Mus musculus: Alternative complement activation"	2	4	0.0146389902258089	0.0283038030445047
+"4810535"	"Mus musculus: Pregnenolone biosynthesis"	2	4	0.0146389902258089	0.0283038030445047
+"4810632"	"Mus musculus: Thyroxine biosynthesis"	2	4	0.0146389902258089	0.0283038030445047
+"4810634"	"Mus musculus: Serotonin and melatonin biosynthesis"	2	4	0.0146389902258089	0.0283038030445047
+"4810635"	"Mus musculus: Catecholamine biosynthesis"	2	4	0.0146389902258089	0.0283038030445047
+"4810669"	"Mus musculus: Peptide hormone biosynthesis"	2	4	0.0146389902258089	0.0283038030445047
+"4810683"	"Mus musculus: Reuptake of GABA"	2	4	0.0146389902258089	0.0283038030445047
+"4810820"	"Mus musculus: Opsins"	2	4	0.0146389902258089	0.0283038030445047
+"4810883"	"Mus musculus: Destabilization of mRNA by Butyrate Response Factor 1 (BRF1)"	2	4	0.0146389902258089	0.0283038030445047
+"4811172"	"Mus musculus: LRR FLII-interacting protein 1 (LRRFIP1) activates type I IFN production"	2	4	0.0146389902258089	0.0283038030445047
+"4810162"	"Mus musculus: TRAF6 mediated induction of NFkB and MAP kinases upon TLR7/8 or 9 activation"	7	72	0.014725743632579	0.0284204208348696
+"4810163"	"Mus musculus: MyD88 dependent cascade initiated on endosome"	7	73	0.0156964411112992	0.0301854636755753
+"4810165"	"Mus musculus: Toll Like Receptor 7/8 (TLR7/8) Cascade"	7	73	0.0156964411112992	0.0301854636755753
+"4810078"	"Mus musculus: Phospholipid metabolism"	10	129	0.0161292734727513	0.0309624446128708
+"4810128"	"Mus musculus: GRB2 events in EGFR signaling"	3	14	0.0167702314012211	0.0317761143079356
+"4810205"	"Mus musculus: PKA-mediated phosphorylation of CREB"	3	14	0.0167702314012211	0.0317761143079356
+"4810651"	"Mus musculus: Activation of DNA fragmentation factor"	3	14	0.0167702314012211	0.0317761143079356
+"4810652"	"Mus musculus: Apoptosis induced DNA fragmentation"	3	14	0.0167702314012211	0.0317761143079356
+"4810804"	"Mus musculus: Nucleotide-like (purinergic) receptors"	3	14	0.0167702314012211	0.0317761143079356
+"4810892"	"Mus musculus: N-glycan trimming in the ER and Calnexin/Calreticulin cycle"	3	14	0.0167702314012211	0.0317761143079356
+"4811127"	"Mus musculus: Scavenging of Heme from Plasma"	3	14	0.0167702314012211	0.0317761143079356
+"4810964"	"Mus musculus: Amyloids"	8	92	0.0167896120250302	0.0317761143079356
+"4810981"	"Mus musculus: Regulation of Hypoxia-inducible Factor (HIF) by Oxygen"	4	27	0.0176555799772405	0.0332978043430412
+"4810982"	"Mus musculus: Cellular response to hypoxia"	4	27	0.0176555799772405	0.0332978043430412
+"4810346"	"Mus musculus: Respiratory electron transport"	8	93	0.0177287772216894	0.033377295119643
+"4810164"	"Mus musculus: Toll Like Receptor 9 (TLR9) Cascade"	7	75	0.0177723856711854	0.0334008996442733
+"4809840"	"Mus musculus: p53-Dependent G1 DNA Damage Response"	6	58	0.0179995107997327	0.0337098852085586
+"4809841"	"Mus musculus: p53-Dependent G1/S DNA damage checkpoint"	6	58	0.0179995107997327	0.0337098852085586
+"4809874"	"Mus musculus: Pyruvate metabolism and Citric Acid (TCA) cycle"	5	42	0.0181877891763094	0.0339442245912025
+"4811060"	"Mus musculus: Regulation of Cholesterol Biosynthesis by SREBP (SREBF)"	5	42	0.0181877891763094	0.0339442245912025
+"4810285"	"Mus musculus: M Phase"	15	236	0.018729780538307	0.0348951717134836
+"4809871"	"Mus musculus: Glycogen breakdown (glycogenolysis)"	3	15	0.019644107166655	0.0360501514279306
+"4810367"	"Mus musculus: mTORC1-mediated signalling"	3	15	0.019644107166655	0.0360501514279306
+"4810561"	"Mus musculus: Beta-catenin phosphorylation cascade"	3	15	0.019644107166655	0.0360501514279306
+"4810708"	"Mus musculus: Sema4D in semaphorin signaling"	4	28	0.0196687200155554	0.0360501514279306
+"4810764"	"Mus musculus: Striated Muscle Contraction"	4	28	0.0196687200155554	0.0360501514279306
+"4810946"	"Mus musculus: ISG15 antiviral mechanism"	4	28	0.0196687200155554	0.0360501514279306
+"4810947"	"Mus musculus: Antiviral mechanism by IFN-stimulated genes"	4	28	0.0196687200155554	0.0360501514279306
+"4810054"	"Mus musculus: ATM mediated response to DNA double-strand break"	2	5	0.0200539447013046	0.0360501514279306
+"4810063"	"Mus musculus: ATM mediated phosphorylation of repair proteins"	2	5	0.0200539447013046	0.0360501514279306
+"4810286"	"Mus musculus: Polo-like kinase mediated events"	2	5	0.0200539447013046	0.0360501514279306
+"4810617"	"Mus musculus: NOSTRIN mediated eNOS trafficking"	2	5	0.0200539447013046	0.0360501514279306
+"4810668"	"Mus musculus: Synthesis of 5-eicosatetraenoic acids"	2	5	0.0200539447013046	0.0360501514279306
+"4810746"	"Mus musculus: Vasopressin-like receptors"	2	5	0.0200539447013046	0.0360501514279306
+"4810753"	"Mus musculus: Glyoxylate metabolism"	2	5	0.0200539447013046	0.0360501514279306
+"4810798"	"Mus musculus: RORA Activates Circadian Expression"	2	5	0.0200539447013046	0.0360501514279306
+"4810873"	"Mus musculus: Synthesis of UDP-N-acetyl-glucosamine"	2	5	0.0200539447013046	0.0360501514279306
+"4810914"	"Mus musculus: The NLRP1 inflammasome"	2	5	0.0200539447013046	0.0360501514279306
+"4811016"	"Mus musculus: GRB7 events in ERBB2 signaling"	2	5	0.0200539447013046	0.0360501514279306
+"4811071"	"Mus musculus: Activation of Chaperone Genes by ATF6-alpha"	2	5	0.0200539447013046	0.0360501514279306
+"4811145"	"Mus musculus: The retinoid cycle in cones (daylight vision)"	2	5	0.0200539447013046	0.0360501514279306
+"4811156"	"Mus musculus: Constitutive Signaling by NOTCH1 t(7;9)(NOTCH1:M1580_K2555) Translocation Mutant"	2	5	0.0200539447013046	0.0360501514279306
+"4810728"	"Mus musculus: Loss of Nlp from mitotic centrosomes"	6	60	0.0206602169936298	0.0370162221135866
+"4810729"	"Mus musculus: Loss of proteins required for interphase microtubule organization from the centrosome"	6	60	0.0206602169936298	0.0370162221135866
+"4810307"	"Mus musculus: Signaling by NOTCH2"	4	29	0.0218177056952277	0.0390250143467052
+"4810296"	"Mus musculus: Signaling by NOTCH1"	6	61	0.0220853784417751	0.0390489832646517
+"4810298"	"Mus musculus: Signaling by NOTCH1 PEST Domain Mutants in Cancer"	6	61	0.0220853784417751	0.0390489832646517
+"4810299"	"Mus musculus: Signaling by NOTCH1 in Cancer"	6	61	0.0220853784417751	0.0390489832646517
+"4810300"	"Mus musculus: FBXW7 Mutants and NOTCH1 in Cancer"	6	61	0.0220853784417751	0.0390489832646517
+"4810301"	"Mus musculus: Signaling by NOTCH1 t(7;9)(NOTCH1:M1580_K2555) Translocation Mutant"	6	61	0.0220853784417751	0.0390489832646517
+"4810302"	"Mus musculus: Signaling by NOTCH1 HD Domain Mutants in Cancer"	6	61	0.0220853784417751	0.0390489832646517
+"4810303"	"Mus musculus: Signaling by NOTCH1 HD+PEST Domain Mutants in Cancer"	6	61	0.0220853784417751	0.0390489832646517
+"4810280"	"Mus musculus: Regulation of APC/C activators between G1/S and early anaphase"	7	79	0.0224891410225481	0.0396753390980335
+"4810055"	"Mus musculus: Homologous recombination repair of replication-independent double-strand breaks"	3	16	0.022771799277662	0.0396753390980335
+"4810056"	"Mus musculus: Homologous Recombination Repair"	3	16	0.022771799277662	0.0396753390980335
+"4810129"	"Mus musculus: SHC1 events in EGFR signaling"	3	16	0.022771799277662	0.0396753390980335
+"4810629"	"Mus musculus: Regulation of KIT signaling"	3	16	0.022771799277662	0.0396753390980335
+"4810687"	"Mus musculus: GRB2:SOS provides linkage to MAPK signaling for Intergrins "	3	16	0.022771799277662	0.0396753390980335
+"4810787"	"Mus musculus: Sema3A PAK dependent Axon repulsion"	3	16	0.022771799277662	0.0396753390980335
+"4810802"	"Mus musculus: Trafficking of GluR2-containing AMPA receptors"	3	16	0.022771799277662	0.0396753390980335
+"4811088"	"Mus musculus: Pre-NOTCH Expression and Processing"	3	16	0.022771799277662	0.0396753390980335
+"4809935"	"Mus musculus: Gene Expression"	40	839	0.023518063660937	0.0409092531318888
+"4810218"	"Mus musculus: Formation of RNA Pol II elongation complex "	5	46	0.0250572345842568	0.0434460115775421
+"4810219"	"Mus musculus: RNA Polymerase II Transcription Elongation"	5	46	0.0250572345842568	0.0434460115775421
+"4809814"	"Mus musculus: DNA Replication"	8	100	0.0253805265959675	0.0439356941878664
+"4810704"	"Mus musculus: Interaction between L1 and Ankyrins"	3	17	0.0261534746300041	0.0445764485281528
+"4810915"	"Mus musculus: Inflammasomes"	3	17	0.0261534746300041	0.0445764485281528
+"4810366"	"Mus musculus: Release of eIF4E"	2	6	0.026165338624432	0.0445764485281528
+"4810402"	"Mus musculus: G2/M DNA replication checkpoint"	2	6	0.026165338624432	0.0445764485281528
+"4810436"	"Mus musculus: Terminal pathway of complement"	2	6	0.026165338624432	0.0445764485281528
+"4811070"	"Mus musculus: Activation of Genes by ATF4"	2	6	0.026165338624432	0.0445764485281528
+"4811107"	"Mus musculus: Linoleic acid (LA) metabolism"	2	6	0.026165338624432	0.0445764485281528
+"4811119"	"Mus musculus: Synthesis of 15-eicosatetraenoic acid derivatives"	2	6	0.026165338624432	0.0445764485281528
+"4811131"	"Mus musculus: Scavenging by Class B Receptors"	2	6	0.026165338624432	0.0445764485281528
+"4811139"	"Mus musculus: Scavenging by Class F Receptors"	2	6	0.026165338624432	0.0445764485281528
+"4810549"	"Mus musculus: NRAGE signals death through JNK"	5	47	0.0270013586872121	0.0459279439695459
+"4810121"	"Mus musculus: Transport of vitamins, nucleosides, and related molecules"	4	32	0.0290982440332613	0.049260806827962
+"4810174"	"Mus musculus: Formation of transcription-coupled NER (TC-NER) repair complex"	4	32	0.0290982440332613	0.049260806827962
+"4810176"	"Mus musculus: Dual incision reaction in TC-NER"	4	32	0.0290982440332613	0.049260806827962
+"4810281"	"Mus musculus: APC/C-mediated degradation of cell cycle proteins"	7	84	0.0295167505691994	0.0498124126560273
+"4810282"	"Mus musculus: Regulation of mitotic cell cycle"	7	84	0.0295167505691994	0.0498124126560273
+"4810681"	"Mus musculus: Na+/Cl- dependent neurotransmitter transporters"	3	18	0.0297883740341948	0.0501920095403753
+"4810394"	"Mus musculus: Nucleotide-binding domain, leucine rich repeat containing receptor (NLR) signaling pathways"	5	49	0.031170846219458	0.0524392170358643
+"4810614"	"Mus musculus: FCERI mediated NF-kB activation"	4	33	0.031807673394566	0.053426951404935
+"4810593"	"Mus musculus: AKT phosphorylates targets in the nucleus"	2	7	0.0329219767475344	0.0549551630490675
+"4810832"	"Mus musculus: Multifunctional anion exchangers"	2	7	0.0329219767475344	0.0549551630490675
+"4811052"	"Mus musculus: The activation of arylsulfatases"	2	7	0.0329219767475344	0.0549551630490675
+"4811161"	"Mus musculus: Activation of NIMA Kinases NEK9, NEK6, NEK7"	2	7	0.0329219767475344	0.0549551630490675
+"4810255"	"Mus musculus: Platelet calcium homeostasis"	3	19	0.0336748934295505	0.0560379418525802
+"4810396"	"Mus musculus: IKK complex recruitment mediated by RIP1"	3	19	0.0336748934295505	0.0560379418525802
+"4810210"	"Mus musculus: Glucagon signaling in metabolic regulation"	4	35	0.0376559596835259	0.0625659299223962
+"4810060"	"Mus musculus: Recruitment of repair and signaling proteins to double-strand breaks"	2	8	0.0402752612898111	0.0657992490677004
+"4810304"	"Mus musculus: Receptor-ligand binding initiates the second proteolytic cleavage of Notch receptor"	2	8	0.0402752612898111	0.0657992490677004
+"4810409"	"Mus musculus: Adenylate cyclase activating pathway"	2	8	0.0402752612898111	0.0657992490677004
+"4810570"	"Mus musculus: Metabolism of folate and pterines"	2	8	0.0402752612898111	0.0657992490677004
+"4810583"	"Mus musculus: G beta:gamma signalling through PI3Kgamma"	2	8	0.0402752612898111	0.0657992490677004
+"4810595"	"Mus musculus: CREB phosphorylation"	2	8	0.0402752612898111	0.0657992490677004
+"4810719"	"Mus musculus: Inactivation of Cdc42 and Rac"	2	8	0.0402752612898111	0.0657992490677004
+"4810735"	"Mus musculus: Activation of Chaperones by ATF6-alpha"	2	8	0.0402752612898111	0.0657992490677004
+"4810743"	"Mus musculus: Synthesis, Secretion, and Inactivation of Glucagon-like Peptide-1 (GLP-1)"	2	8	0.0402752612898111	0.0657992490677004
+"4810799"	"Mus musculus: Synthesis, Secretion, and Inactivation of Glucose-dependent Insulinotropic Polypeptide (GIP)"	2	8	0.0402752612898111	0.0657992490677004
+"4811144"	"Mus musculus: Retinoid cycle disease events"	2	8	0.0402752612898111	0.0657992490677004
+"4810126"	"Mus musculus: Prolonged ERK activation events"	3	21	0.0421926041907422	0.0687228022803755
+"4810701"	"Mus musculus: Nephrin interactions"	3	21	0.0421926041907422	0.0687228022803755
+"4809979"	"Mus musculus: Nucleotide Excision Repair"	5	54	0.0432797360626611	0.0703868627342824
+"4810986"	"Mus musculus: Antigen processing-Cross presentation"	7	92	0.0435952072732982	0.0707928214785432
+"4809869"	"Mus musculus: SLC-mediated transmembrane transport"	14	244	0.0452028461845671	0.0732926993188681
+"4809967"	"Mus musculus: RNA Polymerase I Promoter Escape"	3	22	0.0468170256611824	0.0753417703379807
+"4810043"	"Mus musculus: RNA Polymerase I Chain Elongation"	3	22	0.0468170256611824	0.0753417703379807
+"4810074"	"Mus musculus: Peroxisomal lipid metabolism"	3	22	0.0468170256611824	0.0753417703379807
+"4810306"	"Mus musculus: NOTCH2 Activation and Transmission of Signal to the Nucleus"	3	22	0.0468170256611824	0.0753417703379807
+"4810527"	"Mus musculus: Synthesis of bile acids and bile salts via 7alpha-hydroxycholesterol"	3	22	0.0468170256611824	0.0753417703379807
+"4810966"	"Mus musculus: Prolactin receptor signaling"	4	38	0.0475068074387724	0.0763375455854713
+"4809921"	"Mus musculus: Phenylalanine and tyrosine catabolism"	2	9	0.0481790770459833	0.0773022504842269
+"4810587"	"Mus musculus: Nuclear Events (kinase and transcription factor activation)"	3	23	0.0516796571001315	0.0826233293351768
+"4810845"	"Mus musculus: Deadenylation of mRNA"	3	23	0.0516796571001315	0.0826233293351768
+"4810387"	"Mus musculus: RIG-I/MDA5 mediated induction of IFN-alpha/beta pathways"	5	57	0.0517260471093712	0.0826233293351768
+"4809821"	"Mus musculus: Synthesis of DNA"	7	96	0.0520202139684698	0.0829699258399185
+"4810730"	"Mus musculus: Centrosome maturation"	6	77	0.0543059340640853	0.0863592886374138
+"4810732"	"Mus musculus: Recruitment of mitotic centrosome proteins and complexes"	6	77	0.0543059340640853	0.0863592886374138
+"4809955"	"Mus musculus: Recycling of eIF2:GDP"	2	10	0.0565896812221266	0.0893302603726669
+"4810257"	"Mus musculus: Activation, myristolyation of BID and translocation to mitochondria"	2	10	0.0565896812221266	0.0893302603726669
+"4810663"	"Mus musculus: Acetylcholine Neurotransmitter Release Cycle"	2	10	0.0565896812221266	0.0893302603726669
+"4810822"	"Mus musculus: Tight junction interactions"	2	10	0.0565896812221266	0.0893302603726669
+"4810974"	"Mus musculus: Interleukin-6 signaling"	2	10	0.0565896812221266	0.0893302603726669
+"210774"	"Mus musculus: Regulation of Beta-Cell Development"	3	24	0.0567757224398506	0.0893614957874662
+"4810044"	"Mus musculus: RNA Polymerase I Transcription Termination"	3	24	0.0567757224398506	0.0893614957874662
+"4810145"	"Mus musculus: FCERI mediated MAPK activation"	4	41	0.0586460678592676	0.0920357999251281
+"4810699"	"Mus musculus: Netrin-1 signaling"	4	41	0.0586460678592676	0.0920357999251281
+"912497"	"Mus musculus: Meiotic Recombination"	7	100	0.0614017508305687	0.0962199448146666
+"4809966"	"Mus musculus: RNA Polymerase I Transcription Initiation"	3	25	0.0620999918971206	0.0971724764037913
+"4810087"	"Mus musculus: CYP2E1 reactions"	1	1	0.0642268585837134	0.0989167234634554
+"4810090"	"Mus musculus: Aromatic amines can be N-hydroxylated or N-dealkylated by CYP1A2"	1	1	0.0642268585837134	0.0989167234634554
+"4810530"	"Mus musculus: Sterols are 12-hydroxylated by CYP8B1"	1	1	0.0642268585837134	0.0989167234634554
+"4811009"	"Mus musculus: Acrosome Reaction"	1	1	0.0642268585837134	0.0989167234634554
+"4811093"	"Mus musculus: Signaling by FGFR1 amplification mutants"	1	1	0.0642268585837134	0.0989167234634554
+"4811098"	"Mus musculus: Signaling by FGFR4 mutants"	1	1	0.0642268585837134	0.0989167234634554
+"4811106"	"Mus musculus: t(4;14) translocations of FGFR3"	1	1	0.0642268585837134	0.0989167234634554
+"4811120"	"Mus musculus: Synthesis of Hepoxilins (HX) and Trioxilins (TrX)"	1	1	0.0642268585837134	0.0989167234634554
+"4906337"	"Gallus gallus: NCAM signaling for neurite out-growth"	1	1	0.0642268585837134	0.0989167234634554
+"4906851"	"Gallus gallus: NCAM1 interactions"	1	1	0.0642268585837134	0.0989167234634554
+"4907125"	"Gallus gallus: Endosomal/Vacuolar pathway"	1	1	0.0642268585837134	0.0989167234634554
+"4809926"	"Mus musculus: Purine catabolism"	2	11	0.0654655978127147	0.0995410433503088
+"4810316"	"Mus musculus: Recycling of bile acids and salts"	2	11	0.0654655978127147	0.0995410433503088
+"4810383"	"Mus musculus: Activation of the AP-1 family of transcription factors"	2	11	0.0654655978127147	0.0995410433503088
+"4810404"	"Mus musculus: Adenylate cyclase inhibitory pathway"	2	11	0.0654655978127147	0.0995410433503088
+"4810405"	"Mus musculus: Inhibition of adenylate cyclase pathway"	2	11	0.0654655978127147	0.0995410433503088
+"4810584"	"Mus musculus: G-protein beta:gamma signalling"	2	11	0.0654655978127147	0.0995410433503088
+"4811057"	"Mus musculus: Keratan sulfate degradation"	2	11	0.0654655978127147	0.0995410433503088
+"4811094"	"Mus musculus: YAP1- and WWTR1 (TAZ)-stimulated gene expression"	2	11	0.0654655978127147	0.0995410433503088
+"4811159"	"Mus musculus: Constitutive Signaling by NOTCH1 HD Domain Mutants"	2	11	0.0654655978127147	0.0995410433503088
+"4809963"	"Mus musculus: RNA Polymerase I Promoter Clearance"	3	26	0.067646833307942	0.1025674835064
+"4811079"	"Mus musculus: Synthesis of IP3 and IP4 in the cytosol"	3	26	0.067646833307942	0.1025674835064
+"4810538"	"Mus musculus: Glucocorticoid biosynthesis"	2	12	0.0747675163400125	0.112570140147778
+"4810554"	"Mus musculus: Transport of organic anions"	2	12	0.0747675163400125	0.112570140147778
+"4810716"	"Mus musculus: DSCAM interactions"	2	12	0.0747675163400125	0.112570140147778
+"4810920"	"Mus musculus: Regulation of IFNG signaling"	2	12	0.0747675163400125	0.112570140147778
+"4811155"	"Mus musculus: Cytosolic Iron-sulfur Cluster Assembly"	2	12	0.0747675163400125	0.112570140147778
+"4809983"	"Mus musculus: RNA Polymerase II Pre-transcription Events"	5	64	0.0749054661579731	0.112620106461288
+"4809964"	"Mus musculus: RNA Polymerase I Transcription"	3	28	0.0793839757784891	0.119020605246689
+"4810912"	"Mus musculus: HS-GAG biosynthesis"	3	28	0.0793839757784891	0.119020605246689
+"186601"	"Mus musculus: Regulation of gene expression in beta cells"	2	13	0.0844581947837874	0.125577537195811
+"4810075"	"Mus musculus: Synthesis of very long-chain fatty acyl-CoAs"	2	13	0.0844581947837874	0.125577537195811
+"4810208"	"Mus musculus: PKA activation"	2	13	0.0844581947837874	0.125577537195811
+"4810305"	"Mus musculus: Signaling by NOTCH3"	2	13	0.0844581947837874	0.125577537195811
+"4810308"	"Mus musculus: Signaling by NOTCH4"	2	13	0.0844581947837874	0.125577537195811
+"4810525"	"Mus musculus: Synthesis of bile acids and bile salts via 27-hydroxycholesterol"	2	13	0.0844581947837874	0.125577537195811
+"4810843"	"Mus musculus: Deadenylation-dependent mRNA decay"	4	47	0.0846800267739666	0.125733465168528
+"4809823"	"Mus musculus: Activation of the pre-replicative complex"	3	29	0.0855614160298271	0.126692179383008
+"4810682"	"Mus musculus: Amine compound SLC transporters"	3	29	0.0855614160298271	0.126692179383008
+"4810932"	"Mus musculus: Meiosis"	8	132	0.0888005348476998	0.131307530895842
+"4810097"	"Mus musculus: RNA Pol II CTD phosphorylation and interaction with CE"	3	30	0.0919357870632869	0.135756828424497
+"4810175"	"Mus musculus: Transcription-coupled NER (TC-NER)"	4	49	0.0944210910319612	0.136028652606826
+"4810209"	"Mus musculus: PKA activation in glucagon signalling"	2	14	0.0945023665358789	0.136028652606826
+"4810597"	"Mus musculus: COPI Mediated Transport"	2	14	0.0945023665358789	0.136028652606826
+"4810598"	"Mus musculus: Golgi to ER Retrograde Transport"	2	14	0.0945023665358789	0.136028652606826
+"4811129"	"Mus musculus: Golgi Cisternae Pericentriolar Stack Reorganization"	2	14	0.0945023665358789	0.136028652606826
+"4810113"	"Mus musculus: Formation of the Editosome"	1	2	0.0947771728395466	0.136028652606826
+"4810114"	"Mus musculus: mRNA Editing: C to U Conversion"	1	2	0.0947771728395466	0.136028652606826
+"4810270"	"Mus musculus: Metabolism of serotonin"	1	2	0.0947771728395466	0.136028652606826
+"4810271"	"Mus musculus: Serotonin clearance from the synaptic cleft"	1	2	0.0947771728395466	0.136028652606826
+"4810328"	"Mus musculus: Inhibition of HSL"	1	2	0.0947771728395466	0.136028652606826
+"4810329"	"Mus musculus: PDE3B signalling"	1	2	0.0947771728395466	0.136028652606826
+"4810370"	"Mus musculus: Transfer of LPS from LBP carrier to CD14"	1	2	0.0947771728395466	0.136028652606826
+"4810536"	"Mus musculus: Estrogen biosynthesis"	1	2	0.0947771728395466	0.136028652606826
+"4810649"	"Mus musculus: AKT-mediated inactivation of FOXO1A"	1	2	0.0947771728395466	0.136028652606826
+"4810653"	"Mus musculus: Stimulation of the cell death response by PAK-2p34"	1	2	0.0947771728395466	0.136028652606826
+"4810722"	"Mus musculus: Enzymatic degradation of Dopamine by monoamine oxidase"	1	2	0.0947771728395466	0.136028652606826
+"4810724"	"Mus musculus: Enzymatic degradation of dopamine by COMT"	1	2	0.0947771728395466	0.136028652606826
+"4810745"	"Mus musculus: Mitochondrial ABC transporters"	1	2	0.0947771728395466	0.136028652606826
+"4810851"	"Mus musculus: Transport of Glycerol from Adipocytes to the Liver by Aquaporins"	1	2	0.0947771728395466	0.136028652606826
+"4811006"	"Mus musculus: Sperm:Oocyte Membrane Binding"	1	2	0.0947771728395466	0.136028652606826
+"4811054"	"Mus musculus: Cysteine formation from homocysteine"	1	2	0.0947771728395466	0.136028652606826
+"4810678"	"Mus musculus: Amino acid transport across the plasma membrane"	3	31	0.0985001018972339	0.140703473409272
+"4809827"	"Mus musculus: Orc1 removal from chromatin"	5	70	0.0985578748624949	0.140703473409272
+"4809828"	"Mus musculus: Switching of origins to a post-replicative state"	5	70	0.0985578748624949	0.140703473409272
+"4810442"	"Mus musculus: Cdc20:Phospho-APC/C mediated degradation of Cyclin A"	5	70	0.0985578748624949	0.140703473409272
+"4809896"	"Mus musculus: Metabolism of water-soluble vitamins and cofactors"	5	71	0.102826335806701	0.142999108657443
+"4809897"	"Mus musculus: Metabolism of vitamins and cofactors"	5	71	0.102826335806701	0.142999108657443
+"4809898"	"Mus musculus: Defective TCN2 causes hereditary megaloblastic anemia"	5	71	0.102826335806701	0.142999108657443
+"4809899"	"Mus musculus: Defects in cobalamin (B12) metabolism"	5	71	0.102826335806701	0.142999108657443
+"4809900"	"Mus musculus: Defects in vitamin and cofactor metabolism"	5	71	0.102826335806701	0.142999108657443
+"4809902"	"Mus musculus: Defective GIF causes intrinsic factor deficiency"	5	71	0.102826335806701	0.142999108657443
+"4809903"	"Mus musculus: Defective LMBRD1 causes methylmalonic aciduria and homocystinuria type cblF"	5	71	0.102826335806701	0.142999108657443
+"4809904"	"Mus musculus: Defective AMN causes hereditary megaloblastic anemia 1"	5	71	0.102826335806701	0.142999108657443
+"4809905"	"Mus musculus: Defective CUBN causes hereditary megaloblastic anemia 1"	5	71	0.102826335806701	0.142999108657443
+"4809906"	"Mus musculus: Defective MTRR causes methylmalonic aciduria and homocystinuria type cblE"	5	71	0.102826335806701	0.142999108657443
+"4809907"	"Mus musculus: Defective MTR causes methylmalonic aciduria and homocystinuria type cblG"	5	71	0.102826335806701	0.142999108657443
+"4809908"	"Mus musculus: Defective MMAB causes methylmalonic aciduria type cblB"	5	71	0.102826335806701	0.142999108657443
+"4809909"	"Mus musculus: Defective MMADHC causes methylmalonic aciduria and homocystinuria type cblD"	5	71	0.102826335806701	0.142999108657443
+"4809910"	"Mus musculus: Defective MMACHC causes methylmalonic aciduria and homocystinuria type cblC"	5	71	0.102826335806701	0.142999108657443
+"4809911"	"Mus musculus: Defective MMAA causes methylmalonic aciduria type cblA"	5	71	0.102826335806701	0.142999108657443
+"4809912"	"Mus musculus: Defective MUT causes methylmalonic aciduria mut type"	5	71	0.102826335806701	0.142999108657443
+"4809913"	"Mus musculus: Defective CD320 causes methylmalonic aciduria"	5	71	0.102826335806701	0.142999108657443
+"4809914"	"Mus musculus: Defective BTD causes biotidinase deficiency"	5	71	0.102826335806701	0.142999108657443
+"4809915"	"Mus musculus: Defects in biotin (Btn) metabolism"	5	71	0.102826335806701	0.142999108657443
+"4809916"	"Mus musculus: Defective HLCS causes multiple carboxylase deficiency"	5	71	0.102826335806701	0.142999108657443
+"4810514"	"Mus musculus: Transport of connexons to the plasma membrane"	2	15	0.1048666512205	0.145272744925306
+"4810786"	"Mus musculus: SEMA3A-Plexin repulsion signaling by inhibiting Integrin adhesion"	2	15	0.1048666512205	0.145272744925306
+"4811065"	"Mus musculus: Synthesis of PIPs at the Golgi membrane"	2	15	0.1048666512205	0.145272744925306
+"4810096"	"Mus musculus: mRNA Capping"	3	32	0.105247213812919	0.145425134767208
+"4810911"	"Mus musculus: Keratan sulfate/keratin metabolism"	3	32	0.105247213812919	0.145425134767208
+"4809817"	"Mus musculus: Regulation of DNA replication"	5	72	0.107185033075194	0.147533816332693
+"4809826"	"Mus musculus: Removal of licensing factors from origins"	5	72	0.107185033075194	0.147533816332693
+"4809862"	"Mus musculus: Phase II conjugation"	5	72	0.107185033075194	0.147533816332693
+"4810411"	"Mus musculus: TGF-beta receptor signaling activates SMADs"	3	33	0.112169847429251	0.154197680289572
+"4810256"	"Mus musculus: Platelet homeostasis"	4	53	0.11538795844332	0.158418972320011
+"4810970"	"Mus musculus: Antigen Presentation: Folding, assembly and peptide loading of class I MHC"	3	34	0.119260627491135	0.16352700835838
+"4810102"	"Mus musculus: Beta oxidation of butanoyl-CoA to acetyl-CoA"	1	3	0.124330599807716	0.167487963400119
+"4810148"	"Mus musculus: ERK1 activation"	1	3	0.124330599807716	0.167487963400119
+"4810364"	"Mus musculus: Inhibition of TSC complex formation by PKB"	1	3	0.124330599807716	0.167487963400119
+"4810476"	"Mus musculus: Processing of DNA ends prior to end rejoining"	1	3	0.124330599807716	0.167487963400119
+"4810506"	"Mus musculus: FGFR1c and Klotho ligand binding and activation"	1	3	0.124330599807716	0.167487963400119
+"4810516"	"Mus musculus: c-src mediated regulation of Cx43 function and closure of gap junctions"	1	3	0.124330599807716	0.167487963400119
+"4810517"	"Mus musculus: Regulation of gap junction activity"	1	3	0.124330599807716	0.167487963400119
+"4810531"	"Mus musculus: Digestion of dietary lipid"	1	3	0.124330599807716	0.167487963400119
+"4810615"	"Mus musculus: Fibronectin matrix formation"	1	3	0.124330599807716	0.167487963400119
+"4810665"	"Mus musculus: Breakdown of the nuclear lamina"	1	3	0.124330599807716	0.167487963400119
+"4810876"	"Mus musculus: Interleukin-1 processing"	1	3	0.124330599807716	0.167487963400119
+"4810916"	"Mus musculus: The AIM2 inflammasome"	1	3	0.124330599807716	0.167487963400119
+"4810984"	"Mus musculus: Oxygen-dependent Asparagine Hydroxylation of Hypoxia-inducible Factor Alpha"	1	3	0.124330599807716	0.167487963400119
+"4811160"	"Mus musculus: Ficolins bind to repetitive carbohydrate structures on the target cell surface"	1	3	0.124330599807716	0.167487963400119
+"4810127"	"Mus musculus: ARMS-mediated activation"	2	17	0.126430959809533	0.168944737160195
+"4810529"	"Mus musculus: Synthesis of bile acids and bile salts via 24-hydroxycholesterol"	2	17	0.126430959809533	0.168944737160195
+"4811111"	"Mus musculus: TGF-beta receptor signaling in EMT (epithelial to mesenchymal transition)"	2	17	0.126430959809533	0.168944737160195
+"4906223"	"Gallus gallus: Immune System"	3	35	0.126512105501355	0.168944737160195
+"4906228"	"Gallus gallus: Adaptive Immune System"	3	35	0.126512105501355	0.168944737160195
+"4907101"	"Gallus gallus: Class I MHC mediated antigen processing & presentation"	3	35	0.126512105501355	0.168944737160195
+"4907123"	"Gallus gallus: Antigen processing-Cross presentation"	3	35	0.126512105501355	0.168944737160195
+"4810193"	"Mus musculus: Removal of DNA patch containing abasic residue"	2	18	0.137572902607258	0.183033255325251
+"4810194"	"Mus musculus: Resolution of AP sites via the multiple-nucleotide patch replacement pathway"	2	18	0.137572902607258	0.183033255325251
+"4810849"	"Mus musculus: Cell-extracellular matrix interactions"	2	18	0.137572902607258	0.183033255325251
+"4809953"	"Mus musculus: Activation of the mRNA upon binding of the cap-binding complex and eIFs, and subsequent binding to 43S"	7	124	0.137810122157623	0.183122226600056
+"4810220"	"Mus musculus: Formation of the Early Elongation Complex"	3	37	0.14146714084527	0.187287163064859
+"4811136"	"Mus musculus: Constitutive Signaling by NOTCH1 PEST Domain Mutants"	3	37	0.14146714084527	0.187287163064859
+"4811137"	"Mus musculus: Constitutive Signaling by NOTCH1 HD+PEST Domain Mutants"	3	37	0.14146714084527	0.187287163064859
+"4809929"	"Mus musculus: Synthesis and interconversion of nucleotide di- and triphosphates"	2	19	0.148918642457054	0.196185711570261
+"4810125"	"Mus musculus: Frs2-mediated activation"	2	19	0.148918642457054	0.196185711570261
+"4810278"	"Mus musculus: Inactivation of APC/C via direct inhibition of the APC/C complex"	2	19	0.148918642457054	0.196185711570261
+"4810279"	"Mus musculus: Inhibition of the proteolytic activity of APC/C required for the onset of anaphase by mitotic spindle checkpoint components"	2	19	0.148918642457054	0.196185711570261
+"4810934"	"Mus musculus: O-linked glycosylation of mucins"	3	38	0.149155646897401	0.196257430128159
+"4810655"	"Mus musculus: Regulation of Apoptosis"	4	59	0.150210237373268	0.197403429310836
+"186589"	"Mus musculus: Late stage (branching morphogenesis) pancreatic bud precursor cells"	1	4	0.152919652828575	0.197582484123459
+"4810049"	"Mus musculus: mRNA Editing"	1	4	0.152919652828575	0.197582484123459
+"4810079"	"Mus musculus: Nonhomologous End-joining (NHEJ)"	1	4	0.152919652828575	0.197582484123459
+"4810100"	"Mus musculus: Beta oxidation of myristoyl-CoA to lauroyl-CoA"	1	4	0.152919652828575	0.197582484123459
+"4810101"	"Mus musculus: Beta oxidation of palmitoyl-CoA to myristoyl-CoA"	1	4	0.152919652828575	0.197582484123459
+"4810122"	"Mus musculus: Activation of PKB"	1	4	0.152919652828575	0.197582484123459
+"4810234"	"Mus musculus: Release of apoptotic factors from the mitochondria"	1	4	0.152919652828575	0.197582484123459
+"4810261"	"Mus musculus: Activation of BIM and translocation to mitochondria "	1	4	0.152919652828575	0.197582484123459
+"4810375"	"Mus musculus: Lectin pathway of complement activation"	1	4	0.152919652828575	0.197582484123459
+"4810562"	"Mus musculus: Neurophilin interactions with VEGF and VEGFR"	1	4	0.152919652828575	0.197582484123459
+"4810647"	"Mus musculus: Regulation of gene expression in late stage (branching morphogenesis) pancreatic bud precursor cells"	1	4	0.152919652828575	0.197582484123459
+"4810863"	"Mus musculus: CREB phosphorylation through the activation of Adenylate Cyclase"	1	4	0.152919652828575	0.197582484123459
+"4811149"	"Mus musculus: Antagonism of Activin by Follistatin"	1	4	0.152919652828575	0.197582484123459
+"4811169"	"Mus musculus: Clearance of Nuclear Envelope Membranes from Chromatin"	1	4	0.152919652828575	0.197582484123459
+"4810390"	"Mus musculus: Cytosolic sensors of pathogen-associated DNA "	4	60	0.156367329829254	0.201794573309062
+"4810041"	"Mus musculus: Signalling to ERKs"	3	39	0.156974788394218	0.202335608541708
+"4809975"	"Mus musculus: Resolution of Abasic Sites (AP sites)"	2	20	0.160443017359805	0.205328861502131
+"4809976"	"Mus musculus: Base Excision Repair"	2	20	0.160443017359805	0.205328861502131
+"4810277"	"Mus musculus: Mitotic Spindle Checkpoint"	2	20	0.160443017359805	0.205328861502131
+"4810666"	"Mus musculus: Insulin Processing"	2	20	0.160443017359805	0.205328861502131
+"4810988"	"Mus musculus: Endosomal/Vacuolar pathway"	2	20	0.160443017359805	0.205328861502131
+"4811102"	"Mus musculus: Signaling by Hippo"	2	20	0.160443017359805	0.205328861502131
+"4810971"	"Mus musculus: Class I MHC mediated antigen processing & presentation"	11	228	0.161116875587046	0.205946065702823
+"4810428"	"Mus musculus: Transcriptional activity of SMAD2/SMAD3:SMAD4 heterotrimer"	3	40	0.164917082935945	0.210303516199455
+"4811162"	"Mus musculus: Nuclear Envelope Breakdown"	3	40	0.164917082935945	0.210303516199455
+"4810144"	"Mus musculus: Signaling by Leptin"	2	21	0.172122289479272	0.218972143420375
+"4811061"	"Mus musculus: HS-GAG degradation"	2	21	0.172122289479272	0.218972143420375
+"4809865"	"Mus musculus: Galactose catabolism"	1	5	0.180575785349128	0.226774496787748
+"4809888"	"Mus musculus: Histidine catabolism"	1	5	0.180575785349128	0.226774496787748
+"4809922"	"Mus musculus: Abnormal metabolism in phenylketonuria"	1	5	0.180575785349128	0.226774496787748
+"4810149"	"Mus musculus: ERK activation"	1	5	0.180575785349128	0.226774496787748
+"4810196"	"Mus musculus: Transport of the SLBP independent Mature mRNA"	1	5	0.180575785349128	0.226774496787748
+"4810452"	"Mus musculus: Glutathione synthesis and recycling"	1	5	0.180575785349128	0.226774496787748
+"4810545"	"Mus musculus: Axonal growth stimulation"	1	5	0.180575785349128	0.226774496787748
+"4810567"	"Mus musculus: Vitamin B2 (riboflavin) metabolism"	1	5	0.180575785349128	0.226774496787748
+"4810700"	"Mus musculus: Netrin mediated repulsion signals"	1	5	0.180575785349128	0.226774496787748
+"4811031"	"Mus musculus: Acyl chain remodeling of DAG and TAG"	1	5	0.180575785349128	0.226774496787748
+"4811115"	"Mus musculus: Abacavir metabolism"	1	5	0.180575785349128	0.226774496787748
+"4810449"	"Mus musculus: Mitotic Anaphase"	9	184	0.181776155774472	0.228015597966811
+"4809873"	"Mus musculus: Pyruvate metabolism"	2	22	0.183934079050956	0.230453537272468
+"4810341"	"Mus musculus: Mitotic Metaphase and Anaphase"	9	185	0.185517673207145	0.232167053198697
+"4810560"	"Mus musculus: Degradation of beta-catenin by the destruction complex"	4	66	0.195123738245065	0.243904672806332
+"4810332"	"Mus musculus: Post-translational modification: synthesis of GPI-anchored proteins"	2	23	0.19585730108485	0.243970566241267
+"4810427"	"Mus musculus: SMAD2/SMAD3:SMAD4 heterotrimer regulates transcription"	2	23	0.19585730108485	0.243970566241267
+"4810646"	"Mus musculus: Regulation of beta-cell development"	2	23	0.19585730108485	0.243970566241267
+"4810680"	"Mus musculus: Transport of inorganic cations/anions and amino acids/oligopeptides"	5	91	0.205055850609293	0.253271741325433
+"4810050"	"Mus musculus: RNA Polymerase II Transcription Pre-Initiation And Promoter Opening"	3	45	0.206218095467605	0.253271741325433
+"4810069"	"Mus musculus: RNA Polymerase II Promoter Escape"	3	45	0.206218095467605	0.253271741325433
+"4810070"	"Mus musculus: RNA Polymerase II Transcription Initiation And Promoter Clearance"	3	45	0.206218095467605	0.253271741325433
+"4810072"	"Mus musculus: RNA Polymerase II Transcription Initiation"	3	45	0.206218095467605	0.253271741325433
+"4811080"	"Mus musculus: Inositol phosphate metabolism"	3	45	0.206218095467605	0.253271741325433
+"4810027"	"Mus musculus: IRS activation"	1	6	0.207329425457099	0.253271741325433
+"4810098"	"Mus musculus: Beta oxidation of lauroyl-CoA to decanoyl-CoA-CoA"	1	6	0.207329425457099	0.253271741325433
+"4810103"	"Mus musculus: Beta oxidation of hexanoyl-CoA to butanoyl-CoA"	1	6	0.207329425457099	0.253271741325433
+"4810104"	"Mus musculus: Beta oxidation of octanoyl-CoA to hexanoyl-CoA"	1	6	0.207329425457099	0.253271741325433
+"4810105"	"Mus musculus: Beta oxidation of decanoyl-CoA to octanoyl-CoA-CoA"	1	6	0.207329425457099	0.253271741325433
+"4810109"	"Mus musculus: Transport of the SLBP Dependant Mature mRNA"	1	6	0.207329425457099	0.253271741325433
+"4810224"	"Mus musculus: Inhibition of replication initiation of damaged DNA by RB1/E2F1"	1	6	0.207329425457099	0.253271741325433
+"4810392"	"Mus musculus: DEx/H-box helicases activate type I IFN and inflammatory cytokines production "	1	6	0.207329425457099	0.253271741325433
+"4810456"	"Mus musculus: Transport and synthesis of PAPS"	1	6	0.207329425457099	0.253271741325433
+"4810489"	"Mus musculus: Digestion of dietary carbohydrate"	1	6	0.207329425457099	0.253271741325433
+"4810594"	"Mus musculus: Negative regulation of the PI3K/AKT network"	1	6	0.207329425457099	0.253271741325433
+"4810930"	"Mus musculus: Regulation of IFNA signaling"	2	24	0.207872104750243	0.253646438826914
+"4810482"	"Mus musculus: APC-Cdc20 mediated degradation of Nek2A"	2	25	0.219959815335074	0.267787997151987
+"4810929"	"Mus musculus: Interferon alpha/beta signaling"	2	25	0.219959815335074	0.267787997151987
+"4810679"	"Mus musculus: Amino acid and oligopeptide SLC transporters"	3	47	0.223346365307539	0.271603328852494
+"4809866"	"Mus musculus: Pentose phosphate pathway (hexose monophosphate shunt)"	1	7	0.233210009290337	0.281370100995636
+"4810081"	"Mus musculus: Presynaptic phase of homologous DNA pairing and strand exchange"	1	7	0.233210009290337	0.281370100995636
+"4810082"	"Mus musculus: Homologous DNA pairing and strand exchange"	1	7	0.233210009290337	0.281370100995636
+"4810120"	"Mus musculus: Transport of nucleosides and free purine and pyrimidine bases across the plasma membrane"	1	7	0.233210009290337	0.281370100995636
+"4810450"	"Mus musculus: Phosphorylation of Emi1"	1	7	0.233210009290337	0.281370100995636
+"4810868"	"Mus musculus: CHL1 interactions"	1	7	0.233210009290337	0.281370100995636
+"4811124"	"Mus musculus: Ubiquinol biosynthesis"	1	7	0.233210009290337	0.281370100995636
+"4810910"	"Mus musculus: Keratan sulfate biosynthesis"	2	27	0.244284807963012	0.294401534260356
+"4810289"	"Mus musculus: Translation initiation complex formation"	6	123	0.246388352169391	0.296604119352851
+"4809952"	"Mus musculus: Ribosomal scanning and start codon recognition"	6	124	0.251828150967349	0.302813492494295
+"4809889"	"Mus musculus: Lysine catabolism"	1	8	0.258246013358187	0.307776568026664
+"4810112"	"Mus musculus: Transport of Mature mRNA Derived from an Intronless Transcript"	1	8	0.258246013358187	0.307776568026664
+"4810359"	"Mus musculus: ChREBP activates metabolic gene expression"	1	8	0.258246013358187	0.307776568026664
+"4810754"	"Mus musculus: Beta-oxidation of pristanoyl-CoA"	1	8	0.258246013358187	0.307776568026664
+"4811056"	"Mus musculus: Degradation of cysteine and homocysteine"	1	8	0.258246013358187	0.307776568026664
+"4811132"	"Mus musculus: NOTCH2 intracellular domain regulates transcription"	1	8	0.258246013358187	0.307776568026664
+"4811170"	"Mus musculus: Initiation of Nuclear Envelope Reformation"	1	8	0.258246013358187	0.307776568026664
+"4811171"	"Mus musculus: Nuclear Envelope Reassembly"	1	8	0.258246013358187	0.307776568026664
+"4810448"	"Mus musculus: Separation of Sister Chromatids"	8	178	0.263627967029558	0.313842817892331
+"4809937"	"Mus musculus: mRNA Processing"	7	152	0.263967606641947	0.313899532234616
+"4810110"	"Mus musculus: Transport of Mature mRNAs Derived from Intronless Transcripts"	1	9	0.282464985810229	0.332949407616224
+"4810369"	"Mus musculus: S6K1 signalling"	1	9	0.282464985810229	0.332949407616224
+"4810565"	"Mus musculus: Vitamin B5 (pantothenate) metabolism"	1	9	0.282464985810229	0.332949407616224
+"4810800"	"Mus musculus: Sema4D mediated inhibition of cell attachment and migration"	1	9	0.282464985810229	0.332949407616224
+"4810825"	"Mus musculus: Synthesis, Secretion, and Deacylation of Ghrelin"	1	9	0.282464985810229	0.332949407616224
+"4810840"	"Mus musculus: Platelet sensitization by LDL"	1	9	0.282464985810229	0.332949407616224
+"4810995"	"Mus musculus: Downregulation of ERBB4 signaling"	1	9	0.282464985810229	0.332949407616224
+"4811148"	"Mus musculus: Cohesin Loading onto Chromatin"	1	9	0.282464985810229	0.332949407616224
+"4809832"	"Mus musculus: DNA strand elongation"	2	31	0.293106014503829	0.345113872499031
+"4810393"	"Mus musculus: NOD1/2 Signaling Pathway"	2	32	0.305268884041741	0.353206868891678
+"4907122"	"Gallus gallus: ER-Phagosome pathway"	2	32	0.305268884041741	0.353206868891678
+"4809989"	"Mus musculus: Activation of the phototransduction cascade"	1	10	0.305893576686654	0.353206868891678
+"4810124"	"Mus musculus: RAF/MAP kinase cascade"	1	10	0.305893576686654	0.353206868891678
+"4810191"	"Mus musculus: Displacement of DNA glycosylase by  APE1"	1	10	0.305893576686654	0.353206868891678
+"4810226"	"Mus musculus: E2F-enabled inhibition of pre-replication complex formation"	1	10	0.305893576686654	0.353206868891678
+"4810309"	"Mus musculus: NICD traffics to nucleus"	1	10	0.305893576686654	0.353206868891678
+"4810388"	"Mus musculus: RIP-mediated NFkB activation via ZBP1"	1	10	0.305893576686654	0.353206868891678
+"4810532"	"Mus musculus: Mineralocorticoid biosynthesis"	1	10	0.305893576686654	0.353206868891678
+"4810539"	"Mus musculus: Axonal growth inhibition (RHOA activation)"	1	10	0.305893576686654	0.353206868891678
+"4810659"	"Mus musculus: Notch-HLH transcription pathway"	1	10	0.305893576686654	0.353206868891678
+"4810790"	"Mus musculus: Regulation of Insulin Secretion by Acetylcholine"	1	10	0.305893576686654	0.353206868891678
+"4810793"	"Mus musculus: EGFR Transactivation by Gastrin"	1	10	0.305893576686654	0.353206868891678
+"4810812"	"Mus musculus: Role of second messengers in netrin-1 signaling"	1	10	0.305893576686654	0.353206868891678
+"4810818"	"Mus musculus: Regulation of the Fanconi anemia pathway"	1	10	0.305893576686654	0.353206868891678
+"4811114"	"Mus musculus: Hyaluronan uptake and degradation"	1	10	0.305893576686654	0.353206868891678
+"4811116"	"Mus musculus: Abacavir transport and metabolism"	1	10	0.305893576686654	0.353206868891678
+"4811147"	"Mus musculus: Establishment of Sister Chromatid Cohesion"	1	10	0.305893576686654	0.353206868891678
+"4809950"	"Mus musculus: Translation"	12	297	0.31118657950531	0.358933018206232
+"4811126"	"Mus musculus: Mitotic Prophase"	3	58	0.320928581139964	0.369773016854728
+"2586551"	"Mus musculus: Signaling by Leptin"	1	11	0.328557567183428	0.374946268282575
+"4809961"	"Mus musculus: Pyrimidine salvage reactions"	1	11	0.328557567183428	0.374946268282575
+"4810192"	"Mus musculus: Base-free sugar-phosphate removal via the single-nucleotide replacement pathway"	1	11	0.328557567183428	0.374946268282575
+"4810352"	"Mus musculus: Hormone-sensitive lipase (HSL)-mediated triacylglycerol hydrolysis"	1	11	0.328557567183428	0.374946268282575
+"4810399"	"Mus musculus: Unwinding of DNA"	1	11	0.328557567183428	0.374946268282575
+"4810474"	"Mus musculus: Removal of the Flap Intermediate from the C-strand"	1	11	0.328557567183428	0.374946268282575
+"4810537"	"Mus musculus: Androgen biosynthesis"	1	11	0.328557567183428	0.374946268282575
+"4810540"	"Mus musculus: p75NTR regulates axonogenesis"	1	11	0.328557567183428	0.374946268282575
+"4810689"	"Mus musculus: Norepinephrine Neurotransmitter Release Cycle"	1	11	0.328557567183428	0.374946268282575
+"4809945"	"Mus musculus: RNA Polymerase II Transcription"	5	112	0.335318017476569	0.382255428194392
+"4810221"	"Mus musculus: Elongation arrest and recovery"	2	35	0.341474845452407	0.388450221017288
+"4811167"	"Mus musculus: Nuclear Pore Complex (NPC) Disassembly"	2	35	0.341474845452407	0.388450221017288
+"4810389"	"Mus musculus: ZBP1(DAI) mediated induction of type I IFNs"	1	12	0.350481897964321	0.395764748226518
+"4810472"	"Mus musculus: Processive synthesis on the C-strand of the telomere"	1	12	0.350481897964321	0.395764748226518
+"4810621"	"Mus musculus: Regulation of pyruvate dehydrogenase (PDH) complex"	1	12	0.350481897964321	0.395764748226518
+"4810650"	"Mus musculus: Regulation of gene expression in beta cells"	1	12	0.350481897964321	0.395764748226518
+"4810880"	"Mus musculus: Stabilization of mRNA by HuR"	1	12	0.350481897964321	0.395764748226518
+"4811089"	"Mus musculus: Pre-NOTCH Processing in Golgi"	1	12	0.350481897964321	0.395764748226518
+"4811125"	"Mus musculus: MASTL Facilitates Mitotic Progression"	1	12	0.350481897964321	0.395764748226518
+"4810881"	"Mus musculus: Regulation of mRNA Stability by Proteins that Bind AU-rich Elements"	4	88	0.353525199960634	0.398782360920967
+"4809965"	"Mus musculus: RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"	3	63	0.365791389452959	0.412186314111039
+"4809974"	"Mus musculus: Resolution of AP sites via the single-nucleotide replacement pathway"	1	13	0.371690696550807	0.415783037244659
+"4810284"	"Mus musculus: Mitotic Telophase/Cytokinesis"	1	13	0.371690696550807	0.415783037244659
+"4810368"	"Mus musculus: S6K1-mediated signalling"	1	13	0.371690696550807	0.415783037244659
+"4810380"	"Mus musculus: NGF processing"	1	13	0.371690696550807	0.415783037244659
+"4810552"	"Mus musculus: Regulated proteolysis of p75NTR"	1	13	0.371690696550807	0.415783037244659
+"4810937"	"Mus musculus: TRAF3-dependent IRF activation pathway"	1	13	0.371690696550807	0.415783037244659
+"4811113"	"Mus musculus: Hyaluronan metabolism"	1	13	0.371690696550807	0.415783037244659
+"4810338"	"Mus musculus: Signaling by Wnt"	4	91	0.375839399164312	0.419986854575504
+"4810491"	"Mus musculus: Transport of glucose and other sugars, bile salts and organic acids, metal ions and amine compounds"	4	92	0.383264770840616	0.42783969745967
+"4809835"	"Mus musculus: Removal of the Flap Intermediate"	1	14	0.39220730381988	0.433187033189416
+"4809895"	"Mus musculus: Cobalamin (Cbl, vitamin B12) transport and metabolism"	1	14	0.39220730381988	0.433187033189416
+"4809990"	"Mus musculus: The canonical retinoid cycle in rods (twilight vision)"	1	14	0.39220730381988	0.433187033189416
+"4810024"	"Mus musculus: Signal attenuation"	1	14	0.39220730381988	0.433187033189416
+"4810030"	"Mus musculus: SOS-mediated signalling"	1	14	0.39220730381988	0.433187033189416
+"4810331"	"Mus musculus: Synthesis of glycosylphosphatidylinositol (GPI)"	1	14	0.39220730381988	0.433187033189416
+"4810513"	"Mus musculus: Microtubule-dependent trafficking of connexons from Golgi to the plasma membrane"	1	14	0.39220730381988	0.433187033189416
+"4810599"	"Mus musculus: Regulation of AMPK activity via LKB1"	1	14	0.39220730381988	0.433187033189416
+"4810842"	"Mus musculus: mRNA Decay by 5' to 3' Exoribonuclease"	1	14	0.39220730381988	0.433187033189416
+"4811075"	"Mus musculus: Signaling by FGFR1 fusion mutants"	1	14	0.39220730381988	0.433187033189416
+"4810975"	"Mus musculus: Activation of NF-kappaB in B Cells"	3	66	0.392487600303713	0.433187033189416
+"4809867"	"Mus musculus: Glucose transport"	2	41	0.411822018811895	0.4492478418983
+"4810406"	"Mus musculus: Activation of GABAB receptors"	2	41	0.411822018811895	0.4492478418983
+"4810407"	"Mus musculus: GABA B receptor activation"	2	41	0.411822018811895	0.4492478418983
+"4809834"	"Mus musculus: Processive synthesis on the lagging strand"	1	15	0.412054299638813	0.4492478418983
+"4809883"	"Mus musculus: Glutamate Neurotransmitter Release Cycle"	1	15	0.412054299638813	0.4492478418983
+"4810130"	"Mus musculus: Signalling to p38 via RIT and RIN"	1	15	0.412054299638813	0.4492478418983
+"4810397"	"Mus musculus: Activation of IRF3/IRF7 mediated by TBK1/IKK epsilon"	1	15	0.412054299638813	0.4492478418983
+"4810943"	"Mus musculus: Spry regulation of FGF signaling"	1	15	0.412054299638813	0.4492478418983
+"4810949"	"Mus musculus: TRAF6 mediated induction of TAK1 complex"	1	15	0.412054299638813	0.4492478418983
+"4810950"	"Mus musculus: IRAK1 recruits IKK complex"	1	15	0.412054299638813	0.4492478418983
+"4810955"	"Mus musculus: IRAK1 recruits IKK complex upon TLR7/8 or 9 stimulation"	1	15	0.412054299638813	0.4492478418983
+"4810962"	"Mus musculus: N-Glycan antennae elongation"	1	15	0.412054299638813	0.4492478418983
+"4810038"	"Mus musculus: SHC-mediated signalling"	1	16	0.431253527664958	0.468753834418432
+"4810386"	"Mus musculus: TRAF6 mediated NF-kB activation"	1	16	0.431253527664958	0.468753834418432
+"4810884"	"Mus musculus: Destabilization of mRNA by KSRP"	1	16	0.431253527664958	0.468753834418432
+"4809868"	"Mus musculus: Hexose transport"	2	43	0.43445401793774	0.471755625538455
+"4810446"	"Mus musculus: APC/C:Cdc20 mediated degradation of mitotic proteins"	3	71	0.436269915324868	0.473249403606693
+"4810444"	"Mus musculus: Activation of APC/C and APC/C:Cdc20 mediated degradation of mitotic proteins"	3	72	0.444889018197211	0.482112595324599
+"4810395"	"Mus musculus: Interleukin-1 signaling"	2	44	0.445592434029079	0.482388586688077
+"4810311"	"Mus musculus: Cytosolic sulfonation of small molecules"	1	17	0.449826119337765	0.485993043505625
+"4810600"	"Mus musculus: Energy dependent regulation of mTOR by LKB1-AMPK"	1	17	0.449826119337765	0.485993043505625
+"4811043"	"Mus musculus: PI Metabolism"	2	46	0.467493223011167	0.503884725321677
+"4809886"	"Mus musculus: Metabolism of polyamines"	1	18	0.467792517089333	0.503884725321677
+"4810443"	"Mus musculus: Phosphorylation of the APC/C"	1	18	0.467792517089333	0.503884725321677
+"4810037"	"Mus musculus: SHC-related events"	1	19	0.485172496798916	0.520519395268298
+"4810039"	"Mus musculus: SHC-related events triggered by IGF1R"	1	19	0.485172496798916	0.520519395268298
+"4810586"	"Mus musculus: ERK/MAPK targets"	1	19	0.485172496798916	0.520519395268298
+"4810705"	"Mus musculus: Other semaphorin interactions"	1	19	0.485172496798916	0.520519395268298
+"4809810"	"Mus musculus: DNA Replication Pre-Initiation"	3	78	0.495401994387265	0.530435402356882
+"4809811"	"Mus musculus: M/G1 Transition"	3	78	0.495401994387265	0.530435402356882
+"4809948"	"Mus musculus: Cap-dependent Translation Initiation"	9	256	0.499246289819852	0.533488828584832
+"4809949"	"Mus musculus: Eukaryotic Translation Initiation"	9	256	0.499246289819852	0.533488828584832
+"4809833"	"Mus musculus: Lagging Strand Synthesis"	1	20	0.501985189516009	0.534820692497235
+"4810253"	"Mus musculus: Effects of PIP2 hydrolysis"	1	20	0.501985189516009	0.534820692497235
+"4810961"	"Mus musculus: N-glycan antennae elongation in the medial/trans-Golgi"	1	20	0.501985189516009	0.534820692497235
+"4810980"	"Mus musculus: Oxygen-dependent Proline Hydroxylation of Hypoxia-inducible Factor Alpha"	1	21	0.518249102475829	0.551601767486649
+"4809847"	"Mus musculus: p53-Independent DNA Damage Response"	2	51	0.519900973991066	0.551721171806906
+"4809848"	"Mus musculus: p53-Independent G1/S DNA damage checkpoint"	2	51	0.519900973991066	0.551721171806906
+"4809849"	"Mus musculus: Ubiquitin Mediated Degradation of Phosphorylated Cdc25A"	2	51	0.519900973991066	0.551721171806906
+"4810065"	"Mus musculus: Ubiquitin-dependent degradation of Cyclin D1"	2	52	0.529960860980424	0.561288596604883
+"4810066"	"Mus musculus: Ubiquitin-dependent degradation of Cyclin D"	2	52	0.529960860980424	0.561288596604883
+"4810471"	"Mus musculus: Telomere C-strand (Lagging Strand) Synthesis"	1	22	0.533982139430218	0.564990944771146
+"4810095"	"Mus musculus: Synthesis of Prostaglandins (PG) and Thromboxanes (TX)"	1	23	0.549201620316272	0.578815433176464
+"4810385"	"Mus musculus: TAK1 activates NFkB by phosphorylation and activation of IKKs complex"	1	23	0.549201620316272	0.578815433176464
+"4810445"	"Mus musculus: APC/C:Cdc20 mediated degradation of Cyclin B"	1	23	0.549201620316272	0.578815433176464
+"4810731"	"Mus musculus: Recruitment of NuMA to mitotic centrosomes"	1	23	0.549201620316272	0.578815433176464
+"4810343"	"Mus musculus: Extension of Telomeres"	1	24	0.563924300284248	0.593168906854762
+"4810859"	"Mus musculus: Metal ion SLC transporters"	1	24	0.563924300284248	0.593168906854762
+"4809933"	"Mus musculus: Cytosolic tRNA aminoacylation"	1	25	0.578166388105608	0.607555099915473
+"4809958"	"Mus musculus: Pyrimidine metabolism"	1	26	0.591943563981398	0.618405569757049
+"4810076"	"Mus musculus: Synthesis of PA"	1	26	0.591943563981398	0.618405569757049
+"4810433"	"Mus musculus: Downregulation of SMAD2/3:SMAD4 transcriptional activity"	1	26	0.591943563981398	0.618405569757049
+"4810522"	"Mus musculus: snRNP Assembly"	1	26	0.591943563981398	0.618405569757049
+"4810523"	"Mus musculus: Metabolism of non-coding RNA"	1	26	0.591943563981398	0.618405569757049
+"4810945"	"Mus musculus: Negative regulators of RIG-I/MDA5 signaling"	1	26	0.591943563981398	0.618405569757049
+"4810434"	"Mus musculus: Downregulation of TGF-beta receptor signaling"	1	27	0.60527099677047	0.630490621635907
+"4810453"	"Mus musculus: Glutathione conjugation"	1	27	0.60527099677047	0.630490621635907
+"4810938"	"Mus musculus: TRAF6 mediated IRF7 activation"	1	27	0.60527099677047	0.630490621635907
+"4809946"	"Mus musculus: Transcription"	5	156	0.606965248007629	0.631643409107648
+"4810040"	"Mus musculus: Signalling to RAS"	1	28	0.618163360656451	0.642053732082787
+"4810618"	"Mus musculus: MicroRNA (miRNA) Biogenesis"	1	28	0.618163360656451	0.642053732082787
+"4810051"	"Mus musculus: Transport of Mature mRNA derived from an Intron-Containing Transcript"	1	29	0.630634851271724	0.65437496632925
+"4810619"	"Mus musculus: Regulatory RNA pathways"	1	31	0.65436969554736	0.677695012247988
+"4810836"	"Mus musculus: Sphingolipid de novo biosynthesis"	1	31	0.65436969554736	0.677695012247988
+"4810052"	"Mus musculus: Transport of Mature Transcript to Cytoplasm"	1	33	0.676580103808401	0.699349626532723
+"4811078"	"Mus musculus: NOTCH1 Intracellular Domain Regulates Transcription"	1	33	0.676580103808401	0.699349626532723
+"4810624"	"Mus musculus: Transport to the Golgi and subsequent modification"	1	36	0.707249748534875	0.73034916395292
+"4810901"	"Mus musculus: Deposition of New CENPA-containing Nucleosomes at the Centromere"	1	37	0.716812789849489	0.738805128560116
+"4810902"	"Mus musculus: Nucleosome assembly"	1	37	0.716812789849489	0.738805128560116
+"4810290"	"Mus musculus: L13a-mediated translational silencing of Ceruloplasmin expression"	7	247	0.725838569340087	0.746676040230233
+"4810291"	"Mus musculus: 3' -UTR-mediated translational regulation"	7	247	0.725838569340087	0.746676040230233
+"4809947"	"Mus musculus: GTP hydrolysis and joining of the 60S ribosomal subunit"	7	249	0.733207513187921	0.753535446153934
+"4810524"	"Mus musculus: Metabolism of RNA"	11	384	0.744277907225759	0.764182187457202
+"4809954"	"Mus musculus: Formation of the ternary complex, and subsequently, the 43S complex"	3	116	0.749666949944346	0.76898088854024
+"4810985"	"Mus musculus: ER-Phagosome pathway"	2	80	0.75244642980137	0.77109619831885
+"4809934"	"Mus musculus: tRNA Aminoacylation"	1	43	0.767979347870053	0.784769770874817
+"4810344"	"Mus musculus: Telomere Maintenance"	1	43	0.767979347870053	0.784769770874817
+"4810741"	"Mus musculus: Regulation of Insulin Secretion by Glucagon-like Peptide-1"	1	43	0.767979347870053	0.784769770874817
+"4810844"	"Mus musculus: Metabolism of mRNA"	10	360	0.769633104953066	0.785712808950186
+"4810987"	"Mus musculus: Cross-presentation of soluble exogenous antigens (endosomes)"	1	45	0.782892069782119	0.79849048862977
+"4810696"	"Mus musculus: Class C/3 (Metabotropic glutamate/pheromone receptors)"	1	46	0.789985228704262	0.804961251997234
+"4810345"	"Mus musculus: Chromosome Maintenance"	4	162	0.79407448392605	0.808361808920931
+"4809829"	"Mus musculus: CDK-mediated phosphorylation and removal of Cdc6"	1	50	0.816115970712729	0.830013877498755
+"4809936"	"Mus musculus: Processing of Capped Intron-Containing Pre-mRNA"	3	133	0.824545371306021	0.8377942099754
+"4810662"	"Mus musculus: Autodegradation of the E3 ubiquitin ligase COP1"	1	52	0.827936153670838	0.8404451040568
+"4809839"	"Mus musculus: Stabilization of p53"	1	53	0.83355832900462	0.845353965735817
+"4810451"	"Mus musculus: SCF-beta-TrCP mediated degradation of Emi1"	1	54	0.838996890918364	0.850067537923884
+"4810885"	"Mus musculus: Destabilization of mRNA by AUF1 (hnRNP D0)"	1	55	0.84425783303776	0.854592439280219
+"1221633"	"Mus musculus: Meiotic Synapsis"	2	114	0.895657250000618	0.904916864427316
+"4810933"	"Mus musculus: Meiotic Synapsis"	2	114	0.895657250000618	0.904916864427316
+"4809938"	"Mus musculus: mRNA Splicing - Major Pathway"	2	129	0.93010035326217	0.937831422016509
+"4809939"	"Mus musculus: mRNA Splicing"	2	129	0.93010035326217	0.937831422016509
+"4810972"	"Mus musculus: Antigen processing: Ubiquitination & Proteasome degradation"	3	174	0.930852211434061	0.937831422016509
+"4810292"	"Mus musculus: Peptide chain elongation"	4	225	0.943124574254363	0.949306102362772
+"4810293"	"Mus musculus: Eukaryotic Translation Elongation"	4	229	0.947925753262763	0.953246197153854
+"4809956"	"Mus musculus: Formation of a pool of free 40S subunits"	3	235	0.984872842652121	0.989475052197224
+"4811072"	"Mus musculus: SRP-dependent cotranslational protein targeting to membrane"	3	254	0.9907957295618	0.994496180465859
+"4810283"	"Mus musculus: Eukaryotic Translation Termination"	2	224	0.995285634714467	0.99746520171492
+"4810939"	"Mus musculus: Nonsense Mediated Decay Independent of the Exon Junction Complex"	2	228	0.995809033438298	0.99746520171492
+"4810940"	"Mus musculus: Nonsense-Mediated Decay"	2	245	0.99746520171492	0.99746520171492
+"4810941"	"Mus musculus: Nonsense Mediated Decay Enhanced by the Exon Junction Complex"	2	245	0.99746520171492	0.99746520171492

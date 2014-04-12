@@ -1,0 +1,2 @@
+"KEGGID"	"Pvalue"	"OddsRatio"	"ExpCount"	"Count"	"Size"	"Term"	"p.adj"
+"04530"	0.0205705705705707	Inf	0.0205705705705706	1	137	"Tight junction"	0.0205705705705707

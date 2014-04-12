@@ -1,0 +1,2 @@
+"KEGGID"	"Pvalue"	"OddsRatio"	"ExpCount"	"Count"	"Size"	"Term"	"p.adj"
+"00514"	0.0192474526191101	78.75	0.0193693693693694	1	43	"Other types of O-glycan biosynthesis"	0.0192474526191101
