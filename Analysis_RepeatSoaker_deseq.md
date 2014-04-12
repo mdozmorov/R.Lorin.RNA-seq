@@ -249,3 +249,15 @@ Unique genes with 00% RepeatSoaker
 
 <img src="img/Pathwayr00.png" title="plot of chunk Pathwayr00" alt="plot of chunk Pathwayr00" width="700" />
 
+
+Other tests
+------------
+
+Let's have a look at the distribution of log2 fold change of genes in the leaves of the Venn diagram, as compared with that of the heart of the Venn diagram. It is expected that the leaves may have fold change different from the main DEGs.
+
+<img src="img/boxPlot.png" title="plot of chunk boxPlot" alt="plot of chunk boxPlot" width="700" />
+
+
+We will also check the same for the expression level. The leaves may have higher expression level, hence, more susceptible to the RepeatSoaker.
+
+To be continued.

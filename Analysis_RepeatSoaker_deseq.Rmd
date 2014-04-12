@@ -214,12 +214,16 @@ message(paste("Number of differentially expressed GENES, with RepeatSoaker:", le
 Later, we compare these gene lists (Genes without vs. Genes with RepeatSoaker) for biological meaning.
 
 ```{r Uniq}
-uniq <- function(idx, filename=NULL) {
+uniq <- function(idx, filename=NULL, raw=F) {
   # Find unique genes for the condition idx
   idxs <- seq(1:length(res)) # All indexes
   # Get unique Ensembl ISa
   uniq.xloc <- setdiff(rownames(res[[idx]]), unique(unlist(sapply(setdiff(idxs, idx), function(x) rownames(res[[x]])))))
-  return(ens2gene(uniq.xloc, filename)) # Vector of NM_ IDs
+  if (raw) {
+    return(uniq.xloc)
+  } else {
+    return(ens2gene(uniq.xloc, filename)) # Vector of NM_ IDs
+  }
 }
 #grid.table(GOEnrichment(as.character(as.matrix(uniq.all[, 2])))[[1]][1:20], )
 ```
@@ -351,4 +355,22 @@ GOKEGG(uniq.r00, use="GO", "GO_uniq_r00.txt")
 Pathway(uniq.r00, "PW_uniq_r00.txt")
 ```
 
+Other tests
+------------
 
+Let's have a look at the distribution of log2 fold change of genes in the leaves of the Venn diagram, as compared with that of the heart of the Venn diagram. It is expected that the leaves may have fold change different from the main DEGs.
+
+```{r boxPlot}
+par(oma=c(2, 5, 1, 1))
+boxplot(list(all=res[[1]][uniq(1, , raw=T), ]$log2FoldChange,
+             r75=res[[2]][uniq(2, , raw=T), ]$log2FoldChange,
+             r50=res[[3]][uniq(3, , raw=T), ]$log2FoldChange,
+             r25=res[[4]][uniq(4, , raw=T), ]$log2FoldChange,
+             r00=res[[5]][uniq(5, , raw=T), ]$log2FoldChange,
+             VennHeart=res[[1]][Reduce(intersect, list(rownames(res[[1]]), rownames(res[[2]]), rownames(res[[3]]), rownames(res[[4]]), rownames(res[[5]]))), ]$log2FoldChange),
+        ylab="log2FC distribution")
+```
+
+We will also check the same for the expression level. The leaves may have higher expression level, hence, more susceptible to the RepeatSoaker.
+
+To be continued.
