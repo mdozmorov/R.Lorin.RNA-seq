@@ -190,29 +190,6 @@ res <- lapply(ddsHTSEQ, resDDS)
 plot_venn5(rownames(res[[1]]), rownames(res[[2]]), rownames(res[[3]]), rownames(res[[4]]), rownames(res[[5]]))
 ```
 
-We observe that soaking diminishes the number of differentially expressed genes. More rigorous soaking (less strict overlap threshold) also increases the number of genes not detected previously.
-
-Withour RepeatSoaker, we have (all genes in the rownames(res[[1]]) oval):
-
-```{r allGenes, results='hide'}
-# Get all genes from sig_genes_names[[1]], no repeatSoaker applied
-message(paste("Number of differentially expressed PROBES, no RepeatSoaker:", nrow(res[[1]])))
-message(paste("Number of differentially expressed GENES, no RepeatSoaker:", length(unique(ens2gene(rownames(res[[1]]))[, 1]))))
-```
-
-Some probes map to multiple genes, hence the discrepancy in numbers. 
-
-After trimming the data with all RepeatSoaker settings, we have (the center of the Venn diagram):
-
-```{r commonGenes}
-# Get common genes from the center of the Venn diagram
-sig_genes_names_common <- Reduce(intersect, list(rownames(res[[1]]), rownames(res[[2]]), rownames(res[[3]]), rownames(res[[4]]), rownames(res[[5]])))
-message(paste("Number of differentially expressed PROBES, with RepeatSoaker:", length(sig_genes_names_common)))
-message(paste("Number of differentially expressed GENES, with RepeatSoaker:", length(unique(ens2gene(sig_genes_names_common)[, 1]))))
-```
-
-Later, we compare these gene lists (Genes without vs. Genes with RepeatSoaker) for biological meaning.
-
 ```{r Uniq}
 uniq <- function(idx, filename=NULL, raw=F) {
   # Find unique genes for the condition idx
@@ -227,12 +204,6 @@ uniq <- function(idx, filename=NULL, raw=F) {
 }
 #grid.table(GOEnrichment(as.character(as.matrix(uniq.all[, 2])))[[1]][1:20], )
 ```
-
-Now, we check what those genes unique to each RepeatSoaker % are. We will look at 3 things:
-
-1) Gene names and their description. Note that not all probes can be mapped to genes, and some probes map to the same gene - therefore, the numbers in the Venn diagram and the tables below differ.
-
-2) GO and Pathway enrichment of those genes, if any. 
 
 ```{r GO}
 GOKEGG <- function(x, use="GO", filename=NULL) {
@@ -251,6 +222,60 @@ Pathway <- function(x, filename=NULL) {
   if (i > 0) {grid.table(res.pathway[[1]][1:30, ], gp=gpar(fontsize=7))}
 }
 ```
+
+We observe that soaking diminishes the number of differentially expressed genes. More rigorous soaking (less strict overlap threshold) also increases the number of genes not detected previously.
+
+Withour RepeatSoaker, we have (all genes in the rownames(res[[1]]) oval):
+
+```{r allGenes, results='hide'}
+# Get all genes from sig_genes_names[[1]], no repeatSoaker applied
+genes_all_nor <- unique(ens2gene(rownames(res[[1]]), "genes_all_nor.txt")[, 1])
+message(paste("Number of differentially expressed PROBES, no RepeatSoaker:", nrow(res[[1]])))
+message(paste("Number of differentially expressed GENES, no RepeatSoaker:", length(genes_all_nor)))
+```
+
+Some probes map to multiple genes, hence the discrepancy in numbers. 
+
+After trimming the data with 0% RepeatSoaker settings, we have (res[[5]] oval):
+
+```{r RSGenes}
+# Get all genes from sig_genes_names[[1]], no repeatSoaker applied
+genes_all_r00 <- unique(ens2gene(rownames(res[[5]]), "genes_all_r00.txt")[, 1])
+message(paste("Number of differentially expressed PROBES, with RepeatSoaker:", nrow(res[[5]])))
+message(paste("Number of differentially expressed GENES, with RepeatSoaker:", length(genes_all_r00)))
+```
+
+Now, we compare these gene lists (Genes without vs. Genes with RepeatSoaker) for biological meaning. The tables are sequential, first table is for non-repeatsoaked data, second - for 0% repeatsoaked data.
+
+```{r KEGGall_nor}
+GOKEGG(matrix(genes_all_nor, ncol=1), use="KEGG", "KEGG_all_nor.txt")
+```
+
+```{r KEGGall_r00}
+GOKEGG(matrix(genes_all_r00, ncol=1), use="KEGG", "KEGG_all_r00.txt")
+```
+
+```{r GOall_nor}
+GOKEGG(matrix(genes_all_nor, ncol=1), use="GO", "GO_all_nor.txt")
+```
+
+```{r GOall_r00}
+GOKEGG(matrix(genes_all_r00, ncol=1), use="GO", "GO_all_r00.txt")
+```
+
+```{r Pathwayall_nor}
+Pathway(matrix(genes_all_nor, ncol=1), "PW_all_nor.txt")
+```
+
+```{r Pathwayall_r00}
+Pathway(matrix(genes_all_r00, ncol=1), "PW_all_r00.txt")
+```
+
+Now, we check what those genes unique to each RepeatSoaker % are. We will look at 3 things:
+
+1) Gene names and their description. Note that not all probes can be mapped to genes, and some probes map to the same gene - therefore, the numbers in the Venn diagram and the tables below differ.
+
+2) GO, KEGG and Reactome Pathway enrichment of those genes, if any. 
 
 Genes unique for different RepeatSoaker settings
 -------------------------------------------------
@@ -371,6 +396,18 @@ boxplot(list(all=res[[1]][uniq(1, , raw=T), ]$log2FoldChange,
         ylab="log2FC distribution")
 ```
 
-We will also check the same for the expression level. The leaves may have higher expression level, hence, more susceptible to the RepeatSoaker.
+We also check the same for the expression level.
 
-To be continued.
+```{r boxPlotExpr, warning=FALSE}
+par(oma=c(2, 5, 1, 1))
+boxplot(list(all=log2(rowMeans(counts(ddsHTSEQ[[1]])[uniq(1, , raw=T), ])),
+             r75=log2(rowMeans(counts(ddsHTSEQ[[2]])[uniq(1, , raw=T), ])),
+             r50=log2(rowMeans(counts(ddsHTSEQ[[3]])[uniq(1, , raw=T), ])),
+             r25=log2(rowMeans(counts(ddsHTSEQ[[4]])[uniq(1, , raw=T), ])),
+             r00=log2(rowMeans(counts(ddsHTSEQ[[5]])[uniq(1, , raw=T), ])),
+             VennHeart=log2(rowMeans(counts(ddsHTSEQ[[1]])[Reduce(intersect, list(rownames(res[[1]]), rownames(res[[2]]), rownames(res[[3]]), rownames(res[[4]]), rownames(res[[5]]))), ]))),
+        ylab="log2 expression")
+```
+
+The leaves may have overall lower expression level, hence, more susceptible to the RepeatSoaker.
+

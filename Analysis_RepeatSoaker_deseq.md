@@ -60,6 +60,15 @@ Overlap among DEGs identified in the non-soaked data (index [[1]]) and RepeatSoa
 <img src="img/diffGeneIDs.png" title="plot of chunk diffGeneIDs" alt="plot of chunk diffGeneIDs" width="700" />
 
 
+
+
+
+
+
+
+
+
+
 We observe that soaking diminishes the number of differentially expressed genes. More rigorous soaking (less strict overlap threshold) also increases the number of genes not detected previously.
 
 Withour RepeatSoaker, we have (all genes in the rownames(res[[1]]) oval):
@@ -73,31 +82,70 @@ Withour RepeatSoaker, we have (all genes in the rownames(res[[1]]) oval):
 
 Some probes map to multiple genes, hence the discrepancy in numbers. 
 
-After trimming the data with all RepeatSoaker settings, we have (the center of the Venn diagram):
+After trimming the data with 0% RepeatSoaker settings, we have (res[[5]] oval):
 
 
 ```
-## Number of differentially expressed PROBES, with RepeatSoaker: 1609
-## Number of differentially expressed GENES, with RepeatSoaker: 1592
+## Number of differentially expressed PROBES, with RepeatSoaker: 1719
+## Number of differentially expressed GENES, with RepeatSoaker: 1697
 ```
 
 
-Later, we compare these gene lists (Genes without vs. Genes with RepeatSoaker) for biological meaning.
+Now, we compare these gene lists (Genes without vs. Genes with RepeatSoaker) for biological meaning. The tables are sequential, first table is for non-repeatsoaked data, second - for 0% repeatsoaked data.
 
 
+```
+## The number of enriched GOs:35
+```
+
+<img src="img/KEGGall_nor.png" title="plot of chunk KEGGall_nor" alt="plot of chunk KEGGall_nor" width="700" />
+
+
+
+```
+## The number of enriched GOs:33
+```
+
+<img src="img/KEGGall_r00.png" title="plot of chunk KEGGall_r00" alt="plot of chunk KEGGall_r00" width="700" />
+
+
+
+```
+## The number of enriched GOs:2035
+```
+
+<img src="img/GOall_nor.png" title="plot of chunk GOall_nor" alt="plot of chunk GOall_nor" width="700" />
+
+
+
+```
+## The number of enriched GOs:2025
+```
+
+<img src="img/GOall_r00.png" title="plot of chunk GOall_r00" alt="plot of chunk GOall_r00" width="700" />
+
+
+
+```
+## The number of enriched pathways:403
+```
+
+<img src="img/Pathwayall_nor.png" title="plot of chunk Pathwayall_nor" alt="plot of chunk Pathwayall_nor" width="700" />
+
+
+
+```
+## The number of enriched pathways:390
+```
+
+<img src="img/Pathwayall_r00.png" title="plot of chunk Pathwayall_r00" alt="plot of chunk Pathwayall_r00" width="700" />
 
 
 Now, we check what those genes unique to each RepeatSoaker % are. We will look at 3 things:
 
 1) Gene names and their description. Note that not all probes can be mapped to genes, and some probes map to the same gene - therefore, the numbers in the Venn diagram and the tables below differ.
 
-2) GO and Pathway enrichment of those genes, if any. 
-
-
-
-
-
-
+2) GO, KEGG and Reactome Pathway enrichment of those genes, if any. 
 
 Genes unique for different RepeatSoaker settings
 -------------------------------------------------
@@ -258,6 +306,10 @@ Let's have a look at the distribution of log2 fold change of genes in the leaves
 <img src="img/boxPlot.png" title="plot of chunk boxPlot" alt="plot of chunk boxPlot" width="700" />
 
 
-We will also check the same for the expression level. The leaves may have higher expression level, hence, more susceptible to the RepeatSoaker.
+We also check the same for the expression level.
 
-To be continued.
+<img src="img/boxPlotExpr.png" title="plot of chunk boxPlotExpr" alt="plot of chunk boxPlotExpr" width="700" />
+
+
+The leaves may have overall lower expression level, hence, more susceptible to the RepeatSoaker.
+
