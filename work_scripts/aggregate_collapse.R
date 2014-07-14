@@ -1,0 +1,6 @@
+mtx<-read.table("clipboard",sep="\t",header=T)
+head(mtx)
+head(aggregate(mtx$V2,by=list(toupper(mtx$V1)),max))
+mtx.c<-aggregate(mtx$V2,by=list(toupper(mtx$V1)),max)
+write.table(mtx.c,"clipboard-128",sep="\t")
+write.table(mtx.c,"f:/111.txt",sep="\t")

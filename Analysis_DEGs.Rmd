@@ -1,10 +1,3 @@
-RepeatSoaker effect on DEGs detection
-========================================================
-
-Using adapter trimmed, duplicates removed mouse RNA-seq data, we are investigating the biology of genes removed by RepeatSoaker. That is, What are the properties of the genes lost when removing reads overlapping low complexity regions.
-
-First, we explore overlap among gene lists without RepeatSoaker treatment (remDup_all) and with RepeatSoaker treatment at different thresholds (remDup_75 - remDup_0)
-
 ```{r setup, echo=FALSE, include=FALSE, cache=FALSE}
 # Set up the environment
 library(knitr) 
@@ -141,6 +134,26 @@ reactomeEnrichment <- function(res, fileName=NULL)
 }
 ```
 
+```{r GO}
+# Plot top 20 enriched GOs or KEGGs
+GOKEGG <- function(x, use="GO", filename=NULL) {
+  res.go <- Enrichment(x[, 1], use, fileName=filename)
+  message("The number of enriched ", use, " :", res.go[[2]])
+  if (res.go[[2]] > 20) {i <- 20} else {i <- res.go[[2]]}
+  if (i > 0) {grid.table(res.go[[1]][1:i, ], gp=gpar(fontsize=7))}
+}
+```
+
+```{r Pathway}
+# Plot top 20 enriched Reactome
+Pathway <- function(x, filename=NULL) {
+  res.pathway <- reactomeEnrichment(x[, 1], filename)
+  message("The number of enriched Reactome pathways:", res.pathway[[2]])
+  if (res.pathway[[2]] > 20) {i <- 20} else {i <- res.pathway[[2]]}
+  if (i > 0) {grid.table(res.pathway[[1]][1:i, ], gp=gpar(fontsize=7))}
+}
+```
+
 ```{r biomart}
 refseq2gene <- function(x, fileName) {
   # Function to convert NM_ IDs to gene names/descriptions
@@ -161,6 +174,7 @@ ens2gene <- function(x, fileName=NULL) {
 ```
 
 ```{r loadData, results='hide', message=FALSE}
+# Load the data ant get DEGs
 readDDS <- function(DIR) {
   sampleFiles <- list.files(path=DIR, pattern=".+txt$")
   sampleFiles <- sampleFiles[grep("control4|mutant1", sampleFiles, invert=T)] # remove CTL4 and MUT1 outliers
@@ -176,7 +190,7 @@ readDDS <- function(DIR) {
   return(ddsHTSeq)
 }
 
-DIR <- c("data//htseq-count_rev/", "data//htseq-count_rev.75", "data//htseq-count_rev.50", "data//htseq-count_rev.25", "data//htseq-count_rev.01")
+DIR <- "data//htseq-count_rev/"
 ddsHTSEQ <- lapply(DIR, readDDS)
 
 # Getting differentially expressed genes
@@ -186,251 +200,41 @@ resDDS <- function(DDS, pval=0.01, lfc=0) {
   res <- res[complete.cases(res), ]
   return(res[res$padj < pval & abs(res$log2FoldChange) > lfc, ])
 }
+```
 
+Differential gene expression
+========================================================
+```{r get_degs, echo=FALSE}
 res <- lapply(ddsHTSEQ, resDDS)
+# Write results to file
+write.table(merge(res[[1]], getBM(attributes=c('ensembl_gene_id', 'external_gene_id', 'description'), filters='ensembl_gene_id', values=rownames(res[[1]]), mart=mart, uniqueRows=T), by.x="row.names", by.y=1, all.x=T), paste("results//", "DEGs_all.txt", sep=""), sep="\t", row.names=T)
 ```
 
-```{r diffGeneIDs}
-remDup_all <- rownames(res[[1]])
-remDup_75 <- rownames(res[[2]])
-remDup_50 <- rownames(res[[3]])
-remDup_25 <- rownames(res[[4]])
-remDup_0 <- rownames(res[[5]])
-plot_venn5(remDup_all, remDup_75, remDup_50, remDup_25, remDup_0)
-```
-
-We observe that "RepeatSoaking" diminishes the number of differentially expressed genes. More rigorous soaking (less strict overlap threshold) also increases the number of genes not detected previously (the numbers in the "leaves" of the Venn diagram).
-
-```{r Uniq}
-uniq <- function(idx, filename=NULL, raw=F) {
-  # Find unique genes for the condition idx
-  idxs <- seq(1:length(res)) # All indexes
-  # Get unique Ensembl ISa
-  uniq.xloc <- setdiff(rownames(res[[idx]]), unique(unlist(sapply(setdiff(idxs, idx), function(x) rownames(res[[x]])))))
-  if (raw) {
-    return(uniq.xloc)
-  } else {
-    return(ens2gene(uniq.xloc, filename)) # Vector of NM_ IDs
-  }
-}
-#grid.table(GOEnrichment(as.character(as.matrix(uniq.all[, 2])))[[1]][1:20], )
-```
-
-```{r GO}
-GOKEGG <- function(x, use="GO", filename=NULL) {
-  res.go <- Enrichment(x[, 1], use, fileName=filename)
-  message("The number of enriched ", use, " :", res.go[[2]])
-  if (res.go[[2]] > 20) {i <- 20} else {i <- res.go[[2]]}
-  if (i > 0) {grid.table(res.go[[1]][1:i, ], gp=gpar(fontsize=7))}
-}
-```
-
-```{r Pathway}
-Pathway <- function(x, filename=NULL) {
-  res.pathway <- reactomeEnrichment(x[, 1], filename)
-  message("The number of enriched Reactome pathways:", res.pathway[[2]])
-  if (res.pathway[[2]] > 20) {i <- 20} else {i <- res.pathway[[2]]}
-  if (i > 0) {grid.table(res.pathway[[1]][1:i, ], gp=gpar(fontsize=7))}
-}
-```
-
-Withour RepeatSoaker, we have (all genes in the remDup_All oval):
+First, we check how many genes are differentially expressed
 
 ```{r allGenes, results='hide'}
 # Get all genes from sig_genes_names[[1]], no repeatSoaker applied
 genes_all_nor <- unique(ens2gene(rownames(res[[1]]), "genes_all_nor.txt")[, 1])
-message(paste("Number of differentially expressed PROBES, no RepeatSoaker:", nrow(res[[1]])))
-message(paste("Number of differentially expressed GENES, no RepeatSoaker:", length(genes_all_nor)))
+message(paste("Number of differentially expressed PROBES:", nrow(res[[1]])))
+message(paste("Number of differentially expressed GENES:", length(genes_all_nor)))
 ```
 
 Some probes map to multiple genes, hence the discrepancy in counts of probes and genes. 
 
-After trimming the data with 0% RepeatSoaker settings, we have (remDup_0 oval):
-
-```{r RSGenes}
-# Get all genes from sig_genes_names[[1]], no repeatSoaker applied
-genes_all_r00 <- unique(ens2gene(rownames(res[[5]]), "genes_all_r00.txt")[, 1])
-message(paste("Number of differentially expressed PROBES, with RepeatSoaker:", nrow(res[[5]])))
-message(paste("Number of differentially expressed GENES, with RepeatSoaker:", length(genes_all_r00)))
-```
-
-Genes without vs. Genes with RepeatSoaker comparison
-=====================================================
-
-We compare enrichment analyses results using genes with and without reads overlapping low complexity regions (remDup_all vs. remDup_0).
-
-KEGG enrichment analysis without RepeatSoaker
+KEGG enrichment analysis
 ----------------------------------------------
 ```{r KEGGall_nor}
 GOKEGG(matrix(genes_all_nor, ncol=1), use="KEGG", "KEGG_all_nor.txt")
 ```
 
-KEGG enrichment analysis with RepeatSoaker
-----------------------------------------------
-```{r KEGGall_r00}
-GOKEGG(matrix(genes_all_r00, ncol=1), use="KEGG", "KEGG_all_r00.txt")
-```
-
-GO enrichment analysis without RepeatSoaker
+GO enrichment analysis
 ----------------------------------------------
 ```{r GOall_nor}
 GOKEGG(matrix(genes_all_nor, ncol=1), use="GO", "GO_all_nor.txt")
 ```
 
-GO enrichment analysis with RepeatSoaker
-----------------------------------------------
-```{r GOall_r00}
-GOKEGG(matrix(genes_all_r00, ncol=1), use="GO", "GO_all_r00.txt")
-```
-
-Reactome enrichment analysis without RepeatSoaker
+Reactome enrichment analysis
 ----------------------------------------------
 ```{r Pathwayall_nor}
 Pathway(matrix(genes_all_nor, ncol=1), "PW_all_nor.txt")
 ```
-
-Reactome enrichment analysis with RepeatSoaker
-----------------------------------------------
-```{r Pathwayall_r00}
-Pathway(matrix(genes_all_r00, ncol=1), "PW_all_r00.txt")
-```
-
-Genes unique for different RepeatSoaker settings
--------------------------------------------------
-Now, we check what those genes unique to each RepeatSoaker % are (leaves of the Venn diagram). We will look at:
-
-1) Gene names and their description. Note that not all probes can be mapped to gene names, and some probes map to the same gene - therefore, the numbers in the Venn diagram and the tables below differ.
-
-2) GO, KEGG and Reactome Pathway enrichment of those genes, if any. 
-
-Unique genes without RepeatSoaker
----------------------------------
-
-```{r u1}
-uniq.all <- uniq(1, "genes_uniq_all.txt") # Condition-specific gene names
-grid.table(uniq.all[order(uniq.all[, 1]), ], gp=gpar(fontsize=6))  
-```
-
-```{r KEGGall}
-GOKEGG(uniq.all, use="KEGG", "KEGG_uniq_all.txt")
-```
-
-```{r GOall}
-GOKEGG(uniq.all, use="GO", "GO_uniq_all.txt")
-```
-
-```{r Pathwayall}
-Pathway(uniq.all, "PW_uniq_all.txt")
-```
-
-Unique genes with 75% RepeatSoaker
-----------------------------------
-
-```{r u2}
-uniq.r75 <- uniq(2, "genes_uniq_r75.txt") # Condition-specific gene names
-grid.table(uniq.r75[order(uniq.r75[,1]), ], gp=gpar(fontsize=6))  
-```
-
-```{r KEGGr75}
-GOKEGG(uniq.r75, use="KEGG", "KEGG_uniq_r75.txt")
-```
-
-```{r GOr75}
-GOKEGG(uniq.r75, use="GO", "GO_uniq_r75.txt")
-```
-
-```{r Pathwayr75}
-Pathway(uniq.r75, "PW_uniq_r75.txt")
-```
-
-Unique genes with 50% RepeatSoaker
-----------------------------------
-
-```{r u3}
-uniq.r50 <- uniq(3, "genes_uniq_r50.txt") # Condition-specific gene names
-grid.table(uniq.r50[order(uniq.r50[,1]), ], gp=gpar(fontsize=6))  
-```
-
-```{r KEGGr50}
-GOKEGG(uniq.r50, use="KEGG", "KEGG_uniq_r50.txt")
-```
-
-```{r GOr50}
-GOKEGG(uniq.r50, use="GO", "GO_uniq_r50.txt")
-```
-
-```{r Pathwayr50}
-Pathway(uniq.r50, "PW_uniq_r50.txt")
-```
-
-Unique genes with 25% RepeatSoaker
----------------------------------
-
-```{r u4}
-uniq.r25 <- uniq(4, "genes_uniq_r25.txt") # Condition-specific gene names
-grid.table(uniq.r25[order(uniq.r25[,1]), ], gp=gpar(fontsize=6))  
-```
-
-```{r KEGGr25}
-GOKEGG(uniq.r25, use="KEGG", "KEGG_uniq_r25.txt")
-```
-
-```{r GOr25}
-GOKEGG(uniq.r25, use="GO", "GO_uniq_r25.txt")
-```
-
-```{r Pathwayr25}
-Pathway(uniq.r25, "PW_uniq_r25.txt")
-```
-
-Unique genes with 00% RepeatSoaker
----------------------------------
-
-```{r u5}
-uniq.r00 <- uniq(5, "genes_uniq_r00.txt") # Condition-specific gene names
-grid.table(uniq.r00[order(uniq.r00[,1]), ], gp=gpar(fontsize=6))  
-```
-
-```{r KEGGr00}
-GOKEGG(uniq.r00, use="KEGG", "KEGG_uniq_r00.txt")
-```
-
-```{r GOr00}
-GOKEGG(uniq.r00, use="GO", "GO_uniq_r00.txt")
-```
-
-```{r Pathwayr00}
-Pathway(uniq.r00, "PW_uniq_r00.txt")
-```
-
-Other tests
-------------
-
-Let's have a look at the distribution of log2 fold change of genes in the leaves of the Venn diagram, as compared with that of the heart of the Venn diagram. It is expected that the leaves may have fold change different from the main DEGs.
-
-```{r boxPlot}
-par(oma=c(2, 5, 1, 1))
-boxplot(list(all=res[[1]][uniq(1, , raw=T), ]$log2FoldChange,
-             r75=res[[2]][uniq(2, , raw=T), ]$log2FoldChange,
-             r50=res[[3]][uniq(3, , raw=T), ]$log2FoldChange,
-             r25=res[[4]][uniq(4, , raw=T), ]$log2FoldChange,
-             r00=res[[5]][uniq(5, , raw=T), ]$log2FoldChange,
-             VennHeart=res[[1]][Reduce(intersect, list(rownames(res[[1]]), rownames(res[[2]]), rownames(res[[3]]), rownames(res[[4]]), rownames(res[[5]]))), ]$log2FoldChange),
-        ylab="log2FC distribution")
-```
-
-We also check the same for the expression level.
-
-```{r boxPlotExpr, warning=FALSE}
-par(oma=c(2, 5, 1, 1))
-boxplot(list(all=log2(rowMeans(counts(ddsHTSEQ[[1]])[uniq(1, , raw=T), ])),
-             r75=log2(rowMeans(counts(ddsHTSEQ[[2]])[uniq(1, , raw=T), ])),
-             r50=log2(rowMeans(counts(ddsHTSEQ[[3]])[uniq(1, , raw=T), ])),
-             r25=log2(rowMeans(counts(ddsHTSEQ[[4]])[uniq(1, , raw=T), ])),
-             r00=log2(rowMeans(counts(ddsHTSEQ[[5]])[uniq(1, , raw=T), ])),
-             VennHeart=log2(rowMeans(counts(ddsHTSEQ[[1]])[Reduce(intersect, list(rownames(res[[1]]), rownames(res[[2]]), rownames(res[[3]]), rownames(res[[4]]), rownames(res[[5]]))), ]))),
-        ylab="log2 expression")
-```
-
-The leaves may have overall lower expression level, hence, more susceptible to the RepeatSoaker.
-

@@ -1,6 +1,9 @@
 RepeatSoaker effect on DEGs detection
 ========================================================
 
+Using adapter trimmed, duplicates removed mouse RNA-seq data, we are investigating the biology of genes removed by RepeatSoaker. That is, What are the properties of the genes lost when removing reads overlapping low complexity regions.
+
+First, we explore overlap among gene lists without RepeatSoaker treatment (remDup_all) and with RepeatSoaker treatment at different thresholds (remDup_75 - remDup_0)
 
 
 
@@ -21,45 +24,12 @@ RepeatSoaker effect on DEGs detection
 
 
 
-Overlap among DEGs identified in the non-soaked data (index [[1]]) and RepeatSoaked data at 75%, 50, 25 and 1% thresholds (subsequent indexes).
 
-
-```
-## estimating size factors
-## estimating dispersions
-## gene-wise dispersion estimates
-## mean-dispersion relationship
-## final dispersion estimates
-## fitting model and testing
-## estimating size factors
-## estimating dispersions
-## gene-wise dispersion estimates
-## mean-dispersion relationship
-## final dispersion estimates
-## fitting model and testing
-## estimating size factors
-## estimating dispersions
-## gene-wise dispersion estimates
-## mean-dispersion relationship
-## final dispersion estimates
-## fitting model and testing
-## estimating size factors
-## estimating dispersions
-## gene-wise dispersion estimates
-## mean-dispersion relationship
-## final dispersion estimates
-## fitting model and testing
-## estimating size factors
-## estimating dispersions
-## gene-wise dispersion estimates
-## mean-dispersion relationship
-## final dispersion estimates
-## fitting model and testing
-```
 
 <img src="img/diffGeneIDs.png" title="plot of chunk diffGeneIDs" alt="plot of chunk diffGeneIDs" width="700" />
 
 
+We observe that "RepeatSoaking" diminishes the number of differentially expressed genes. More rigorous soaking (less strict overlap threshold) also increases the number of genes not detected previously (the numbers in the "leaves" of the Venn diagram).
 
 
 
@@ -69,9 +39,8 @@ Overlap among DEGs identified in the non-soaked data (index [[1]]) and RepeatSoa
 
 
 
-We observe that soaking diminishes the number of differentially expressed genes. More rigorous soaking (less strict overlap threshold) also increases the number of genes not detected previously.
 
-Withour RepeatSoaker, we have (all genes in the rownames(res[[1]]) oval):
+Withour RepeatSoaker, we have (all genes in the remDup_All oval):
 
 
 ```
@@ -80,9 +49,9 @@ Withour RepeatSoaker, we have (all genes in the rownames(res[[1]]) oval):
 ```
 
 
-Some probes map to multiple genes, hence the discrepancy in numbers. 
+Some probes map to multiple genes, hence the discrepancy in counts of probes and genes. 
 
-After trimming the data with 0% RepeatSoaker settings, we have (res[[5]] oval):
+After trimming the data with 0% RepeatSoaker settings, we have (remDup_0 oval):
 
 
 ```
@@ -91,64 +60,84 @@ After trimming the data with 0% RepeatSoaker settings, we have (res[[5]] oval):
 ```
 
 
-Now, we compare these gene lists (Genes without vs. Genes with RepeatSoaker) for biological meaning. The tables are sequential, first table is for non-repeatsoaked data, second - for 0% repeatsoaked data.
+Genes without vs. Genes with RepeatSoaker comparison
+=====================================================
 
+We compare enrichment analyses results using genes with and without reads overlapping low complexity regions (remDup_all vs. remDup_0).
+
+KEGG enrichment analysis without RepeatSoaker
+----------------------------------------------
 
 ```
-## The number of enriched GOs:35
+## 
+## KEGG.db contains mappings based on older data because the original resource was removed from the the public
+##   domain before the most recent update was produced. This package should now be considered deprecated and
+##   future versions of Bioconductor may not have it available.  Users who want more current data are
+##   encouraged to look at the KEGGREST or reactome.db packages
+## 
+## The number of enriched KEGG :35
 ```
 
 <img src="img/KEGGall_nor.png" title="plot of chunk KEGGall_nor" alt="plot of chunk KEGGall_nor" width="700" />
 
 
+KEGG enrichment analysis with RepeatSoaker
+----------------------------------------------
 
 ```
-## The number of enriched GOs:33
+## The number of enriched KEGG :33
 ```
 
 <img src="img/KEGGall_r00.png" title="plot of chunk KEGGall_r00" alt="plot of chunk KEGGall_r00" width="700" />
 
 
+GO enrichment analysis without RepeatSoaker
+----------------------------------------------
 
 ```
-## The number of enriched GOs:2035
+## The number of enriched GO :2035
 ```
 
 <img src="img/GOall_nor.png" title="plot of chunk GOall_nor" alt="plot of chunk GOall_nor" width="700" />
 
 
+GO enrichment analysis with RepeatSoaker
+----------------------------------------------
 
 ```
-## The number of enriched GOs:2025
+## The number of enriched GO :2025
 ```
 
 <img src="img/GOall_r00.png" title="plot of chunk GOall_r00" alt="plot of chunk GOall_r00" width="700" />
 
 
+Reactome enrichment analysis without RepeatSoaker
+----------------------------------------------
 
 ```
-## The number of enriched pathways:403
+## The number of enriched Reactome pathways:403
 ```
 
 <img src="img/Pathwayall_nor.png" title="plot of chunk Pathwayall_nor" alt="plot of chunk Pathwayall_nor" width="700" />
 
 
+Reactome enrichment analysis with RepeatSoaker
+----------------------------------------------
 
 ```
-## The number of enriched pathways:390
+## The number of enriched Reactome pathways:390
 ```
 
 <img src="img/Pathwayall_r00.png" title="plot of chunk Pathwayall_r00" alt="plot of chunk Pathwayall_r00" width="700" />
 
 
-Now, we check what those genes unique to each RepeatSoaker % are. We will look at 3 things:
-
-1) Gene names and their description. Note that not all probes can be mapped to genes, and some probes map to the same gene - therefore, the numbers in the Venn diagram and the tables below differ.
-
-2) GO, KEGG and Reactome Pathway enrichment of those genes, if any. 
-
 Genes unique for different RepeatSoaker settings
 -------------------------------------------------
+Now, we check what those genes unique to each RepeatSoaker % are (leaves of the Venn diagram). We will look at:
+
+1) Gene names and their description. Note that not all probes can be mapped to gene names, and some probes map to the same gene - therefore, the numbers in the Venn diagram and the tables below differ.
+
+2) GO, KEGG and Reactome Pathway enrichment of those genes, if any. 
 
 Unique genes without RepeatSoaker
 ---------------------------------
@@ -158,7 +147,7 @@ Unique genes without RepeatSoaker
 
 
 ```
-## The number of enriched GOs:10
+## The number of enriched KEGG :10
 ```
 
 <img src="img/KEGGall.png" title="plot of chunk KEGGall" alt="plot of chunk KEGGall" width="700" />
@@ -166,7 +155,7 @@ Unique genes without RepeatSoaker
 
 
 ```
-## The number of enriched GOs:31
+## The number of enriched GO :31
 ```
 
 <img src="img/GOall.png" title="plot of chunk GOall" alt="plot of chunk GOall" width="700" />
@@ -174,7 +163,7 @@ Unique genes without RepeatSoaker
 
 
 ```
-## The number of enriched pathways:0
+## The number of enriched Reactome pathways:0
 ```
 
 
@@ -186,7 +175,7 @@ Unique genes with 75% RepeatSoaker
 
 
 ```
-## The number of enriched GOs:1
+## The number of enriched KEGG :1
 ```
 
 <img src="img/KEGGr75.png" title="plot of chunk KEGGr75" alt="plot of chunk KEGGr75" width="700" />
@@ -194,7 +183,7 @@ Unique genes with 75% RepeatSoaker
 
 
 ```
-## The number of enriched GOs:52
+## The number of enriched GO :52
 ```
 
 <img src="img/GOr75.png" title="plot of chunk GOr75" alt="plot of chunk GOr75" width="700" />
@@ -202,7 +191,7 @@ Unique genes with 75% RepeatSoaker
 
 
 ```
-## The number of enriched pathways:6
+## The number of enriched Reactome pathways:6
 ```
 
 <img src="img/Pathwayr75.png" title="plot of chunk Pathwayr75" alt="plot of chunk Pathwayr75" width="700" />
@@ -216,7 +205,7 @@ Unique genes with 50% RepeatSoaker
 
 
 ```
-## The number of enriched GOs:1
+## The number of enriched KEGG :1
 ```
 
 <img src="img/KEGGr50.png" title="plot of chunk KEGGr50" alt="plot of chunk KEGGr50" width="700" />
@@ -224,7 +213,7 @@ Unique genes with 50% RepeatSoaker
 
 
 ```
-## The number of enriched GOs:32
+## The number of enriched GO :32
 ```
 
 <img src="img/GOr50.png" title="plot of chunk GOr50" alt="plot of chunk GOr50" width="700" />
@@ -232,7 +221,7 @@ Unique genes with 50% RepeatSoaker
 
 
 ```
-## The number of enriched pathways:25
+## The number of enriched Reactome pathways:25
 ```
 
 <img src="img/Pathwayr50.png" title="plot of chunk Pathwayr50" alt="plot of chunk Pathwayr50" width="700" />
@@ -246,7 +235,7 @@ Unique genes with 25% RepeatSoaker
 
 
 ```
-## The number of enriched GOs:4
+## The number of enriched KEGG :4
 ```
 
 <img src="img/KEGGr25.png" title="plot of chunk KEGGr25" alt="plot of chunk KEGGr25" width="700" />
@@ -254,7 +243,7 @@ Unique genes with 25% RepeatSoaker
 
 
 ```
-## The number of enriched GOs:101
+## The number of enriched GO :101
 ```
 
 <img src="img/GOr25.png" title="plot of chunk GOr25" alt="plot of chunk GOr25" width="700" />
@@ -262,7 +251,7 @@ Unique genes with 25% RepeatSoaker
 
 
 ```
-## The number of enriched pathways:51
+## The number of enriched Reactome pathways:51
 ```
 
 <img src="img/Pathwayr25.png" title="plot of chunk Pathwayr25" alt="plot of chunk Pathwayr25" width="700" />
@@ -276,7 +265,7 @@ Unique genes with 00% RepeatSoaker
 
 
 ```
-## The number of enriched GOs:10
+## The number of enriched KEGG :10
 ```
 
 <img src="img/KEGGr00.png" title="plot of chunk KEGGr00" alt="plot of chunk KEGGr00" width="700" />
@@ -284,7 +273,7 @@ Unique genes with 00% RepeatSoaker
 
 
 ```
-## The number of enriched GOs:109
+## The number of enriched GO :109
 ```
 
 <img src="img/GOr00.png" title="plot of chunk GOr00" alt="plot of chunk GOr00" width="700" />
@@ -292,7 +281,7 @@ Unique genes with 00% RepeatSoaker
 
 
 ```
-## The number of enriched pathways:43
+## The number of enriched Reactome pathways:43
 ```
 
 <img src="img/Pathwayr00.png" title="plot of chunk Pathwayr00" alt="plot of chunk Pathwayr00" width="700" />

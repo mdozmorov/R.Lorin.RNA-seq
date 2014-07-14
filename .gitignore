@@ -1,7 +1,7 @@
 .Rproj.user
 .Rhistory
 .RData
+*.Rproj
 data/
 cache/
-attayQuality*
-work_scripts/
+arrayQuality*
