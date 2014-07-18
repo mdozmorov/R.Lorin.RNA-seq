@@ -1,7 +1,7 @@
 ```{r setup, echo=FALSE, include=FALSE, cache=FALSE}
 # Set up the environment
 library(knitr) 
-opts_chunk$set(cache.path='cache/', fig.path='img/', cache=F, tidy=T, fig.keep='high', echo=T, dpi=300, out.width=700, echo=F)
+opts_chunk$set(cache.path='cache/', fig.path='img/', cache=T, tidy=T, fig.keep='high', echo=T, dpi=300, out.width=700, echo=F)
 options(replace.assign=TRUE, width=120)
 set.seed(1)
 ```
@@ -171,6 +171,14 @@ ens2gene <- function(x, fileName=NULL) {
   }
   return(genes)
 }
+gene2ens <- function(x, fileName=NULL) {
+  # Function to convertgene names to ensembl IDs
+  genes <- getBM(attributes=c('external_gene_id', 'ensembl_gene_id'), filters='wikigene_name', values=x, mart=mart, uniqueRows=T)
+  if (!is.null(fileName)) {
+    write.table(genes, paste("results//", fileName, sep=""), sep="\t", row.names=F)
+  }
+  return(genes)
+}
 ```
 
 ```{r loadData, results='hide', message=FALSE}
@@ -237,4 +245,78 @@ Reactome enrichment analysis
 ----------------------------------------------
 ```{r Pathwayall_nor}
 Pathway(matrix(genes_all_nor, ncol=1), "PW_all_nor.txt")
+```
+
+Plots of selected genes
+------------------------
+```{r barboxplots}
+# Function plotting error bars. http://monkeysuncle.stanford.edu/?p=485
+error.bar <- function(x, y, upper, lower=upper, length=0.1,...){
+  if(length(x) != length(y) | length(y) !=length(lower) | length(lower) != length(upper))
+    stop("vectors must be same length")
+  arrows(x,y+upper, x, y-lower, angle=90, code=3, length=length, ...)
+}
+
+# Function to extract data subset
+data.sel <- function(selectedGenes="", mtx) {
+  selectedEns <- gene2ens(selectedGenes)
+  selectedData <- mtx[rownames(mtx) %in% selectedEns[, "ensembl_gene_id"],]
+  selectedEns[selectedEns[, "ensembl_gene_id"] %in% rownames(selectedData), "external_gene_id"]
+  data <- merge(selectedData, selectedEns, by.x="row.names", by.y="ensembl_gene_id")
+  rownames(data) <- data[,ncol(data)]
+  data <- as.matrix(data[,c(-1, -ncol(data))])
+  return(data)
+}
+
+
+# Plot bar/box plot
+plot.bb <- function(selectedGenes, data, type="bar") {
+# More blunt but working method, processing one row at a time
+#dev.off() # Clear the plot area
+  par(mfrow=c(2,2)) # Num X Num plot area
+  names<-c("control","mutant")
+  indices <- lapply(names, function(p) {grep(p, colnames(data))}) # Group specific column indices
+  for (i in 1:nrow(data)) {  
+    if (type == "bar") {
+      data.means<-c(rowMeans(data[i,indices[[1]], drop=F]),rowMeans(data[i,indices[[2]], drop=F]))
+      data.sd<-1.96*c(apply(data[i,indices[[1]], drop=F],1,sd)/sqrt(length(data[i,indices[[1]]])),apply(data[i,indices[[2]], drop=F],1,sd)/sqrt(length(data[i,indices[[2]]])))
+      data.min<-min(as.numeric(data[i,])) - 0.1*min(as.numeric(data[i,])) # Get the min -10%
+      data.max<-max(as.numeric(data[i,])) + 0.1*max(as.numeric(data[i,])) # Get the max +10%
+      barx<-barplot(data.means, main=row.names(data)[i], names.arg=names, 
+               ylim=c(data.min,data.max), xpd=F, ylab="log2-normalized expression", las=2) # Plot a hits for current data
+      error.bar(barx,data.means,data.sd)
+    } else {
+      boxplot(data.frame(control=data[i, indices[[1]]], mutant=data[i, indices[[2]]]), main=rownames(data)[i], las=2)
+    }
+  }
+}
+```
+
+First, we select genes of interest. 
+
+```{r selectGenes}
+(selectedGenes <- c("Dlk1", "Zfp423", "Zfp521", "Zfml"))
+```
+
+Then, we plot the BARplots of their normalized log2-expression level.
+
+```{r barplots, fig.height=7, fig.width=4}
+rlg <- rlog(ddsHTSEQ[[1]])
+rlogMat <- assay(rlg)
+#vsd <- varianceStabilizingTransformation(ddsHTSEQ[[1]])
+#vstMat <- assay(vsd)
+plot.bb(selectedGenes, data.sel(selectedGenes, rlogMat), "bar")
+```
+
+We plot the same data using BOXplots.
+
+```{r boxplots, fig.height=7, fig.width=4}
+plot.bb(selectedGenes, data.sel(selectedGenes, rlogMat), "box")
+```
+
+We compare these boxplots with plotting raw unnormalized read counts
+
+```{r boxplotsRaw, fig.height=7, fig.width=4}
+mtx <- counts(ddsHTSEQ[[1]])
+plot.bb(selectedGenes, data.sel(selectedGenes, mtx), "box")
 ```
