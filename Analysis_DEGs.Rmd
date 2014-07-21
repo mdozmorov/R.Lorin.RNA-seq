@@ -202,7 +202,7 @@ DIR <- "data//htseq-count_rev/"
 ddsHTSEQ <- lapply(DIR, readDDS)
 
 # Getting differentially expressed genes
-resDDS <- function(DDS, pval=0.01, lfc=0) {
+resDDS <- function(DDS, pval=0.1, lfc=0) {
   dds <- DESeq(DDS)
   res <- results(dds)
   res <- res[complete.cases(res), ]
@@ -214,8 +214,9 @@ Differential gene expression
 ========================================================
 ```{r get_degs, echo=FALSE}
 res <- lapply(ddsHTSEQ, resDDS)
+res.annot <- merge(res[[1]], getBM(attributes=c('ensembl_gene_id', 'external_gene_id', 'description'), filters='ensembl_gene_id', values=rownames(res[[1]]), mart=mart, uniqueRows=T), by.x="row.names", by.y=1, all.x=T)
 # Write results to file
-write.table(merge(res[[1]], getBM(attributes=c('ensembl_gene_id', 'external_gene_id', 'description'), filters='ensembl_gene_id', values=rownames(res[[1]]), mart=mart, uniqueRows=T), by.x="row.names", by.y=1, all.x=T), paste("results//", "DEGs_all.txt", sep=""), sep="\t", row.names=T)
+write.table(res.annot, paste("results//", "DEGs_all_FDR_0.1.txt", sep=""), sep="\t", row.names=T)
 ```
 
 First, we check how many genes are differentially expressed
@@ -228,6 +229,27 @@ message(paste("Number of differentially expressed GENES:", length(genes_all_nor)
 ```
 
 Some probes map to multiple genes, hence the discrepancy in counts of probes and genes. 
+
+Then, we look at volcano plot of our differentially expressed genes.
+- Red highlights genes with padj<0.01
+- Orange highlights genes with fold change greater than 2 (log2FC>1)
+- Green highlights genes with both padj<0.01 and FC>2
+```{r volcano}
+# http://www.r-bloggers.com/using-volcano-plots-in-r-to-visualize-microarray-and-rna-seq-results/
+# Make a basic volcano plot
+with(res[[1]], plot(log2FoldChange, -log10(pvalue), pch=20, main="Volcano plot", xlim=c(-2.5,2)))
+
+# Add colored points: red if padj<0.05, orange of log2FC>1, green if both)
+with(subset(res[[1]], padj<.01 ), points(log2FoldChange, -log10(pvalue), pch=20, col="red"))
+with(subset(res[[1]], abs(log2FoldChange)>1), points(log2FoldChange, -log10(pvalue), pch=20, col="orange"))
+with(subset(res[[1]], padj<.01 & abs(log2FoldChange)>1), points(log2FoldChange, -log10(pvalue), pch=20, col="green"))
+
+# Label points with the textxy function from the calibrate plot
+library(calibrate)
+with(subset(res, padj<.01 & abs(log2FoldChange)>1), textxy(log2FoldChange, -log10(pvalue), labs=res.annot$external_gene_id, cex=.4))
+```
+
+
 
 KEGG enrichment analysis
 ----------------------------------------------
